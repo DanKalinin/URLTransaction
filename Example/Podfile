@@ -1,0 +1,15 @@
+source 'https://github.com/CocoaPods/Specs.git'
+use_frameworks!
+
+target 'URLTransaction_Example', :exclusive => true do
+  pod "URLTransaction", :path => "../"
+end
+
+target 'URLTransaction_Tests', :exclusive => true do
+  pod "URLTransaction", :path => "../"
+
+  pod 'Specta'
+  pod 'Expecta'
+  pod 'FBSnapshotTestCase'
+  pod 'Expecta+Snapshots'
+end
