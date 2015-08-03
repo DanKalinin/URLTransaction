@@ -1,2 +1,4 @@
 language: objective-c
-script: xctool -workspace Example/URLTransaction.xcworkspace -scheme URLTransaction-Example -sdk iphonesimulator test
+xcode_workspace: Example/URLTransaction.xcworkspace
+xcode_scheme: URLTransaction-Example
+xcode_sdk: iphonesimulator
