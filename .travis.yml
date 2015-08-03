@@ -1,2 +1,2 @@
 language: objective-c
-script: xctool -workspace Example/URLTransaction.xcworkspace -scheme URLTransaction-Example test -sdk iphonesimulator -parallelize -logicTestBucketSize 10
+script: xctool -workspace Example/URLTransaction.xcworkspace -scheme URLTransaction-Example test
