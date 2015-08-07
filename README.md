@@ -9,6 +9,12 @@
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
+### URLRequest
+![](https://github.com/DanKalinin/URLTransaction/blob/master/URLRequest.png)
+
+### URLTransaction
+![](https://github.com/DanKalinin/URLTransaction/blob/master/URLTransaction.png)
+
 ```objective-c
 @interface Department : NSObject
 
