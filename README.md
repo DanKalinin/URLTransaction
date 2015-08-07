@@ -9,10 +9,10 @@
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
-### URLRequest
+#### URLRequest
 ![](https://github.com/DanKalinin/URLTransaction/blob/master/URLRequest.png)
 
-### URLTransaction
+#### URLTransaction
 ![](https://github.com/DanKalinin/URLTransaction/blob/master/URLTransaction.png)
 
 ```objective-c
