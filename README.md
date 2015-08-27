@@ -6,6 +6,7 @@
 [![Platform](https://img.shields.io/cocoapods/p/URLTransaction.svg?style=flat)](http://cocoapods.org/pods/URLTransaction)
 
 ## Description
+
 ![](https://www.dropbox.com/s/jhx6bruip81daa3/URLRequest%20.svg?dl=0&raw=1)
 
 ## Usage
@@ -13,10 +14,8 @@
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
 #### URLRequest
-![](https://www.dropbox.com/s/cosw9dw22smx3mi/URLRequest.png?dl=0)
 
 #### URLTransaction
-![](https://www.dropbox.com/s/mvffsqm18tmr0qf/URLTransaction.png?dl=0)
 
 ```objective-c
 @interface Department : NSObject
