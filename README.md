@@ -5,6 +5,9 @@
 [![License](https://img.shields.io/cocoapods/l/URLTransaction.svg?style=flat)](http://cocoapods.org/pods/URLTransaction)
 [![Platform](https://img.shields.io/cocoapods/p/URLTransaction.svg?style=flat)](http://cocoapods.org/pods/URLTransaction)
 
+## Description
+![](https://www.dropbox.com/s/jhx6bruip81daa3/URLRequest%20.svg?dl=0&raw=1)
+
 ## Usage
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
