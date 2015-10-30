@@ -7,7 +7,7 @@
 
 ## Description
 
-![](https://www.dropbox.com/s/jhx6bruip81daa3/URLRequest%20.svg?dl=0&raw=1)
+![](https://www.dropbox.com/s/3y2c9nupbjdt3og/URLRequest.svg?raw=1)
 
 ## Usage
 
