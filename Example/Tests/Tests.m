@@ -1,72 +1,106 @@
 //
-//  AppTests.m
-//  AppTests
+//  URLTransactionTests.m
+//  URLTransactionTests
 //
-//  Created by Dan Kalinin on 03.08.15.
-//  Copyright (c) 2015 Dan Kalinin. All rights reserved.
+//  Created by DanKalinin on 11/13/2015.
+//  Copyright (c) 2015 DanKalinin. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
-#import <XCTest/XCTest.h>
+@import XCTest;
+#import "URLTransaction.h"
+#import "URLRequest+Hotels.h"
 
 
 
-@interface URLRequestTests : XCTestCase {
-@private
-    int a;
-    int b;
-    
-    NSString *first;
-    NSString *last;
-}
+@interface Tests : XCTestCase
+
+@property NSArray<Hotel *> *hotels;
 
 @end
 
 
 
-@implementation URLRequestTests
+@implementation Tests
 
 - (void)setUp {
     [super setUp];
     
-    a = 20;
-    b = 5;
+    XCTestExpectation *hotelsExpectation = [self expectationWithDescription:@"Hotels Expectation"];
     
-    first = @"John";
-    last = @"Taylor";
-}
-
-- (void)tearDown {
-    a = b = 0;
+    [[URLRequest getHotels] sendWithSuccess:^(URLRequest *request) {
+        XCTAssertNil(request.error);
+        XCTAssertEqual(200, request.response.statusCode);
+        self.hotels = [request mapHotels];
+        XCTAssertEqual(10, self.hotels.count);
+    } failure:^(URLRequest *request) {
+        XCTAssertNotNil(request.error);
+        XCTAssertNotEqual(200, request.response.statusCode);
+    } completion:^(URLRequest *request) {
+        [hotelsExpectation fulfill];
+    } queue:dispatch_get_main_queue()];
     
-    first = last = nil;
-    
-    [super tearDown];
+    [self waitForExpectationsWithTimeout:30.0 handler:nil];
 }
 
-- (void)testAddition {
-    XCTAssertEqual(a + b, 25, @"Addition failed");
+- (void)testRequest {
+    if (self.hotels.count) {
+        
+        Image *image = self.hotels.firstObject.images.firstObject;
+        XCTAssertNotNil(image);
+        
+        XCTestExpectation *imageExpectation = [self expectationWithDescription:@"Image Expectation"];
+        
+        [[URLRequest getImage:image.ID] sendWithSuccess:^(URLRequest *request) {
+            XCTAssertNil(request.error);
+            XCTAssertEqual(200, request.response.statusCode);
+            UIImage *image = [request mapImage];
+            XCTAssertNotNil(image);
+            XCTAssertEqualWithAccuracy(404.0, image.size.width, 1.0);
+            XCTAssertEqualWithAccuracy(500.0, image.size.height, 1.0);
+        } failure:^(URLRequest *request) {
+            XCTAssertNotNil(request.error);
+            XCTAssertNotEqual(200, request.response.statusCode);
+        } completion:^(URLRequest *request) {
+            [imageExpectation fulfill];
+        } queue:dispatch_get_main_queue()];
+        
+        [self waitForExpectationsWithTimeout:30.0 handler:nil];
+    }
 }
 
-- (void)testSubtraction {
-    XCTAssertEqual(a - b, 15, @"Subtraction failed");
-}
-
-- (void)testDivision {
-    XCTAssertEqual(a / b, 4, @"Division failed");
-}
-
-- (void)testMultiplication {
-    XCTAssertEqual(a * b, 100, @"Multiplication failed");
-}
-
-- (void)testName {
-    XCTAssertNotNil(first, @"Empty first name");
-    XCTAssertNotNil(last, @"Empty last name");
-}
-
-- (void)testNameIsJohn {
-    XCTAssertEqualObjects(first, @"John", @"Name is not John");
+- (void)testTransaction {
+    if (self.hotels.count) {
+        
+        NSArray<Review *> *reviews = self.hotels.firstObject.reviews;
+        XCTAssertGreaterThan(reviews.count, 0);
+        
+        XCTestExpectation *reviewsExpectation = [self expectationWithDescription:@"Reviews Expectation"];
+        
+        NSMutableArray<Review *> *loadedReviews = [NSMutableArray array];
+        
+        for (Review *review in reviews) {
+            [[URLRequest getReview:review.ID] addToTransaction:@20 success:^(URLRequest *request) {
+                XCTAssertNil(request.error);
+                XCTAssertEqual(200, request.response.statusCode);
+                [loadedReviews addObject:[request mapReview]];
+            } failure:^(URLRequest *request) {
+                XCTAssertNotNil(request.error);
+                XCTAssertNotEqual(200, request.response.statusCode);
+            } completion:nil];
+        }
+        
+        [[URLTransaction transaction:@20] sendWithSuccess:^(URLTransaction *transaction) {
+            XCTAssertNil(transaction.error);
+            XCTAssertEqual(reviews.count, loadedReviews.count);
+            XCTAssertEqualObjects(@"Marina", loadedReviews.firstObject.user);
+        } failure:^(URLTransaction *transaction) {
+            XCTAssertNotNil(transaction.error);
+        } completion:^(URLTransaction *transaction) {
+            [reviewsExpectation fulfill];
+        } queue:dispatch_get_main_queue()];
+        
+        [self waitForExpectationsWithTimeout:30.0 handler:nil];
+    }
 }
 
 @end

@@ -8,8 +8,5 @@ end
 target 'URLTransaction_Tests', :exclusive => true do
   pod "URLTransaction", :path => "../"
 
-  pod 'Specta'
-  pod 'Expecta'
-  pod 'FBSnapshotTestCase'
-  pod 'Expecta+Snapshots'
+  
 end

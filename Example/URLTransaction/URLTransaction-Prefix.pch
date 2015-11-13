@@ -13,4 +13,9 @@
 #ifdef __OBJC__
     @import UIKit;
     @import Foundation;
+    #import "Image.h"
+    #import "Review.h"
+    #import "Hotel.h"
+    #import "URLRequest+Hotels.h"
+    #import "UIView+Hotels.h"
 #endif

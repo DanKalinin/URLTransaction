@@ -1,28 +1,14 @@
 PODS:
-  - Expecta (1.0.2)
-  - Expecta+Snapshots (1.3.4):
-    - Expecta (~> 1.0)
-    - FBSnapshotTestCase (~> 1.8)
-  - FBSnapshotTestCase (1.8.1)
-  - Specta (1.0.3)
   - URLTransaction (0.1.0)
 
 DEPENDENCIES:
-  - Expecta
-  - Expecta+Snapshots
-  - FBSnapshotTestCase
-  - Specta
   - URLTransaction (from `../`)
 
 EXTERNAL SOURCES:
   URLTransaction:
-    :path: ../
+    :path: "../"
 
 SPEC CHECKSUMS:
-  Expecta: 54e8a3530add08f4f0208c111355eda7cde74a53
-  Expecta+Snapshots: ca15bfb57e7a0f78f86c7699c2c54ffacfa4ad2a
-  FBSnapshotTestCase: 3dc3899168747a0319c5278f5b3445c13a6532dd
-  Specta: cf3e4188cf35375c3ee2cd03f8db8f1f4ef98234
-  URLTransaction: cdbb3c297799723d9a9777696ba38fb8c7f30c68
+  URLTransaction: 35de55e0ceca2707633afcf569280afc2c8eed0f
 
-COCOAPODS: 0.36.3
+COCOAPODS: 0.39.0

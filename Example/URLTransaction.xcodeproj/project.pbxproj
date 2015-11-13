@@ -7,22 +7,38 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0162231894DD2B78957B67BE /* Pods_URLTransaction_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 981F8571BD671901B95C3461 /* Pods_URLTransaction_Example.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
 		6003F592195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
 		6003F598195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F596195388D20070C39A /* InfoPlist.strings */; };
 		6003F59A195388D20070C39A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F599195388D20070C39A /* main.m */; };
-		6003F59E195388D20070C39A /* URLAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F59D195388D20070C39A /* URLAppDelegate.m */; };
-		6003F5A7195388D20070C39A /* URLViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5A6195388D20070C39A /* URLViewController.m */; };
-		6003F5A9195388D20070C39A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5A8195388D20070C39A /* Images.xcassets */; };
 		6003F5B0195388D20070C39A /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F5AF195388D20070C39A /* XCTest.framework */; };
 		6003F5B1195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F5B2195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
 		6003F5BA195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5B8195388D20070C39A /* InfoPlist.strings */; };
 		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
-		84C08A046F820F906053A51F /* Pods_URLTransaction_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A59BB41B4988F73EB96A6DCB /* Pods_URLTransaction_Tests.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
-		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
+		AF8CDF239CC4CF6685C1585F /* Pods_URLTransaction_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D9B04DEEA4851B367DA148A /* Pods_URLTransaction_Example.framework */; };
+		E21B6746565FBDEF5AE1D81C /* Pods_URLTransaction_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98FD0FDC2B17387EF4C43412 /* Pods_URLTransaction_Tests.framework */; };
+		E7728EB61BF56BE30019B7EC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E7728E861BF56BE30019B7EC /* AppDelegate.m */; settings = {ASSET_TAGS = (); }; };
+		E7728EB71BF56BE30019B7EC /* CLLocation+Hotels.m in Sources */ = {isa = PBXBuildFile; fileRef = E7728E891BF56BE30019B7EC /* CLLocation+Hotels.m */; settings = {ASSET_TAGS = (); }; };
+		E7728EB81BF56BE30019B7EC /* Geocoder.m in Sources */ = {isa = PBXBuildFile; fileRef = E7728E8B1BF56BE30019B7EC /* Geocoder.m */; settings = {ASSET_TAGS = (); }; };
+		E7728EB91BF56BE30019B7EC /* UIView+Hotels.m in Sources */ = {isa = PBXBuildFile; fileRef = E7728E8D1BF56BE30019B7EC /* UIView+Hotels.m */; settings = {ASSET_TAGS = (); }; };
+		E7728EBA1BF56BE30019B7EC /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = E7728E911BF56BE30019B7EC /* MBProgressHUD.m */; settings = {ASSET_TAGS = (); }; };
+		E7728EBB1BF56BE30019B7EC /* Hotel.m in Sources */ = {isa = PBXBuildFile; fileRef = E7728E941BF56BE30019B7EC /* Hotel.m */; settings = {ASSET_TAGS = (); }; };
+		E7728EBC1BF56BE30019B7EC /* Image.m in Sources */ = {isa = PBXBuildFile; fileRef = E7728E961BF56BE30019B7EC /* Image.m */; settings = {ASSET_TAGS = (); }; };
+		E7728EBD1BF56BE30019B7EC /* Review.m in Sources */ = {isa = PBXBuildFile; fileRef = E7728E981BF56BE30019B7EC /* Review.m */; settings = {ASSET_TAGS = (); }; };
+		E7728EBE1BF56BE30019B7EC /* URLRequest+Hotels.m in Sources */ = {isa = PBXBuildFile; fileRef = E7728E9B1BF56BE30019B7EC /* URLRequest+Hotels.m */; settings = {ASSET_TAGS = (); }; };
+		E7728EC11BF56BE30019B7EC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E7728EA11BF56BE30019B7EC /* Assets.xcassets */; settings = {ASSET_TAGS = (); }; };
+		E7728EC21BF56BE30019B7EC /* HotelInfoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E7728EA41BF56BE30019B7EC /* HotelInfoCell.m */; settings = {ASSET_TAGS = (); }; };
+		E7728EC31BF56BE30019B7EC /* HotelVC.m in Sources */ = {isa = PBXBuildFile; fileRef = E7728EA61BF56BE30019B7EC /* HotelVC.m */; settings = {ASSET_TAGS = (); }; };
+		E7728EC41BF56BE30019B7EC /* MapImagesCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E7728EA81BF56BE30019B7EC /* MapImagesCell.m */; settings = {ASSET_TAGS = (); }; };
+		E7728EC51BF56BE30019B7EC /* NoReviewsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E7728EAA1BF56BE30019B7EC /* NoReviewsCell.m */; settings = {ASSET_TAGS = (); }; };
+		E7728EC61BF56BE30019B7EC /* ReviewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E7728EAC1BF56BE30019B7EC /* ReviewCell.m */; settings = {ASSET_TAGS = (); }; };
+		E7728EC71BF56BE30019B7EC /* HotelCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E7728EAF1BF56BE30019B7EC /* HotelCell.m */; settings = {ASSET_TAGS = (); }; };
+		E7728EC81BF56BE30019B7EC /* HotelsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = E7728EB11BF56BE30019B7EC /* HotelsVC.m */; settings = {ASSET_TAGS = (); }; };
+		E7728EC91BF56BE30019B7EC /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = E7728EB21BF56BE30019B7EC /* LaunchScreen.xib */; settings = {ASSET_TAGS = (); }; };
+		E7728ECB1BF56BE30019B7EC /* StarsView.m in Sources */ = {isa = PBXBuildFile; fileRef = E7728EB51BF56BE30019B7EC /* StarsView.m */; settings = {ASSET_TAGS = (); }; };
+		E7728ED21BF5726E0019B7EC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E7728EB31BF56BE30019B7EC /* Main.storyboard */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,10 +52,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		2EEFD62668B043F54EC50834 /* Pods-URLTransaction_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-URLTransaction_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-URLTransaction_Tests/Pods-URLTransaction_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		480B0FA21B8E5FC09AC67E88 /* URLTransaction.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = URLTransaction.podspec; path = ../URLTransaction.podspec; sourceTree = "<group>"; };
-		4EFE62B8FE1A8059F6689C9F /* Pods-URLTransaction_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-URLTransaction_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-URLTransaction_Example/Pods-URLTransaction_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		6003F58A195388D20070C39A /* URLTransaction.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = URLTransaction.app; path = URLTransaction_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0AF0A36F7529D53BDB73C796 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		5D9B04DEEA4851B367DA148A /* Pods_URLTransaction_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_URLTransaction_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6003F58A195388D20070C39A /* URLTransaction_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = URLTransaction_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6003F58F195388D20070C39A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		6003F591195388D20070C39A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -47,24 +62,56 @@
 		6003F597195388D20070C39A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		6003F599195388D20070C39A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		6003F59B195388D20070C39A /* URLTransaction-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "URLTransaction-Prefix.pch"; sourceTree = "<group>"; };
-		6003F59C195388D20070C39A /* URLAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = URLAppDelegate.h; sourceTree = "<group>"; };
-		6003F59D195388D20070C39A /* URLAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = URLAppDelegate.m; sourceTree = "<group>"; };
-		6003F5A5195388D20070C39A /* URLViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = URLViewController.h; sourceTree = "<group>"; };
-		6003F5A6195388D20070C39A /* URLViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = URLViewController.m; sourceTree = "<group>"; };
-		6003F5A8195388D20070C39A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		6003F5AE195388D20070C39A /* Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = Tests.xctest; path = URLTransaction_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F5AF195388D20070C39A /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		6003F5B7195388D20070C39A /* Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Tests-Info.plist"; sourceTree = "<group>"; };
 		6003F5B9195388D20070C39A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		6003F5BB195388D20070C39A /* Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tests.m; sourceTree = "<group>"; };
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
-		648A0F2191F8DAB5ED793F2C /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
-		767CC3B0D5566AF9DAFAF6B5 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
-		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
-		8E2CB954641B31AB7CF76474 /* Pods-URLTransaction_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-URLTransaction_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-URLTransaction_Example/Pods-URLTransaction_Example.release.xcconfig"; sourceTree = "<group>"; };
-		981F8571BD671901B95C3461 /* Pods_URLTransaction_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_URLTransaction_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		A59BB41B4988F73EB96A6DCB /* Pods_URLTransaction_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_URLTransaction_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		AAD5309BB5BF305E3CFE9CED /* Pods-URLTransaction_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-URLTransaction_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-URLTransaction_Tests/Pods-URLTransaction_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		60D9D987EED150EEE969C9BC /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		98FD0FDC2B17387EF4C43412 /* Pods_URLTransaction_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_URLTransaction_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A1C727B3869E427B285AA67A /* Pods-URLTransaction_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-URLTransaction_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-URLTransaction_Tests/Pods-URLTransaction_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		A63B095E3C856A9F9B15219B /* Pods-URLTransaction_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-URLTransaction_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-URLTransaction_Example/Pods-URLTransaction_Example.release.xcconfig"; sourceTree = "<group>"; };
+		C62E584F3092E96BB180B01E /* Pods-URLTransaction_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-URLTransaction_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-URLTransaction_Example/Pods-URLTransaction_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		D9473999343D22638EAC8D37 /* URLTransaction.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = URLTransaction.podspec; path = ../URLTransaction.podspec; sourceTree = "<group>"; };
+		E7728E851BF56BE30019B7EC /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		E7728E861BF56BE30019B7EC /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		E7728E881BF56BE30019B7EC /* CLLocation+Hotels.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CLLocation+Hotels.h"; sourceTree = "<group>"; };
+		E7728E891BF56BE30019B7EC /* CLLocation+Hotels.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CLLocation+Hotels.m"; sourceTree = "<group>"; };
+		E7728E8A1BF56BE30019B7EC /* Geocoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Geocoder.h; sourceTree = "<group>"; };
+		E7728E8B1BF56BE30019B7EC /* Geocoder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Geocoder.m; sourceTree = "<group>"; };
+		E7728E8C1BF56BE30019B7EC /* UIView+Hotels.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Hotels.h"; sourceTree = "<group>"; };
+		E7728E8D1BF56BE30019B7EC /* UIView+Hotels.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Hotels.m"; sourceTree = "<group>"; };
+		E7728E901BF56BE30019B7EC /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
+		E7728E911BF56BE30019B7EC /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
+		E7728E931BF56BE30019B7EC /* Hotel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Hotel.h; sourceTree = "<group>"; };
+		E7728E941BF56BE30019B7EC /* Hotel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Hotel.m; sourceTree = "<group>"; };
+		E7728E951BF56BE30019B7EC /* Image.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Image.h; sourceTree = "<group>"; };
+		E7728E961BF56BE30019B7EC /* Image.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Image.m; sourceTree = "<group>"; };
+		E7728E971BF56BE30019B7EC /* Review.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Review.h; sourceTree = "<group>"; };
+		E7728E981BF56BE30019B7EC /* Review.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Review.m; sourceTree = "<group>"; };
+		E7728E9A1BF56BE30019B7EC /* URLRequest+Hotels.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "URLRequest+Hotels.h"; sourceTree = "<group>"; };
+		E7728E9B1BF56BE30019B7EC /* URLRequest+Hotels.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "URLRequest+Hotels.m"; sourceTree = "<group>"; };
+		E7728EA11BF56BE30019B7EC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E7728EA31BF56BE30019B7EC /* HotelInfoCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HotelInfoCell.h; sourceTree = "<group>"; };
+		E7728EA41BF56BE30019B7EC /* HotelInfoCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HotelInfoCell.m; sourceTree = "<group>"; };
+		E7728EA51BF56BE30019B7EC /* HotelVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HotelVC.h; sourceTree = "<group>"; };
+		E7728EA61BF56BE30019B7EC /* HotelVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HotelVC.m; sourceTree = "<group>"; };
+		E7728EA71BF56BE30019B7EC /* MapImagesCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapImagesCell.h; sourceTree = "<group>"; };
+		E7728EA81BF56BE30019B7EC /* MapImagesCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapImagesCell.m; sourceTree = "<group>"; };
+		E7728EA91BF56BE30019B7EC /* NoReviewsCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NoReviewsCell.h; sourceTree = "<group>"; };
+		E7728EAA1BF56BE30019B7EC /* NoReviewsCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NoReviewsCell.m; sourceTree = "<group>"; };
+		E7728EAB1BF56BE30019B7EC /* ReviewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReviewCell.h; sourceTree = "<group>"; };
+		E7728EAC1BF56BE30019B7EC /* ReviewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReviewCell.m; sourceTree = "<group>"; };
+		E7728EAE1BF56BE30019B7EC /* HotelCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HotelCell.h; sourceTree = "<group>"; };
+		E7728EAF1BF56BE30019B7EC /* HotelCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HotelCell.m; sourceTree = "<group>"; };
+		E7728EB01BF56BE30019B7EC /* HotelsVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HotelsVC.h; sourceTree = "<group>"; };
+		E7728EB11BF56BE30019B7EC /* HotelsVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HotelsVC.m; sourceTree = "<group>"; };
+		E7728EB21BF56BE30019B7EC /* LaunchScreen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LaunchScreen.xib; sourceTree = "<group>"; };
+		E7728EB31BF56BE30019B7EC /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		E7728EB41BF56BE30019B7EC /* StarsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StarsView.h; sourceTree = "<group>"; };
+		E7728EB51BF56BE30019B7EC /* StarsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StarsView.m; sourceTree = "<group>"; };
+		EEBF61CAD69D12433144E92B /* Pods-URLTransaction_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-URLTransaction_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-URLTransaction_Tests/Pods-URLTransaction_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,7 +122,7 @@
 				6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */,
 				6003F592195388D20070C39A /* UIKit.framework in Frameworks */,
 				6003F58E195388D20070C39A /* Foundation.framework in Frameworks */,
-				0162231894DD2B78957B67BE /* Pods_URLTransaction_Example.framework in Frameworks */,
+				AF8CDF239CC4CF6685C1585F /* Pods_URLTransaction_Example.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -86,13 +133,24 @@
 				6003F5B0195388D20070C39A /* XCTest.framework in Frameworks */,
 				6003F5B2195388D20070C39A /* UIKit.framework in Frameworks */,
 				6003F5B1195388D20070C39A /* Foundation.framework in Frameworks */,
-				84C08A046F820F906053A51F /* Pods_URLTransaction_Tests.framework in Frameworks */,
+				E21B6746565FBDEF5AE1D81C /* Pods_URLTransaction_Tests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		09E5473CEA92DF53BAB01C05 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C62E584F3092E96BB180B01E /* Pods-URLTransaction_Example.debug.xcconfig */,
+				A63B095E3C856A9F9B15219B /* Pods-URLTransaction_Example.release.xcconfig */,
+				EEBF61CAD69D12433144E92B /* Pods-URLTransaction_Tests.debug.xcconfig */,
+				A1C727B3869E427B285AA67A /* Pods-URLTransaction_Tests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		6003F581195388D10070C39A = {
 			isa = PBXGroup;
 			children = (
@@ -101,14 +159,14 @@
 				6003F5B5195388D20070C39A /* Tests */,
 				6003F58C195388D20070C39A /* Frameworks */,
 				6003F58B195388D20070C39A /* Products */,
-				FCB77A126526C7137AA57F66 /* Pods */,
+				09E5473CEA92DF53BAB01C05 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
 		6003F58B195388D20070C39A /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				6003F58A195388D20070C39A /* URLTransaction.app */,
+				6003F58A195388D20070C39A /* URLTransaction_Example.app */,
 				6003F5AE195388D20070C39A /* Tests.xctest */,
 			);
 			name = Products;
@@ -121,8 +179,8 @@
 				6003F58F195388D20070C39A /* CoreGraphics.framework */,
 				6003F591195388D20070C39A /* UIKit.framework */,
 				6003F5AF195388D20070C39A /* XCTest.framework */,
-				981F8571BD671901B95C3461 /* Pods_URLTransaction_Example.framework */,
-				A59BB41B4988F73EB96A6DCB /* Pods_URLTransaction_Tests.framework */,
+				5D9B04DEEA4851B367DA148A /* Pods_URLTransaction_Example.framework */,
+				98FD0FDC2B17387EF4C43412 /* Pods_URLTransaction_Tests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -130,12 +188,7 @@
 		6003F593195388D20070C39A /* Example for URLTransaction */ = {
 			isa = PBXGroup;
 			children = (
-				6003F59C195388D20070C39A /* URLAppDelegate.h */,
-				6003F59D195388D20070C39A /* URLAppDelegate.m */,
-				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
-				6003F5A5195388D20070C39A /* URLViewController.h */,
-				6003F5A6195388D20070C39A /* URLViewController.m */,
-				6003F5A8195388D20070C39A /* Images.xcassets */,
+				E7728E841BF56BE30019B7EC /* Hotels */,
 				6003F594195388D20070C39A /* Supporting Files */,
 			);
 			name = "Example for URLTransaction";
@@ -175,22 +228,119 @@
 		60FF7A9C1954A5C5007DD14C /* Podspec Metadata */ = {
 			isa = PBXGroup;
 			children = (
-				480B0FA21B8E5FC09AC67E88 /* URLTransaction.podspec */,
-				648A0F2191F8DAB5ED793F2C /* README.md */,
-				767CC3B0D5566AF9DAFAF6B5 /* LICENSE */,
+				D9473999343D22638EAC8D37 /* URLTransaction.podspec */,
+				0AF0A36F7529D53BDB73C796 /* README.md */,
+				60D9D987EED150EEE969C9BC /* LICENSE */,
 			);
 			name = "Podspec Metadata";
 			sourceTree = "<group>";
 		};
-		FCB77A126526C7137AA57F66 /* Pods */ = {
+		E7728E841BF56BE30019B7EC /* Hotels */ = {
 			isa = PBXGroup;
 			children = (
-				4EFE62B8FE1A8059F6689C9F /* Pods-URLTransaction_Example.debug.xcconfig */,
-				8E2CB954641B31AB7CF76474 /* Pods-URLTransaction_Example.release.xcconfig */,
-				2EEFD62668B043F54EC50834 /* Pods-URLTransaction_Tests.debug.xcconfig */,
-				AAD5309BB5BF305E3CFE9CED /* Pods-URLTransaction_Tests.release.xcconfig */,
+				E7728E851BF56BE30019B7EC /* AppDelegate.h */,
+				E7728E861BF56BE30019B7EC /* AppDelegate.m */,
+				E7728E871BF56BE30019B7EC /* Helpers */,
+				E7728E8E1BF56BE30019B7EC /* Libraries */,
+				E7728E921BF56BE30019B7EC /* Model */,
+				E7728E991BF56BE30019B7EC /* Networking */,
+				E7728EA01BF56BE30019B7EC /* UI */,
 			);
-			name = Pods;
+			path = Hotels;
+			sourceTree = "<group>";
+		};
+		E7728E871BF56BE30019B7EC /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				E7728E881BF56BE30019B7EC /* CLLocation+Hotels.h */,
+				E7728E891BF56BE30019B7EC /* CLLocation+Hotels.m */,
+				E7728E8A1BF56BE30019B7EC /* Geocoder.h */,
+				E7728E8B1BF56BE30019B7EC /* Geocoder.m */,
+				E7728E8C1BF56BE30019B7EC /* UIView+Hotels.h */,
+				E7728E8D1BF56BE30019B7EC /* UIView+Hotels.m */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		E7728E8E1BF56BE30019B7EC /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				E7728E8F1BF56BE30019B7EC /* MBProgressHUD */,
+			);
+			path = Libraries;
+			sourceTree = "<group>";
+		};
+		E7728E8F1BF56BE30019B7EC /* MBProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				E7728E901BF56BE30019B7EC /* MBProgressHUD.h */,
+				E7728E911BF56BE30019B7EC /* MBProgressHUD.m */,
+			);
+			path = MBProgressHUD;
+			sourceTree = "<group>";
+		};
+		E7728E921BF56BE30019B7EC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E7728E931BF56BE30019B7EC /* Hotel.h */,
+				E7728E941BF56BE30019B7EC /* Hotel.m */,
+				E7728E951BF56BE30019B7EC /* Image.h */,
+				E7728E961BF56BE30019B7EC /* Image.m */,
+				E7728E971BF56BE30019B7EC /* Review.h */,
+				E7728E981BF56BE30019B7EC /* Review.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E7728E991BF56BE30019B7EC /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				E7728E9A1BF56BE30019B7EC /* URLRequest+Hotels.h */,
+				E7728E9B1BF56BE30019B7EC /* URLRequest+Hotels.m */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		E7728EA01BF56BE30019B7EC /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				E7728EA11BF56BE30019B7EC /* Assets.xcassets */,
+				E7728EA21BF56BE30019B7EC /* Hotel */,
+				E7728EAD1BF56BE30019B7EC /* Hotels */,
+				E7728EB21BF56BE30019B7EC /* LaunchScreen.xib */,
+				E7728EB31BF56BE30019B7EC /* Main.storyboard */,
+				E7728EB41BF56BE30019B7EC /* StarsView.h */,
+				E7728EB51BF56BE30019B7EC /* StarsView.m */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		E7728EA21BF56BE30019B7EC /* Hotel */ = {
+			isa = PBXGroup;
+			children = (
+				E7728EA31BF56BE30019B7EC /* HotelInfoCell.h */,
+				E7728EA41BF56BE30019B7EC /* HotelInfoCell.m */,
+				E7728EA51BF56BE30019B7EC /* HotelVC.h */,
+				E7728EA61BF56BE30019B7EC /* HotelVC.m */,
+				E7728EA71BF56BE30019B7EC /* MapImagesCell.h */,
+				E7728EA81BF56BE30019B7EC /* MapImagesCell.m */,
+				E7728EA91BF56BE30019B7EC /* NoReviewsCell.h */,
+				E7728EAA1BF56BE30019B7EC /* NoReviewsCell.m */,
+				E7728EAB1BF56BE30019B7EC /* ReviewCell.h */,
+				E7728EAC1BF56BE30019B7EC /* ReviewCell.m */,
+			);
+			path = Hotel;
+			sourceTree = "<group>";
+		};
+		E7728EAD1BF56BE30019B7EC /* Hotels */ = {
+			isa = PBXGroup;
+			children = (
+				E7728EAE1BF56BE30019B7EC /* HotelCell.h */,
+				E7728EAF1BF56BE30019B7EC /* HotelCell.m */,
+				E7728EB01BF56BE30019B7EC /* HotelsVC.h */,
+				E7728EB11BF56BE30019B7EC /* HotelsVC.m */,
+			);
+			path = Hotels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -200,12 +350,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6003F5BF195388D20070C39A /* Build configuration list for PBXNativeTarget "URLTransaction_Example" */;
 			buildPhases = (
-				E1EF4AA951698BBA3470C3DE /* Check Pods Manifest.lock */,
+				289F30E19AD694ED4390C8D4 /* Check Pods Manifest.lock */,
 				6003F586195388D20070C39A /* Sources */,
 				6003F587195388D20070C39A /* Frameworks */,
 				6003F588195388D20070C39A /* Resources */,
-				7A936C5F88940A50E92CB779 /* Embed Pods Frameworks */,
-				BA3F5C1CC4A410D6EAD442DF /* Copy Pods Resources */,
+				B718A271CA53E03F9A514103 /* Embed Pods Frameworks */,
+				FBD9268AFF7DEC9B60CFABEF /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -213,19 +363,19 @@
 			);
 			name = URLTransaction_Example;
 			productName = URLTransaction;
-			productReference = 6003F58A195388D20070C39A /* URLTransaction.app */;
+			productReference = 6003F58A195388D20070C39A /* URLTransaction_Example.app */;
 			productType = "com.apple.product-type.application";
 		};
 		6003F5AD195388D20070C39A /* URLTransaction_Tests */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6003F5C2195388D20070C39A /* Build configuration list for PBXNativeTarget "URLTransaction_Tests" */;
 			buildPhases = (
-				2347D6C5704ADFDA34EB6BA6 /* Check Pods Manifest.lock */,
+				AF6CB75D0081C9B17B1D20DE /* Check Pods Manifest.lock */,
 				6003F5AA195388D20070C39A /* Sources */,
 				6003F5AB195388D20070C39A /* Frameworks */,
 				6003F5AC195388D20070C39A /* Resources */,
-				ADFE60A564C045987B6EB07B /* Embed Pods Frameworks */,
-				B6507E4A5DD3D7A5AAD4F707 /* Copy Pods Resources */,
+				5580EF43C98A702A9ACC2CF3 /* Embed Pods Frameworks */,
+				69AFE794F41C546DE508E413 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -276,9 +426,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */,
-				6003F5A9195388D20070C39A /* Images.xcassets in Resources */,
 				6003F598195388D20070C39A /* InfoPlist.strings in Resources */,
+				E7728ED21BF5726E0019B7EC /* Main.storyboard in Resources */,
+				E7728EC91BF56BE30019B7EC /* LaunchScreen.xib in Resources */,
+				E7728EC11BF56BE30019B7EC /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -293,7 +444,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		2347D6C5704ADFDA34EB6BA6 /* Check Pods Manifest.lock */ = {
+		289F30E19AD694ED4390C8D4 /* Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -308,22 +459,7 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		7A936C5F88940A50E92CB779 /* Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-URLTransaction_Example/Pods-URLTransaction_Example-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		ADFE60A564C045987B6EB07B /* Embed Pods Frameworks */ = {
+		5580EF43C98A702A9ACC2CF3 /* Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -338,7 +474,7 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-URLTransaction_Tests/Pods-URLTransaction_Tests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		B6507E4A5DD3D7A5AAD4F707 /* Copy Pods Resources */ = {
+		69AFE794F41C546DE508E413 /* Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -353,22 +489,7 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-URLTransaction_Tests/Pods-URLTransaction_Tests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		BA3F5C1CC4A410D6EAD442DF /* Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-URLTransaction_Example/Pods-URLTransaction_Example-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		E1EF4AA951698BBA3470C3DE /* Check Pods Manifest.lock */ = {
+		AF6CB75D0081C9B17B1D20DE /* Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -383,6 +504,36 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
+		B718A271CA53E03F9A514103 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-URLTransaction_Example/Pods-URLTransaction_Example-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FBD9268AFF7DEC9B60CFABEF /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-URLTransaction_Example/Pods-URLTransaction_Example-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -390,9 +541,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6003F59E195388D20070C39A /* URLAppDelegate.m in Sources */,
-				6003F5A7195388D20070C39A /* URLViewController.m in Sources */,
+				E7728EC81BF56BE30019B7EC /* HotelsVC.m in Sources */,
+				E7728EBB1BF56BE30019B7EC /* Hotel.m in Sources */,
+				E7728EBD1BF56BE30019B7EC /* Review.m in Sources */,
+				E7728EB91BF56BE30019B7EC /* UIView+Hotels.m in Sources */,
+				E7728EB61BF56BE30019B7EC /* AppDelegate.m in Sources */,
+				E7728EC61BF56BE30019B7EC /* ReviewCell.m in Sources */,
+				E7728EC21BF56BE30019B7EC /* HotelInfoCell.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
+				E7728EB71BF56BE30019B7EC /* CLLocation+Hotels.m in Sources */,
+				E7728EBE1BF56BE30019B7EC /* URLRequest+Hotels.m in Sources */,
+				E7728ECB1BF56BE30019B7EC /* StarsView.m in Sources */,
+				E7728EB81BF56BE30019B7EC /* Geocoder.m in Sources */,
+				E7728EBA1BF56BE30019B7EC /* MBProgressHUD.m in Sources */,
+				E7728EBC1BF56BE30019B7EC /* Image.m in Sources */,
+				E7728EC51BF56BE30019B7EC /* NoReviewsCell.m in Sources */,
+				E7728EC41BF56BE30019B7EC /* MapImagesCell.m in Sources */,
+				E7728EC71BF56BE30019B7EC /* HotelCell.m in Sources */,
+				E7728EC31BF56BE30019B7EC /* HotelVC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -508,37 +674,39 @@
 		};
 		6003F5C0195388D20070C39A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4EFE62B8FE1A8059F6689C9F /* Pods-URLTransaction_Example.debug.xcconfig */;
+			baseConfigurationReference = C62E584F3092E96BB180B01E /* Pods-URLTransaction_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "URLTransaction/URLTransaction-Prefix.pch";
 				INFOPLIST_FILE = "URLTransaction/URLTransaction-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MODULE_NAME = ExampleApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
 		};
 		6003F5C1195388D20070C39A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8E2CB954641B31AB7CF76474 /* Pods-URLTransaction_Example.release.xcconfig */;
+			baseConfigurationReference = A63B095E3C856A9F9B15219B /* Pods-URLTransaction_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "URLTransaction/URLTransaction-Prefix.pch";
 				INFOPLIST_FILE = "URLTransaction/URLTransaction-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MODULE_NAME = ExampleApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
 		};
 		6003F5C3195388D20070C39A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2EEFD62668B043F54EC50834 /* Pods-URLTransaction_Tests.debug.xcconfig */;
+			baseConfigurationReference = EEBF61CAD69D12433144E92B /* Pods-URLTransaction_Tests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -561,7 +729,7 @@
 		};
 		6003F5C4195388D20070C39A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = AAD5309BB5BF305E3CFE9CED /* Pods-URLTransaction_Tests.release.xcconfig */;
+			baseConfigurationReference = A1C727B3869E427B285AA67A /* Pods-URLTransaction_Tests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (

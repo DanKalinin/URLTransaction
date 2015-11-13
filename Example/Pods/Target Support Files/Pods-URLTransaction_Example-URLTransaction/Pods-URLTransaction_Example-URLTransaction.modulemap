@@ -1,6 +1,0 @@
-framework module URLTransaction {
-  umbrella header "Pods-URLTransaction_Example-URLTransaction-umbrella.h"
-
-  export *
-  module * { export * }
-}

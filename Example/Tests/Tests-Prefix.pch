@@ -1,10 +1,9 @@
 //  The contents of this file are implicitly included at the beginning of every test case source file.
 
 #ifdef __OBJC__
-
-  @import Specta;
-  @import Expecta;
-  @import FBSnapshotTestCase;
-  @import Expecta_Snapshots;
-
+    #import "Image.h"
+    #import "Review.h"
+    #import "Hotel.h"
+    #import "URLRequest+Hotels.h"
+    #import "UIView+Hotels.h"
 #endif

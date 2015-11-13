@@ -7,1515 +7,496 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		00523688E034381ACEAF0551 /* SPTExcludeGlobalBeforeAfterEach.h in Headers */ = {isa = PBXBuildFile; fileRef = D495EAFFF707A881A4C221C5 /* SPTExcludeGlobalBeforeAfterEach.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		00FBFBD536CF456EBB87B52E /* FBSnapshotTestCase.h in Headers */ = {isa = PBXBuildFile; fileRef = FBD7862587F45562F054B9E6 /* FBSnapshotTestCase.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		030B2849EEBDEC1341791D5D /* EXPMatchers+beSupersetOf.m in Sources */ = {isa = PBXBuildFile; fileRef = DCAFB9F9654D71DA5630BB3C /* EXPMatchers+beSupersetOf.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		033DAC4C0D6105A4BF7DBA69 /* FBSnapshotTestController.m in Sources */ = {isa = PBXBuildFile; fileRef = 61935CCD137423E4B2785CBD /* FBSnapshotTestController.m */; };
-		0452AFE32A15B8DF77C912B1 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA43CF4A07AA6F3DAD327C7E /* XCTest.framework */; };
-		057C50198D544CF7A23F4525 /* EXPMatchers+beSubclassOf.h in Headers */ = {isa = PBXBuildFile; fileRef = 06DD417025003DB2134423EB /* EXPMatchers+beSubclassOf.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		0776D82A8291B0907D890DBC /* URLTransaction.bundle in Resources */ = {isa = PBXBuildFile; fileRef = FF0D7969462D34A353E7AA13 /* URLTransaction.bundle */; };
-		09F4FE86C28B96837FDABE4C /* EXPUnsupportedObject.h in Headers */ = {isa = PBXBuildFile; fileRef = 5817E0F342C132904686EC4F /* EXPUnsupportedObject.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		0AEAFC204ED3C311B50315F9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AC08D0C4B31256E718BF13B /* Foundation.framework */; };
-		0B7BA6D01E220D7E9D6B7867 /* EXPMatchers+beIdenticalTo.h in Headers */ = {isa = PBXBuildFile; fileRef = F2439119C155E6D837F3F431 /* EXPMatchers+beIdenticalTo.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		0BD78D63B36A4223D7B3B281 /* EXPMatchers+endWith.h in Headers */ = {isa = PBXBuildFile; fileRef = 70FC23AF24561939A5E7EEC9 /* EXPMatchers+endWith.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		0D29B09CDFE6A9621FEFD3FE /* EXPMatchers+postNotification.m in Sources */ = {isa = PBXBuildFile; fileRef = 25B5718BE82813D9192BC505 /* EXPMatchers+postNotification.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		0E2BD7526D7FE0E3ED7D2E8E /* EXPMatchers+beSupersetOf.h in Headers */ = {isa = PBXBuildFile; fileRef = CA37635A516AF1A24E89A3A1 /* EXPMatchers+beSupersetOf.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		12FABE841F001FE10AF1FFBE /* SPTExampleGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = 402BE01A9FEF29504DEA356A /* SPTExampleGroup.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		133B4C5C68C33D121459DB2B /* NSValue+Expecta.h in Headers */ = {isa = PBXBuildFile; fileRef = 829F4BC7186BB920DC00E1EA /* NSValue+Expecta.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		14A4556A35AC1A3E1513D40C /* SPTCompiledExample.h in Headers */ = {isa = PBXBuildFile; fileRef = F09641BF449E3D4B580970F9 /* SPTCompiledExample.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		15BD00565E9B1541D957957D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AC08D0C4B31256E718BF13B /* Foundation.framework */; };
-		16D5A3BB4F94B5B34F365129 /* XCTestCase+Specta.h in Headers */ = {isa = PBXBuildFile; fileRef = 0FE919C44E533949F74B80D1 /* XCTestCase+Specta.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		18AE91DC081271098870B437 /* SPTExample.h in Headers */ = {isa = PBXBuildFile; fileRef = 0C4FC0C9F80B156B3BE1FCE9 /* SPTExample.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1A66B0B5548B3A77899D2777 /* EXPDoubleTuple.h in Headers */ = {isa = PBXBuildFile; fileRef = B03D045044BE88F167EF5327 /* EXPDoubleTuple.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1C6495832A9C64CB842BD51A /* Pods-URLTransaction_Tests-Expecta+Snapshots-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B225C9F1AFCCFAE06B77E40E /* Pods-URLTransaction_Tests-Expecta+Snapshots-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1D2DE27465E3D352CB52EF12 /* EXPMatchers+beCloseTo.m in Sources */ = {isa = PBXBuildFile; fileRef = 885428967FE3298FFA02453E /* EXPMatchers+beCloseTo.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		2035B37B9EAC044D4034BEFE /* SpectaDSL.m in Sources */ = {isa = PBXBuildFile; fileRef = D5019D5BADD52284571915CC /* SpectaDSL.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		215E1F30A42C73CAAFADF255 /* EXPMatchers+haveCountOf.m in Sources */ = {isa = PBXBuildFile; fileRef = A6B69FCA0EB223534AA3DB13 /* EXPMatchers+haveCountOf.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		2181CDCC14E18AB5D3FEC626 /* EXPMatchers+beginWith.h in Headers */ = {isa = PBXBuildFile; fileRef = 739EBD259EF3DA1530C37953 /* EXPMatchers+beginWith.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2AECFBDD5A6E77D288C9106D /* Expecta.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5BE8AB89273D78F9373A604 /* Expecta.framework */; };
-		2B907F566AAFFE3CF2450012 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AC08D0C4B31256E718BF13B /* Foundation.framework */; };
-		2C25E9C1D8E2E81916E86A62 /* SpectaUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 741A4D8BAAEAD6D49A1B3344 /* SpectaUtility.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		2C3184BD15421701788E30C5 /* EXPMatchers.h in Headers */ = {isa = PBXBuildFile; fileRef = BB5F57E7A60CC08DDC00B74E /* EXPMatchers.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2EA06F53BBD453075604D73A /* Pods-URLTransaction_Tests-Expecta+Snapshots-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 930510D77D0D5A02380E6A41 /* Pods-URLTransaction_Tests-Expecta+Snapshots-dummy.m */; };
-		2EAA914BEBEB594C4FEFE8EF /* SPTSpec.h in Headers */ = {isa = PBXBuildFile; fileRef = 4A885D8703E39DCD0A0073AB /* SPTSpec.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		36526D4BF1C50E1CADC5092E /* UIImage+Diff.h in Headers */ = {isa = PBXBuildFile; fileRef = C2D445D9E2E6E790BB466F9E /* UIImage+Diff.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3680995BFC4A4E73C8DFD956 /* EXPMatchers+beTruthy.h in Headers */ = {isa = PBXBuildFile; fileRef = 27BB22C50ED47388C098F5A2 /* EXPMatchers+beTruthy.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		38C32736084369DD95156427 /* SpectaTypes.h in Headers */ = {isa = PBXBuildFile; fileRef = F18B78E5D7BF153FCA16A342 /* SpectaTypes.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		39940986A8B967A964B1857D /* Pods-URLTransaction_Tests-Specta-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AD2D54E4849168439648877 /* Pods-URLTransaction_Tests-Specta-dummy.m */; };
-		3BE426B02E7174CD2FA2D968 /* EXPDefines.h in Headers */ = {isa = PBXBuildFile; fileRef = 6BB9BA3DA46B60B8C0A6ADA9 /* EXPDefines.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3EC21B0EE1530BC0EE5E5FC8 /* EXPMatchers+beginWith.m in Sources */ = {isa = PBXBuildFile; fileRef = B7300ABA0419749776EF2241 /* EXPMatchers+beginWith.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		3FAB884EFE979F78B5BBC36B /* EXPMatchers+FBSnapshotTest.h in Headers */ = {isa = PBXBuildFile; fileRef = 40F60FB57FDD6A23FFAB7EB5 /* EXPMatchers+FBSnapshotTest.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		412F5E6EE549B41396A94906 /* EXPBlockDefinedMatcher.h in Headers */ = {isa = PBXBuildFile; fileRef = BF1AD00799611EE4CBC5A37A /* EXPBlockDefinedMatcher.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		42190830F67AD51D84462DC6 /* EXPMatchers+match.m in Sources */ = {isa = PBXBuildFile; fileRef = 79F8117325F61B1764FF13B3 /* EXPMatchers+match.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		435505C035D142F8D0AED57A /* EXPMatchers+beKindOf.h in Headers */ = {isa = PBXBuildFile; fileRef = CF520C18180E3791E8406316 /* EXPMatchers+beKindOf.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		43598FF737A2A7DA2E5033C8 /* UIImage+Compare.m in Sources */ = {isa = PBXBuildFile; fileRef = 197774D5308D589B708F2F6E /* UIImage+Compare.m */; };
-		4550A313DC5CDD8DEA02A70C /* EXPMatchers+beInstanceOf.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DE2EBB6CAE4B6352C5FEDCA /* EXPMatchers+beInstanceOf.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		4593FD04F2BB3CFA2DC8A550 /* Pods-URLTransaction_Tests-URLTransaction-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 40A202FC4CB7F7500B191E95 /* Pods-URLTransaction_Tests-URLTransaction-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		48297CE50CF2DC60DE70CDD3 /* Specta.h in Headers */ = {isa = PBXBuildFile; fileRef = 803CC0A416B25F40EA945BEC /* Specta.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4886237FA95E6D9E2FC7200E /* EXPMatchers+beInstanceOf.h in Headers */ = {isa = PBXBuildFile; fileRef = 32B3772C46E6ADF6C7FB8236 /* EXPMatchers+beInstanceOf.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		49C5EA9BDEE17B48732980AB /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA43CF4A07AA6F3DAD327C7E /* XCTest.framework */; };
-		49D9AB41C57F22F3377D95FB /* EXPMatcherHelpers.m in Sources */ = {isa = PBXBuildFile; fileRef = 227D7864AC4C7A35FA280DE1 /* EXPMatcherHelpers.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		49FAF16842C1342B71B83F0F /* Pods-URLTransaction_Tests-URLTransaction-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 18EF5BF31255C228962C038F /* Pods-URLTransaction_Tests-URLTransaction-dummy.m */; };
-		4A370741E2DA17A4CCCDC847 /* EXPMatchers+beLessThanOrEqualTo.m in Sources */ = {isa = PBXBuildFile; fileRef = 967821D4B80BD100908EC408 /* EXPMatchers+beLessThanOrEqualTo.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		4E9EED29413C46C6CCDCDC12 /* EXPMatchers+haveCountOf.h in Headers */ = {isa = PBXBuildFile; fileRef = 345346C1A7063A49DE94903C /* EXPMatchers+haveCountOf.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4F5E2A140FEFDC18D6162C90 /* EXPMatchers+beSubclassOf.m in Sources */ = {isa = PBXBuildFile; fileRef = B812735CBF86F1A0691D3F58 /* EXPMatchers+beSubclassOf.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		5AAB486B3C9863706AAA948F /* SPTSharedExampleGroups.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B1B063E6E96CD4C3A505B82 /* SPTSharedExampleGroups.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		5F514406D832CFC9628355C8 /* EXPMatchers+beLessThan.h in Headers */ = {isa = PBXBuildFile; fileRef = 0DE0348364255D64BFFE4489 /* EXPMatchers+beLessThan.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		61380A45B1E3C15D074C2214 /* FBSnapshotTestCasePlatform.h in Headers */ = {isa = PBXBuildFile; fileRef = 979C38DD2CA2CD3FD8FA4D73 /* FBSnapshotTestCasePlatform.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6545B88EFA72AF3E42A76300 /* UIImage+Diff.m in Sources */ = {isa = PBXBuildFile; fileRef = AF7B014B45CF4CDBD9E3E811 /* UIImage+Diff.m */; };
-		66925E562BF11A850FE736D3 /* SPTExample.m in Sources */ = {isa = PBXBuildFile; fileRef = BB6F8C31109DB5D7ED7B3572 /* SPTExample.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		69219E7EB6C2E652BD090CAE /* FBSnapshotTestController.h in Headers */ = {isa = PBXBuildFile; fileRef = 230AEB73CF862F46AB682B53 /* FBSnapshotTestController.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6E69697F84C8A2F7FA884D04 /* SPTCallSite.m in Sources */ = {isa = PBXBuildFile; fileRef = 89CCF20FAB05B059C4CE5BCA /* SPTCallSite.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		6E8BD7CCC77717DCD6103DD7 /* EXPBlockDefinedMatcher.m in Sources */ = {isa = PBXBuildFile; fileRef = BC02530728F29F2086D4B63B /* EXPBlockDefinedMatcher.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		70EC051FEFF6C7EC80A39333 /* EXPMatchers+beFalsy.m in Sources */ = {isa = PBXBuildFile; fileRef = 117F0333F247382B7CD70AD6 /* EXPMatchers+beFalsy.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		736438C3F26B9A6843663483 /* FBSnapshotTestCase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D3BEA749A4F97B092EBF695 /* FBSnapshotTestCase.framework */; };
-		7628E67B8218E4C7C5EB9B36 /* Pods-URLTransaction_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C0068B010FBEC6F8C262A02A /* Pods-URLTransaction_Tests-dummy.m */; };
-		76B961C41C741CBFA410C890 /* SPTTestSuite.m in Sources */ = {isa = PBXBuildFile; fileRef = D4CD9389E2DD034474379502 /* SPTTestSuite.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		79E3283AE62CD3B33894B66A /* EXPMatchers+conformTo.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E4A1C472995A541BDC5FF0C /* EXPMatchers+conformTo.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		7C4E0006418F109E9D1CB501 /* EXPMatchers+beKindOf.m in Sources */ = {isa = PBXBuildFile; fileRef = 56945B4DA92DA83C7B38A608 /* EXPMatchers+beKindOf.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		7CCF88CA1D3C962CA91C4CE3 /* Pods-URLTransaction_Example-URLTransaction-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 560E84CF71A6F509E9C01343 /* Pods-URLTransaction_Example-URLTransaction-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		7D7E67F5A34E5C246ED17762 /* EXPMatchers+raise.h in Headers */ = {isa = PBXBuildFile; fileRef = 032E7169BEDC2EC46996BF7E /* EXPMatchers+raise.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		7E01DA05789E5A1344336BAE /* EXPMatchers+beFalsy.h in Headers */ = {isa = PBXBuildFile; fileRef = 3CE899069DC0676329C37D19 /* EXPMatchers+beFalsy.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		7E68CD1BCB4BC6E1E1A69A03 /* Expecta.h in Headers */ = {isa = PBXBuildFile; fileRef = 70EA0F5E39AC59568CDD94EF /* Expecta.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		7F3267DDF932E7D92202E373 /* NSObject+Expecta.h in Headers */ = {isa = PBXBuildFile; fileRef = 29510F0101CC7E4561F4B9BA /* NSObject+Expecta.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		7F6A80EE0328EE7C70F93076 /* FBSnapshotTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 4956FBC04669AF953259C3B9 /* FBSnapshotTestCase.m */; };
-		80582273150F72A9C52E913B /* EXPMatchers+beIdenticalTo.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FAE9928EB715A519CBF17B7 /* EXPMatchers+beIdenticalTo.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		8137B39533ADFE7245D494E1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AC08D0C4B31256E718BF13B /* Foundation.framework */; };
-		86079BD915C3E3645C2AE94A /* EXPMatcherHelpers.h in Headers */ = {isa = PBXBuildFile; fileRef = D6C85CDC2541002DDBC94CD6 /* EXPMatcherHelpers.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		8A1263181145554754F5C63F /* XCTestCase+Specta.m in Sources */ = {isa = PBXBuildFile; fileRef = 54AAF92BDF8A041CBA30992A /* XCTestCase+Specta.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		90B2F859C112E5D6DA9CEF52 /* EXPMatchers+beTruthy.m in Sources */ = {isa = PBXBuildFile; fileRef = 22457994711B786E5EC5232F /* EXPMatchers+beTruthy.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		915DC671992C56771D032536 /* EXPUnsupportedObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 99996C4AD2AEBE8731410ABA /* EXPUnsupportedObject.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		93CF4F6B12A42519197D6DF3 /* EXPMatchers+respondTo.m in Sources */ = {isa = PBXBuildFile; fileRef = D8BD04C8C1088A88851508CA /* EXPMatchers+respondTo.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		944D588EF347B6BF580A1A07 /* SpectaUtility.h in Headers */ = {isa = PBXBuildFile; fileRef = AA30017DE5A5A930B881A40D /* SpectaUtility.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		94AF0B36D0D0A0B291C5F993 /* EXPExpect.m in Sources */ = {isa = PBXBuildFile; fileRef = 7325D3013070A37B8161359C /* EXPExpect.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		95364F621B99A3C536556EA3 /* EXPMatchers+respondTo.h in Headers */ = {isa = PBXBuildFile; fileRef = 9553D7248D5CB94DA70E5E76 /* EXPMatchers+respondTo.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9BA980C70356DB653D44AB6B /* EXPMatchers+endWith.m in Sources */ = {isa = PBXBuildFile; fileRef = BF9FF2B7745780EF69BC2A62 /* EXPMatchers+endWith.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		9C06F382F76E78A351252D3D /* EXPMatchers+beGreaterThanOrEqualTo.h in Headers */ = {isa = PBXBuildFile; fileRef = 73E65A28944B0EA292573655 /* EXPMatchers+beGreaterThanOrEqualTo.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9C88F5EEE2FA627A1EBF8D61 /* UIImage+Compare.h in Headers */ = {isa = PBXBuildFile; fileRef = 6C98B8737EE00F797966E313 /* UIImage+Compare.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9EB83B21AC2C13BFCDA473AD /* Pods-URLTransaction_Tests-Specta-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2D480F5BDEFCF2B803F498E3 /* Pods-URLTransaction_Tests-Specta-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A03715C045D62E529636B37C /* EXPMatchers+match.h in Headers */ = {isa = PBXBuildFile; fileRef = E29F2DA7144E6345DEFC236B /* EXPMatchers+match.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A0F50F619461D0BF1FEC0A33 /* EXPMatchers+raiseWithReason.h in Headers */ = {isa = PBXBuildFile; fileRef = D716F61B65EE7E756D2EA114 /* EXPMatchers+raiseWithReason.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A130A9CDFEB1BD1EACFC34D2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AC08D0C4B31256E718BF13B /* Foundation.framework */; };
-		A234B6E73747C9698A26D65C /* Pods-URLTransaction_Example-URLTransaction-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 89239874331D0D187FF31555 /* Pods-URLTransaction_Example-URLTransaction-dummy.m */; };
-		A374FC002B1E5E31A6C58DA9 /* SPTCompiledExample.m in Sources */ = {isa = PBXBuildFile; fileRef = 078FCADE8FD8BAF6E19C342A /* SPTCompiledExample.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		A3F14E2A6050CB9E747198F2 /* EXPMatchers+raiseWithReason.m in Sources */ = {isa = PBXBuildFile; fileRef = CC5CFD46F39E8626FA8BAC3D /* EXPMatchers+raiseWithReason.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		A46B1FAD2306BB784AD665DA /* EXPFloatTuple.m in Sources */ = {isa = PBXBuildFile; fileRef = 17242603369A7E718FA3D779 /* EXPFloatTuple.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		A572D998A0B389073C48BF45 /* EXPMatcher.h in Headers */ = {isa = PBXBuildFile; fileRef = 395AD65FE5B77EB829177DC4 /* EXPMatcher.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A661BF562BE923FDD8A9AD06 /* EXPExpect.h in Headers */ = {isa = PBXBuildFile; fileRef = B98FC37B6B425BEAF16C5868 /* EXPExpect.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		AA514B7A915785AF7356FDBE /* ExpectaSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = CE841AD8971F9E668D99765E /* ExpectaSupport.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		ABCFB5AEF503F7F490695AE8 /* SPTSharedExampleGroups.h in Headers */ = {isa = PBXBuildFile; fileRef = 565682467FA3A48F8160B0EB /* SPTSharedExampleGroups.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		AC11EDEF49624F8C26480E3A /* Pods-URLTransaction_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6E31A76B5E14D9EA79611D23 /* Pods-URLTransaction_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		AC3C81C61683C27062F878EF /* SPTSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 85E049B0E8E189D0575C03D7 /* SPTSpec.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		B475259AEE0C1EAEFD0EFC50 /* EXPMatchers+beGreaterThan.h in Headers */ = {isa = PBXBuildFile; fileRef = 9590EB2D8903A61DE360DC6F /* EXPMatchers+beGreaterThan.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B5179542DB26957D6DE82875 /* Pods-URLTransaction_Tests-FBSnapshotTestCase-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 85FB4CC3494011CC06E07C68 /* Pods-URLTransaction_Tests-FBSnapshotTestCase-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B749D0CD547CE41E0B8159A8 /* EXPMatchers+contain.h in Headers */ = {isa = PBXBuildFile; fileRef = 46BB8C00F3F6E6BD1CC958AD /* EXPMatchers+contain.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B9BB6257F633B14B2AB46290 /* SPTTestSuite.h in Headers */ = {isa = PBXBuildFile; fileRef = 168130CA0B68CF78631DB698 /* SPTTestSuite.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		BB1795546FA3AA31B41089D8 /* EXPMatchers+contain.m in Sources */ = {isa = PBXBuildFile; fileRef = 2764DA7716115B89F9791F94 /* EXPMatchers+contain.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		BC8CA9EDFCDEEC4203C187C6 /* EXPMatchers+raise.m in Sources */ = {isa = PBXBuildFile; fileRef = 14EDC9854E4156D80F2F7F3A /* EXPMatchers+raise.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		BE296977C2AA1815E56ED67D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AC08D0C4B31256E718BF13B /* Foundation.framework */; };
-		BF11E2527F1CEEAE06C6A61B /* NSValue+Expecta.m in Sources */ = {isa = PBXBuildFile; fileRef = 791247E024560E9C209EFB05 /* NSValue+Expecta.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		BF9FC8E73B52E133ED0A0D9B /* EXPMatchers+beNil.h in Headers */ = {isa = PBXBuildFile; fileRef = D7992C6F6246B28D19DB6D0F /* EXPMatchers+beNil.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C12124942179E2D46F6033DE /* EXPMatchers+equal.h in Headers */ = {isa = PBXBuildFile; fileRef = 03AAA555B9CE8EB057669ACC /* EXPMatchers+equal.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C23AB3681BCE5186E40935C6 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA43CF4A07AA6F3DAD327C7E /* XCTest.framework */; };
-		C31D7B305FA28195A41BDA57 /* Pods-URLTransaction_Tests-Expecta-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5522BAA3811FBC7211CC2087 /* Pods-URLTransaction_Tests-Expecta-dummy.m */; };
-		C3C7ECD4C509BEA5AAE68CCA /* EXPMatchers+conformTo.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C0FA58B732AEA245D3EFA4F /* EXPMatchers+conformTo.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C4859870C371DCC6EBB7ECE4 /* EXPMatchers+beNil.m in Sources */ = {isa = PBXBuildFile; fileRef = C2E8B59E5FF19D4D6EAE0C71 /* EXPMatchers+beNil.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		C5838344004C4ECF45A21885 /* FBSnapshotTestCasePlatform.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E48461FFE5C5029A382AA4E /* FBSnapshotTestCasePlatform.m */; };
-		C75B72D77A948506B969055B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AC08D0C4B31256E718BF13B /* Foundation.framework */; };
-		C894A9787ECB9CF7473DCAF0 /* SPTExampleGroup.h in Headers */ = {isa = PBXBuildFile; fileRef = A76FC1E35857832D6A7B32E3 /* SPTExampleGroup.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C99A86489E8E0FDF9BFEA2BC /* Pods-URLTransaction_Tests-FBSnapshotTestCase-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B1F586B5D3C1085DBF9F3ACF /* Pods-URLTransaction_Tests-FBSnapshotTestCase-dummy.m */; };
-		CD20D9AFE48AB6E098E9F933 /* SpectaDSL.h in Headers */ = {isa = PBXBuildFile; fileRef = 8C617243B6AF24FFE0AF6F40 /* SpectaDSL.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		CDA64D29F6FD96DDEF44BAA1 /* ExpectaObject.h in Headers */ = {isa = PBXBuildFile; fileRef = FA62C5C38A780B053A5902E2 /* ExpectaObject.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D09256FA12C9DC81B174621B /* URLTransaction.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 1D738FE4518248F9E10839A8 /* URLTransaction.bundle */; };
-		D1183011BFBD2EF3F3A88D4A /* Pods-URLTransaction_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 09036DCD950BB52CB89A45ED /* Pods-URLTransaction_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D292FA0717E6E0F506271BFD /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA43CF4A07AA6F3DAD327C7E /* XCTest.framework */; };
-		D531D19AA0FB413565805F17 /* EXPDoubleTuple.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CE4A925A93A5D946AAA0548 /* EXPDoubleTuple.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		D7B10B5AF0E258C4299D6887 /* EXPMatchers+postNotification.h in Headers */ = {isa = PBXBuildFile; fileRef = 8D1ED2D54CF2E9A4973604FE /* EXPMatchers+postNotification.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		DC1FAAD8083F772ABB2DF289 /* EXPMatchers+beGreaterThan.m in Sources */ = {isa = PBXBuildFile; fileRef = 229BCEDF5CDD4FCA300B5A0C /* EXPMatchers+beGreaterThan.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		DC84D23BD218730F87D18D4C /* EXPMatchers+beGreaterThanOrEqualTo.m in Sources */ = {isa = PBXBuildFile; fileRef = 02B7C0F31B9E0B5CEB4EBEED /* EXPMatchers+beGreaterThanOrEqualTo.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		DC952B44CDF21A39408A171C /* SPTCallSite.h in Headers */ = {isa = PBXBuildFile; fileRef = 3837977545F4A340CDC37BD1 /* SPTCallSite.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		DEF98D6886C25D8B08C8A83C /* EXPMatchers+FBSnapshotTest.m in Sources */ = {isa = PBXBuildFile; fileRef = E3BFFB32858D8A6FAE4C9152 /* EXPMatchers+FBSnapshotTest.m */; };
-		E498C20E9C551D496DEAFF1E /* ExpectaSupport.h in Headers */ = {isa = PBXBuildFile; fileRef = A89B274998D17CC40F243317 /* ExpectaSupport.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E6B285D658352007441E22C7 /* Pods-URLTransaction_Tests-Expecta-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 04EF0A9186659E4D7855291D /* Pods-URLTransaction_Tests-Expecta-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E77A602D1B6B7A3700AA3BD8 /* URLRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = E77A60291B6B7A3700AA3BD8 /* URLRequest.h */; };
-		E77A602E1B6B7A3700AA3BD8 /* URLTransaction.m in Sources */ = {isa = PBXBuildFile; fileRef = E77A602A1B6B7A3700AA3BD8 /* URLTransaction.m */; };
-		E77A602F1B6B7A3700AA3BD8 /* URLTransaction.h in Headers */ = {isa = PBXBuildFile; fileRef = E77A602B1B6B7A3700AA3BD8 /* URLTransaction.h */; };
-		E77A60301B6B7A3700AA3BD8 /* URLRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = E77A602C1B6B7A3700AA3BD8 /* URLRequest.m */; };
-		E77EB9FFF591721DB599D511 /* XCTest+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 3E37BF84BAC2628B29F239FF /* XCTest+Private.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E82C583A90C9DEFA1B641291 /* SPTGlobalBeforeAfterEach.h in Headers */ = {isa = PBXBuildFile; fileRef = 911208C0D3138BD01A53FDA8 /* SPTGlobalBeforeAfterEach.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		EB313D2A11A2B53BE6B9388A /* EXPMatchers+beCloseTo.h in Headers */ = {isa = PBXBuildFile; fileRef = 3F1899616D29D84DB3272DA7 /* EXPMatchers+beCloseTo.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		EC61B40A856DB159855D3CE6 /* ExpectaObject.m in Sources */ = {isa = PBXBuildFile; fileRef = CA8CCC0D1A7F0EA2BAF999F8 /* ExpectaObject.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		ECF8F10FFF8CA8420CC9A969 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AC08D0C4B31256E718BF13B /* Foundation.framework */; };
-		ED29DBA18DB726BEF52EB7B2 /* EXPFloatTuple.h in Headers */ = {isa = PBXBuildFile; fileRef = 3B20FF0A06FDEDCB1C0C9EFD /* EXPFloatTuple.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		EDB445889F8EB877DA379848 /* EXPMatchers+beInTheRangeOf.m in Sources */ = {isa = PBXBuildFile; fileRef = B92CA5EB4E6C70712E2D77F2 /* EXPMatchers+beInTheRangeOf.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		F3988845202907F199A2AEDD /* Pods-URLTransaction_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D7B17719532BF61CD812F794 /* Pods-URLTransaction_Example-dummy.m */; };
-		F4F603C712C51306AE19AA87 /* EXPMatchers+equal.m in Sources */ = {isa = PBXBuildFile; fileRef = C10A7BDDD0BBF61D2EF4BA10 /* EXPMatchers+equal.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		F8820EA6E68568A3E6CF5035 /* EXPMatchers+beLessThan.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D81AFDAE698F668C058EF3D /* EXPMatchers+beLessThan.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		FB41DEC190C18CEA0A64DBB9 /* EXPMatchers+beInTheRangeOf.h in Headers */ = {isa = PBXBuildFile; fileRef = 6C46DC6421E6A464749B740F /* EXPMatchers+beInTheRangeOf.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		FE1E986D434D9F4857293907 /* EXPMatchers+beLessThanOrEqualTo.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C69914A60B0DDBDC706BD36 /* EXPMatchers+beLessThanOrEqualTo.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		08DBD9D2A924DD25D056EDA8EA9E4E8C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
+		0E8B7A781E32B8DD8EA270EDE4B09CF9 /* URLTransaction.h in Headers */ = {isa = PBXBuildFile; fileRef = 687BDA157F8E21BF3020CAAE325FBBD7 /* URLTransaction.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		15AF4FB869D2FF347427E776584BDD25 /* URLTransaction-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C05972E4CDB5180AB50FFA3EAD8DD364 /* URLTransaction-dummy.m */; };
+		25F992303EFA7B5CFCAB8542F6E514EB /* Pods-URLTransaction_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B00DB25794FE1AD5622BFDB709932580 /* Pods-URLTransaction_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4288423A3904EE5D1808A4F56A0D22FC /* Pods-URLTransaction_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 59D92F0F1FD7B323E96EE74140282D18 /* Pods-URLTransaction_Tests-dummy.m */; };
+		62EF3C2367F912849EDDA743CB418377 /* URLTransaction.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 2634F22E2D9049720C6ECD6B92D31A98 /* URLTransaction.bundle */; };
+		8AFA72C1DB7C72D33E9448182A642168 /* Pods-URLTransaction_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 93E91BD9F7802E9E475EA415C31CF445 /* Pods-URLTransaction_Example-dummy.m */; };
+		900122B93316CA5996D93B3D9887A085 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
+		944CCD9A79AC0BF495A26201124AD7C3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
+		97B8F08498E462D1665439579B93E4E0 /* URLTransaction-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = CDF7503E86FF5C43C839EDE86B499C88 /* URLTransaction-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E4D0CD31D85D7E55DE40FC2E837E22CE /* Pods-URLTransaction_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D1042879CAFABD9A1C856E261CA51479 /* Pods-URLTransaction_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F673DC3FCB06794CD769D1AEE3950B83 /* URLTransaction.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F497225F5C692EC0EF05D62FC18A0B5 /* URLTransaction.m */; };
+		FE16C81AE53B5A9C0A16E954B0136F42 /* URLRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 693017B0055870EBC78E0133E2C1147B /* URLRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		0592652FE52E8099A1E09B13 /* PBXContainerItemProxy */ = {
+		65F5F40AC5119CF49C488045C04B49E7 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 12BB134265CE583C97B0CA24 /* Project object */;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 9059F38F7AAA8111CFB2B088;
-			remoteInfo = "Pods-URLTransaction_Tests-Expecta";
+			remoteGlobalIDString = 39B8FC13EC3E59A6A3EA84739C7D2CCC;
+			remoteInfo = "URLTransaction-URLTransaction";
 		};
-		5762B7D01F98443AA814FA6B /* PBXContainerItemProxy */ = {
+		8B4E1BE6EFAF08DC33CC1D52EAC78DA5 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 12BB134265CE583C97B0CA24 /* Project object */;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 7F78CE58FF5A080922A0C5A3;
-			remoteInfo = "Pods-URLTransaction_Tests-Expecta+Snapshots";
+			remoteGlobalIDString = 98DFA25DEAE30D39E0822774DD8D221C;
+			remoteInfo = URLTransaction;
 		};
-		7AA0351724B297536B5D683F /* PBXContainerItemProxy */ = {
+		A6E4C2C3985043F7025D0DCB44B5CFDE /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 12BB134265CE583C97B0CA24 /* Project object */;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = B3D870815954A6006B2CE212;
-			remoteInfo = "Pods-URLTransaction_Tests-Specta";
-		};
-		8780F43FAED21B494D8B67A0 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 12BB134265CE583C97B0CA24 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 4650EC356A999232ABA45E2E;
-			remoteInfo = "Pods-URLTransaction_Tests-URLTransaction";
-		};
-		889C0E79E5F09081DFDA8066 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 12BB134265CE583C97B0CA24 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 9059F38F7AAA8111CFB2B088;
-			remoteInfo = "Pods-URLTransaction_Tests-Expecta";
-		};
-		A8DD721406B5AC9BD7AD2E38 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 12BB134265CE583C97B0CA24 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = B708ABC0988A9493EECC05EE;
-			remoteInfo = "Pods-URLTransaction_Tests-FBSnapshotTestCase";
-		};
-		AB010CD5FF7A58CE931F9D34 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 12BB134265CE583C97B0CA24 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 4F6E3D606F36630AEC4B45D0;
-			remoteInfo = "Pods-URLTransaction_Example-URLTransaction-URLTransaction";
-		};
-		B6E63855E8739E6E94436407 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 12BB134265CE583C97B0CA24 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = D9BECADE968444576162B691;
-			remoteInfo = "Pods-URLTransaction_Tests-URLTransaction-URLTransaction";
-		};
-		D325BC34914D007F407C6313 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 12BB134265CE583C97B0CA24 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = B708ABC0988A9493EECC05EE;
-			remoteInfo = "Pods-URLTransaction_Tests-FBSnapshotTestCase";
-		};
-		FB62CA81A6BB3EF7B0A6DA56 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 12BB134265CE583C97B0CA24 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 5CA1D47D71F4081D52ACB190;
-			remoteInfo = "Pods-URLTransaction_Example-URLTransaction";
+			remoteGlobalIDString = 98DFA25DEAE30D39E0822774DD8D221C;
+			remoteInfo = URLTransaction;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		02B7C0F31B9E0B5CEB4EBEED /* EXPMatchers+beGreaterThanOrEqualTo.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+beGreaterThanOrEqualTo.m"; path = "Expecta/Matchers/EXPMatchers+beGreaterThanOrEqualTo.m"; sourceTree = "<group>"; };
-		032E7169BEDC2EC46996BF7E /* EXPMatchers+raise.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+raise.h"; path = "Expecta/Matchers/EXPMatchers+raise.h"; sourceTree = "<group>"; };
-		03AAA555B9CE8EB057669ACC /* EXPMatchers+equal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+equal.h"; path = "Expecta/Matchers/EXPMatchers+equal.h"; sourceTree = "<group>"; };
-		04EF0A9186659E4D7855291D /* Pods-URLTransaction_Tests-Expecta-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-URLTransaction_Tests-Expecta-umbrella.h"; sourceTree = "<group>"; };
-		068AA05D6671330D4550E714 /* Pods-URLTransaction_Tests-URLTransaction-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "Pods-URLTransaction_Tests-URLTransaction-prefix.pch"; path = "../Pods-URLTransaction_Tests-URLTransaction/Pods-URLTransaction_Tests-URLTransaction-prefix.pch"; sourceTree = "<group>"; };
-		06DD417025003DB2134423EB /* EXPMatchers+beSubclassOf.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+beSubclassOf.h"; path = "Expecta/Matchers/EXPMatchers+beSubclassOf.h"; sourceTree = "<group>"; };
-		078FCADE8FD8BAF6E19C342A /* SPTCompiledExample.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SPTCompiledExample.m; path = Specta/Specta/SPTCompiledExample.m; sourceTree = "<group>"; };
-		09036DCD950BB52CB89A45ED /* Pods-URLTransaction_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-URLTransaction_Example-umbrella.h"; sourceTree = "<group>"; };
-		0B1B063E6E96CD4C3A505B82 /* SPTSharedExampleGroups.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SPTSharedExampleGroups.m; path = Specta/Specta/SPTSharedExampleGroups.m; sourceTree = "<group>"; };
-		0C4FC0C9F80B156B3BE1FCE9 /* SPTExample.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SPTExample.h; path = Specta/Specta/SPTExample.h; sourceTree = "<group>"; };
-		0DE0348364255D64BFFE4489 /* EXPMatchers+beLessThan.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+beLessThan.h"; path = "Expecta/Matchers/EXPMatchers+beLessThan.h"; sourceTree = "<group>"; };
-		0E48461FFE5C5029A382AA4E /* FBSnapshotTestCasePlatform.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSnapshotTestCasePlatform.m; path = FBSnapshotTestCase/FBSnapshotTestCasePlatform.m; sourceTree = "<group>"; };
-		0FE919C44E533949F74B80D1 /* XCTestCase+Specta.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "XCTestCase+Specta.h"; path = "Specta/Specta/XCTestCase+Specta.h"; sourceTree = "<group>"; };
-		117F0333F247382B7CD70AD6 /* EXPMatchers+beFalsy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+beFalsy.m"; path = "Expecta/Matchers/EXPMatchers+beFalsy.m"; sourceTree = "<group>"; };
-		1307DBB6486DB1C5EF7743BE /* Pods-URLTransaction_Tests-Specta.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-URLTransaction_Tests-Specta.modulemap"; sourceTree = "<group>"; };
-		14EDC9854E4156D80F2F7F3A /* EXPMatchers+raise.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+raise.m"; path = "Expecta/Matchers/EXPMatchers+raise.m"; sourceTree = "<group>"; };
-		168130CA0B68CF78631DB698 /* SPTTestSuite.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SPTTestSuite.h; path = Specta/Specta/SPTTestSuite.h; sourceTree = "<group>"; };
-		17242603369A7E718FA3D779 /* EXPFloatTuple.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = EXPFloatTuple.m; path = Expecta/EXPFloatTuple.m; sourceTree = "<group>"; };
-		18EF5BF31255C228962C038F /* Pods-URLTransaction_Tests-URLTransaction-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "Pods-URLTransaction_Tests-URLTransaction-dummy.m"; path = "../Pods-URLTransaction_Tests-URLTransaction/Pods-URLTransaction_Tests-URLTransaction-dummy.m"; sourceTree = "<group>"; };
-		197774D5308D589B708F2F6E /* UIImage+Compare.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+Compare.m"; path = "FBSnapshotTestCase/UIImage+Compare.m"; sourceTree = "<group>"; };
-		1D738FE4518248F9E10839A8 /* URLTransaction.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = URLTransaction.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
-		1F2C125D734DD975DBD77E98 /* Pods_URLTransaction_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_URLTransaction_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		22457994711B786E5EC5232F /* EXPMatchers+beTruthy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+beTruthy.m"; path = "Expecta/Matchers/EXPMatchers+beTruthy.m"; sourceTree = "<group>"; };
-		227D7864AC4C7A35FA280DE1 /* EXPMatcherHelpers.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = EXPMatcherHelpers.m; path = Expecta/Matchers/EXPMatcherHelpers.m; sourceTree = "<group>"; };
-		229BCEDF5CDD4FCA300B5A0C /* EXPMatchers+beGreaterThan.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+beGreaterThan.m"; path = "Expecta/Matchers/EXPMatchers+beGreaterThan.m"; sourceTree = "<group>"; };
-		230AEB73CF862F46AB682B53 /* FBSnapshotTestController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSnapshotTestController.h; path = FBSnapshotTestCase/FBSnapshotTestController.h; sourceTree = "<group>"; };
-		25B5718BE82813D9192BC505 /* EXPMatchers+postNotification.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+postNotification.m"; path = "Expecta/Matchers/EXPMatchers+postNotification.m"; sourceTree = "<group>"; };
-		2764DA7716115B89F9791F94 /* EXPMatchers+contain.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+contain.m"; path = "Expecta/Matchers/EXPMatchers+contain.m"; sourceTree = "<group>"; };
-		27BB22C50ED47388C098F5A2 /* EXPMatchers+beTruthy.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+beTruthy.h"; path = "Expecta/Matchers/EXPMatchers+beTruthy.h"; sourceTree = "<group>"; };
-		29510F0101CC7E4561F4B9BA /* NSObject+Expecta.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSObject+Expecta.h"; path = "Expecta/NSObject+Expecta.h"; sourceTree = "<group>"; };
-		2B1EDFC3BD9AAB36EF5CF9B1 /* URLTransaction.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = URLTransaction.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		2D480F5BDEFCF2B803F498E3 /* Pods-URLTransaction_Tests-Specta-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-URLTransaction_Tests-Specta-umbrella.h"; sourceTree = "<group>"; };
-		2DC569A689D8630F33E7937E /* Pods-URLTransaction_Example-URLTransaction-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-URLTransaction_Example-URLTransaction-Private.xcconfig"; sourceTree = "<group>"; };
-		2FAE9928EB715A519CBF17B7 /* EXPMatchers+beIdenticalTo.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+beIdenticalTo.m"; path = "Expecta/Matchers/EXPMatchers+beIdenticalTo.m"; sourceTree = "<group>"; };
-		30185080BD97F50D38A990C5 /* Pods-URLTransaction_Tests-Expecta-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-URLTransaction_Tests-Expecta-Private.xcconfig"; sourceTree = "<group>"; };
-		324B2A413408B423E3DCAB60 /* Pods-URLTransaction_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-URLTransaction_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		32A2738CD9E62070DABE6999 /* Pods-URLTransaction_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-URLTransaction_Tests-frameworks.sh"; sourceTree = "<group>"; };
-		32B3772C46E6ADF6C7FB8236 /* EXPMatchers+beInstanceOf.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+beInstanceOf.h"; path = "Expecta/Matchers/EXPMatchers+beInstanceOf.h"; sourceTree = "<group>"; };
-		3326C221A1E5C2A44D3B00C5 /* Expecta_Snapshots.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Expecta_Snapshots.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		345346C1A7063A49DE94903C /* EXPMatchers+haveCountOf.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+haveCountOf.h"; path = "Expecta/Matchers/EXPMatchers+haveCountOf.h"; sourceTree = "<group>"; };
-		3837977545F4A340CDC37BD1 /* SPTCallSite.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SPTCallSite.h; path = Specta/Specta/SPTCallSite.h; sourceTree = "<group>"; };
-		395AD65FE5B77EB829177DC4 /* EXPMatcher.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EXPMatcher.h; path = Expecta/EXPMatcher.h; sourceTree = "<group>"; };
-		3AD2D54E4849168439648877 /* Pods-URLTransaction_Tests-Specta-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-URLTransaction_Tests-Specta-dummy.m"; sourceTree = "<group>"; };
-		3B20FF0A06FDEDCB1C0C9EFD /* EXPFloatTuple.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EXPFloatTuple.h; path = Expecta/EXPFloatTuple.h; sourceTree = "<group>"; };
-		3CE899069DC0676329C37D19 /* EXPMatchers+beFalsy.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+beFalsy.h"; path = "Expecta/Matchers/EXPMatchers+beFalsy.h"; sourceTree = "<group>"; };
-		3E37BF84BAC2628B29F239FF /* XCTest+Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "XCTest+Private.h"; path = "Specta/Specta/XCTest+Private.h"; sourceTree = "<group>"; };
-		3F1899616D29D84DB3272DA7 /* EXPMatchers+beCloseTo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+beCloseTo.h"; path = "Expecta/Matchers/EXPMatchers+beCloseTo.h"; sourceTree = "<group>"; };
-		402BE01A9FEF29504DEA356A /* SPTExampleGroup.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SPTExampleGroup.m; path = Specta/Specta/SPTExampleGroup.m; sourceTree = "<group>"; };
-		40A202FC4CB7F7500B191E95 /* Pods-URLTransaction_Tests-URLTransaction-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "Pods-URLTransaction_Tests-URLTransaction-umbrella.h"; path = "../Pods-URLTransaction_Tests-URLTransaction/Pods-URLTransaction_Tests-URLTransaction-umbrella.h"; sourceTree = "<group>"; };
-		40F60FB57FDD6A23FFAB7EB5 /* EXPMatchers+FBSnapshotTest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "EXPMatchers+FBSnapshotTest.h"; sourceTree = "<group>"; };
-		430C9B183624798F0F46ECF9 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		461AFC566C44CBEA534EC8B7 /* Pods-URLTransaction_Tests-Expecta+Snapshots-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-URLTransaction_Tests-Expecta+Snapshots-Private.xcconfig"; sourceTree = "<group>"; };
-		46BB8C00F3F6E6BD1CC958AD /* EXPMatchers+contain.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+contain.h"; path = "Expecta/Matchers/EXPMatchers+contain.h"; sourceTree = "<group>"; };
-		4956FBC04669AF953259C3B9 /* FBSnapshotTestCase.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSnapshotTestCase.m; path = FBSnapshotTestCase/FBSnapshotTestCase.m; sourceTree = "<group>"; };
-		4A885D8703E39DCD0A0073AB /* SPTSpec.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SPTSpec.h; path = Specta/Specta/SPTSpec.h; sourceTree = "<group>"; };
-		4C0FA58B732AEA245D3EFA4F /* EXPMatchers+conformTo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+conformTo.h"; path = "Expecta/Matchers/EXPMatchers+conformTo.h"; sourceTree = "<group>"; };
-		4C69914A60B0DDBDC706BD36 /* EXPMatchers+beLessThanOrEqualTo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+beLessThanOrEqualTo.h"; path = "Expecta/Matchers/EXPMatchers+beLessThanOrEqualTo.h"; sourceTree = "<group>"; };
-		4D6B2B151451D5C760A02B03 /* Pods-URLTransaction_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-URLTransaction_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		4D7333AC46CC65F4FEE1D29D /* Pods-URLTransaction_Tests-FBSnapshotTestCase-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-URLTransaction_Tests-FBSnapshotTestCase-prefix.pch"; sourceTree = "<group>"; };
-		4DC829790D42DDF36FD7BD0C /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		506227C33CE24FF120C29844 /* Pods-URLTransaction_Example-URLTransaction-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-URLTransaction_Example-URLTransaction-prefix.pch"; sourceTree = "<group>"; };
-		52B86608D47C9ECB035F900F /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		548631970CD8625CEE06DA29 /* Pods-URLTransaction_Tests-Specta-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-URLTransaction_Tests-Specta-Private.xcconfig"; sourceTree = "<group>"; };
-		54AAF92BDF8A041CBA30992A /* XCTestCase+Specta.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "XCTestCase+Specta.m"; path = "Specta/Specta/XCTestCase+Specta.m"; sourceTree = "<group>"; };
-		5522BAA3811FBC7211CC2087 /* Pods-URLTransaction_Tests-Expecta-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-URLTransaction_Tests-Expecta-dummy.m"; sourceTree = "<group>"; };
-		560E84CF71A6F509E9C01343 /* Pods-URLTransaction_Example-URLTransaction-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-URLTransaction_Example-URLTransaction-umbrella.h"; sourceTree = "<group>"; };
-		565682467FA3A48F8160B0EB /* SPTSharedExampleGroups.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SPTSharedExampleGroups.h; path = Specta/Specta/SPTSharedExampleGroups.h; sourceTree = "<group>"; };
-		56945B4DA92DA83C7B38A608 /* EXPMatchers+beKindOf.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+beKindOf.m"; path = "Expecta/Matchers/EXPMatchers+beKindOf.m"; sourceTree = "<group>"; };
-		5817E0F342C132904686EC4F /* EXPUnsupportedObject.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EXPUnsupportedObject.h; path = Expecta/EXPUnsupportedObject.h; sourceTree = "<group>"; };
-		58317119375B8489F283365A /* Specta.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Specta.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		590B0E82FE8DEBB6F4A86307 /* Pods-URLTransaction_Example-URLTransaction.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-URLTransaction_Example-URLTransaction.xcconfig"; sourceTree = "<group>"; };
-		60EC0D74DC8874B700EDE66F /* Pods-URLTransaction_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-URLTransaction_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		61935CCD137423E4B2785CBD /* FBSnapshotTestController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSnapshotTestController.m; path = FBSnapshotTestCase/FBSnapshotTestController.m; sourceTree = "<group>"; };
-		619A45D3B14BE8CA4AF9A978 /* Pods-URLTransaction_Tests-URLTransaction.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; name = "Pods-URLTransaction_Tests-URLTransaction.modulemap"; path = "../Pods-URLTransaction_Tests-URLTransaction/Pods-URLTransaction_Tests-URLTransaction.modulemap"; sourceTree = "<group>"; };
-		6759D8C8DDC0342A608BE9B6 /* Pods-URLTransaction_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-URLTransaction_Example-resources.sh"; sourceTree = "<group>"; };
-		6BB9BA3DA46B60B8C0A6ADA9 /* EXPDefines.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EXPDefines.h; path = Expecta/EXPDefines.h; sourceTree = "<group>"; };
-		6BE5EE845EF59A8EF0C88068 /* Pods-URLTransaction_Tests-URLTransaction.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-URLTransaction_Tests-URLTransaction.xcconfig"; path = "../Pods-URLTransaction_Tests-URLTransaction/Pods-URLTransaction_Tests-URLTransaction.xcconfig"; sourceTree = "<group>"; };
-		6C46DC6421E6A464749B740F /* EXPMatchers+beInTheRangeOf.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+beInTheRangeOf.h"; path = "Expecta/Matchers/EXPMatchers+beInTheRangeOf.h"; sourceTree = "<group>"; };
-		6C98B8737EE00F797966E313 /* UIImage+Compare.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+Compare.h"; path = "FBSnapshotTestCase/UIImage+Compare.h"; sourceTree = "<group>"; };
-		6D81AFDAE698F668C058EF3D /* EXPMatchers+beLessThan.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+beLessThan.m"; path = "Expecta/Matchers/EXPMatchers+beLessThan.m"; sourceTree = "<group>"; };
-		6DE2EBB6CAE4B6352C5FEDCA /* EXPMatchers+beInstanceOf.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+beInstanceOf.m"; path = "Expecta/Matchers/EXPMatchers+beInstanceOf.m"; sourceTree = "<group>"; };
-		6E31A76B5E14D9EA79611D23 /* Pods-URLTransaction_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-URLTransaction_Tests-umbrella.h"; sourceTree = "<group>"; };
-		70EA0F5E39AC59568CDD94EF /* Expecta.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Expecta.h; path = Expecta/Expecta.h; sourceTree = "<group>"; };
-		70FC23AF24561939A5E7EEC9 /* EXPMatchers+endWith.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+endWith.h"; path = "Expecta/Matchers/EXPMatchers+endWith.h"; sourceTree = "<group>"; };
-		7325D3013070A37B8161359C /* EXPExpect.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = EXPExpect.m; path = Expecta/EXPExpect.m; sourceTree = "<group>"; };
-		739EBD259EF3DA1530C37953 /* EXPMatchers+beginWith.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+beginWith.h"; path = "Expecta/Matchers/EXPMatchers+beginWith.h"; sourceTree = "<group>"; };
-		73E65A28944B0EA292573655 /* EXPMatchers+beGreaterThanOrEqualTo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+beGreaterThanOrEqualTo.h"; path = "Expecta/Matchers/EXPMatchers+beGreaterThanOrEqualTo.h"; sourceTree = "<group>"; };
-		741A4D8BAAEAD6D49A1B3344 /* SpectaUtility.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SpectaUtility.m; path = Specta/Specta/SpectaUtility.m; sourceTree = "<group>"; };
-		7550F9F9E9BB81CAADA136A1 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		78B1F9877F6AC72C73CCDF62 /* Pods-URLTransaction_Tests-Specta-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-URLTransaction_Tests-Specta-prefix.pch"; sourceTree = "<group>"; };
-		791247E024560E9C209EFB05 /* NSValue+Expecta.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSValue+Expecta.m"; path = "Expecta/NSValue+Expecta.m"; sourceTree = "<group>"; };
-		79F8117325F61B1764FF13B3 /* EXPMatchers+match.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+match.m"; path = "Expecta/Matchers/EXPMatchers+match.m"; sourceTree = "<group>"; };
-		7C90502BE11E72E052388A5E /* Pods-URLTransaction_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-URLTransaction_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		7CE4A925A93A5D946AAA0548 /* EXPDoubleTuple.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = EXPDoubleTuple.m; path = Expecta/EXPDoubleTuple.m; sourceTree = "<group>"; };
-		7E09CF77153D73401EED740A /* Pods-URLTransaction_Tests-FBSnapshotTestCase.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-URLTransaction_Tests-FBSnapshotTestCase.xcconfig"; sourceTree = "<group>"; };
-		7FB6462BC3D30C45C71FF030 /* Pods-URLTransaction_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-URLTransaction_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		803CC0A416B25F40EA945BEC /* Specta.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Specta.h; path = Specta/Specta/Specta.h; sourceTree = "<group>"; };
-		8070C3B71338D39C56D19A8F /* Pods-URLTransaction_Tests-Expecta+Snapshots.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-URLTransaction_Tests-Expecta+Snapshots.xcconfig"; sourceTree = "<group>"; };
-		80F6FC1A518521201D4455F8 /* Pods-URLTransaction_Example-URLTransaction.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-URLTransaction_Example-URLTransaction.modulemap"; sourceTree = "<group>"; };
-		829F4BC7186BB920DC00E1EA /* NSValue+Expecta.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSValue+Expecta.h"; path = "Expecta/NSValue+Expecta.h"; sourceTree = "<group>"; };
-		82FB881A423A506772E010AF /* Pods-URLTransaction_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-URLTransaction_Example-frameworks.sh"; sourceTree = "<group>"; };
-		85E049B0E8E189D0575C03D7 /* SPTSpec.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SPTSpec.m; path = Specta/Specta/SPTSpec.m; sourceTree = "<group>"; };
-		85FB4CC3494011CC06E07C68 /* Pods-URLTransaction_Tests-FBSnapshotTestCase-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-URLTransaction_Tests-FBSnapshotTestCase-umbrella.h"; sourceTree = "<group>"; };
-		87D4E5554A1AED3D03F999B6 /* Pods-URLTransaction_Tests-Specta.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-URLTransaction_Tests-Specta.xcconfig"; sourceTree = "<group>"; };
-		885428967FE3298FFA02453E /* EXPMatchers+beCloseTo.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+beCloseTo.m"; path = "Expecta/Matchers/EXPMatchers+beCloseTo.m"; sourceTree = "<group>"; };
-		89239874331D0D187FF31555 /* Pods-URLTransaction_Example-URLTransaction-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-URLTransaction_Example-URLTransaction-dummy.m"; sourceTree = "<group>"; };
-		89CCF20FAB05B059C4CE5BCA /* SPTCallSite.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SPTCallSite.m; path = Specta/Specta/SPTCallSite.m; sourceTree = "<group>"; };
-		8B85AB40D0DD8901032672C4 /* Pods-URLTransaction_Tests-Expecta.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-URLTransaction_Tests-Expecta.modulemap"; sourceTree = "<group>"; };
-		8C617243B6AF24FFE0AF6F40 /* SpectaDSL.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SpectaDSL.h; path = Specta/Specta/SpectaDSL.h; sourceTree = "<group>"; };
-		8D1ED2D54CF2E9A4973604FE /* EXPMatchers+postNotification.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+postNotification.h"; path = "Expecta/Matchers/EXPMatchers+postNotification.h"; sourceTree = "<group>"; };
-		8D3BEA749A4F97B092EBF695 /* FBSnapshotTestCase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FBSnapshotTestCase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		911208C0D3138BD01A53FDA8 /* SPTGlobalBeforeAfterEach.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SPTGlobalBeforeAfterEach.h; path = Specta/Specta/SPTGlobalBeforeAfterEach.h; sourceTree = "<group>"; };
-		930510D77D0D5A02380E6A41 /* Pods-URLTransaction_Tests-Expecta+Snapshots-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-URLTransaction_Tests-Expecta+Snapshots-dummy.m"; sourceTree = "<group>"; };
-		937C8AEA9C2A8F8820A0856C /* Pods-URLTransaction_Tests-Expecta.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-URLTransaction_Tests-Expecta.xcconfig"; sourceTree = "<group>"; };
-		9553D7248D5CB94DA70E5E76 /* EXPMatchers+respondTo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+respondTo.h"; path = "Expecta/Matchers/EXPMatchers+respondTo.h"; sourceTree = "<group>"; };
-		9590EB2D8903A61DE360DC6F /* EXPMatchers+beGreaterThan.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+beGreaterThan.h"; path = "Expecta/Matchers/EXPMatchers+beGreaterThan.h"; sourceTree = "<group>"; };
-		967821D4B80BD100908EC408 /* EXPMatchers+beLessThanOrEqualTo.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+beLessThanOrEqualTo.m"; path = "Expecta/Matchers/EXPMatchers+beLessThanOrEqualTo.m"; sourceTree = "<group>"; };
-		979C38DD2CA2CD3FD8FA4D73 /* FBSnapshotTestCasePlatform.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSnapshotTestCasePlatform.h; path = FBSnapshotTestCase/FBSnapshotTestCasePlatform.h; sourceTree = "<group>"; };
-		98D7CF87F68ED6F71E9B8D96 /* Pods-URLTransaction_Tests-FBSnapshotTestCase.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-URLTransaction_Tests-FBSnapshotTestCase.modulemap"; sourceTree = "<group>"; };
-		99996C4AD2AEBE8731410ABA /* EXPUnsupportedObject.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = EXPUnsupportedObject.m; path = Expecta/EXPUnsupportedObject.m; sourceTree = "<group>"; };
-		9AC08D0C4B31256E718BF13B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		9BE4B18DD7C782D33CDAE4D9 /* Pods-URLTransaction_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-URLTransaction_Example.release.xcconfig"; sourceTree = "<group>"; };
-		9E4A1C472995A541BDC5FF0C /* EXPMatchers+conformTo.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+conformTo.m"; path = "Expecta/Matchers/EXPMatchers+conformTo.m"; sourceTree = "<group>"; };
-		9F5CC47994362B8B9D3C03E3 /* Pods-URLTransaction_Tests-Expecta+Snapshots.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-URLTransaction_Tests-Expecta+Snapshots.modulemap"; sourceTree = "<group>"; };
-		9F676CEFC3F6A69FBC1F93AD /* Pods-URLTransaction_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-URLTransaction_Tests.modulemap"; sourceTree = "<group>"; };
-		A39B7ED0E18B0B2615955F11 /* Pods-URLTransaction_Tests-Expecta+Snapshots-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-URLTransaction_Tests-Expecta+Snapshots-prefix.pch"; sourceTree = "<group>"; };
-		A6B69FCA0EB223534AA3DB13 /* EXPMatchers+haveCountOf.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+haveCountOf.m"; path = "Expecta/Matchers/EXPMatchers+haveCountOf.m"; sourceTree = "<group>"; };
-		A76FC1E35857832D6A7B32E3 /* SPTExampleGroup.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SPTExampleGroup.h; path = Specta/Specta/SPTExampleGroup.h; sourceTree = "<group>"; };
-		A8530DB16C77226CAC36E1DC /* FBSnapshotTestCase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FBSnapshotTestCase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		A89B274998D17CC40F243317 /* ExpectaSupport.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ExpectaSupport.h; path = Expecta/ExpectaSupport.h; sourceTree = "<group>"; };
-		AA30017DE5A5A930B881A40D /* SpectaUtility.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SpectaUtility.h; path = Specta/Specta/SpectaUtility.h; sourceTree = "<group>"; };
-		AB01DA6FFE4A29BEAD63C230 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		AF7B014B45CF4CDBD9E3E811 /* UIImage+Diff.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+Diff.m"; path = "FBSnapshotTestCase/UIImage+Diff.m"; sourceTree = "<group>"; };
-		B03D045044BE88F167EF5327 /* EXPDoubleTuple.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EXPDoubleTuple.h; path = Expecta/EXPDoubleTuple.h; sourceTree = "<group>"; };
-		B1F586B5D3C1085DBF9F3ACF /* Pods-URLTransaction_Tests-FBSnapshotTestCase-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-URLTransaction_Tests-FBSnapshotTestCase-dummy.m"; sourceTree = "<group>"; };
-		B225C9F1AFCCFAE06B77E40E /* Pods-URLTransaction_Tests-Expecta+Snapshots-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-URLTransaction_Tests-Expecta+Snapshots-umbrella.h"; sourceTree = "<group>"; };
-		B2736EB2291B809F68C28C23 /* Pods-URLTransaction_Example-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-URLTransaction_Example-environment.h"; sourceTree = "<group>"; };
-		B60603EE30789F5F447708DD /* Pods-URLTransaction_Tests-FBSnapshotTestCase-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-URLTransaction_Tests-FBSnapshotTestCase-Private.xcconfig"; sourceTree = "<group>"; };
-		B7300ABA0419749776EF2241 /* EXPMatchers+beginWith.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+beginWith.m"; path = "Expecta/Matchers/EXPMatchers+beginWith.m"; sourceTree = "<group>"; };
-		B812735CBF86F1A0691D3F58 /* EXPMatchers+beSubclassOf.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+beSubclassOf.m"; path = "Expecta/Matchers/EXPMatchers+beSubclassOf.m"; sourceTree = "<group>"; };
-		B82505755A7F230056CD5B15 /* Pods_URLTransaction_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_URLTransaction_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		B92CA5EB4E6C70712E2D77F2 /* EXPMatchers+beInTheRangeOf.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+beInTheRangeOf.m"; path = "Expecta/Matchers/EXPMatchers+beInTheRangeOf.m"; sourceTree = "<group>"; };
-		B98FC37B6B425BEAF16C5868 /* EXPExpect.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EXPExpect.h; path = Expecta/EXPExpect.h; sourceTree = "<group>"; };
-		BB5F57E7A60CC08DDC00B74E /* EXPMatchers.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EXPMatchers.h; path = Expecta/Matchers/EXPMatchers.h; sourceTree = "<group>"; };
-		BB6F8C31109DB5D7ED7B3572 /* SPTExample.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SPTExample.m; path = Specta/Specta/SPTExample.m; sourceTree = "<group>"; };
-		BB84D23E7FCF2EB131C2E400 /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		BC02530728F29F2086D4B63B /* EXPBlockDefinedMatcher.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = EXPBlockDefinedMatcher.m; path = Expecta/EXPBlockDefinedMatcher.m; sourceTree = "<group>"; };
-		BF1AD00799611EE4CBC5A37A /* EXPBlockDefinedMatcher.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EXPBlockDefinedMatcher.h; path = Expecta/EXPBlockDefinedMatcher.h; sourceTree = "<group>"; };
-		BF9FF2B7745780EF69BC2A62 /* EXPMatchers+endWith.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+endWith.m"; path = "Expecta/Matchers/EXPMatchers+endWith.m"; sourceTree = "<group>"; };
-		C0068B010FBEC6F8C262A02A /* Pods-URLTransaction_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-URLTransaction_Tests-dummy.m"; sourceTree = "<group>"; };
-		C10A7BDDD0BBF61D2EF4BA10 /* EXPMatchers+equal.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+equal.m"; path = "Expecta/Matchers/EXPMatchers+equal.m"; sourceTree = "<group>"; };
-		C2D445D9E2E6E790BB466F9E /* UIImage+Diff.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+Diff.h"; path = "FBSnapshotTestCase/UIImage+Diff.h"; sourceTree = "<group>"; };
-		C2E8B59E5FF19D4D6EAE0C71 /* EXPMatchers+beNil.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+beNil.m"; path = "Expecta/Matchers/EXPMatchers+beNil.m"; sourceTree = "<group>"; };
-		C7A3A981E75D7DED3552B5A7 /* Pods-URLTransaction_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-URLTransaction_Example.modulemap"; sourceTree = "<group>"; };
-		C871E72F97EB5AC33657D415 /* Expecta.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Expecta.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		C952F16CCB7F1CBD9DFB65EA /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C9916B2FBDEB318DC6E07DB6 /* Pods-URLTransaction_Tests-Expecta-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-URLTransaction_Tests-Expecta-prefix.pch"; sourceTree = "<group>"; };
-		CA37635A516AF1A24E89A3A1 /* EXPMatchers+beSupersetOf.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+beSupersetOf.h"; path = "Expecta/Matchers/EXPMatchers+beSupersetOf.h"; sourceTree = "<group>"; };
-		CA8CCC0D1A7F0EA2BAF999F8 /* ExpectaObject.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ExpectaObject.m; path = Expecta/ExpectaObject.m; sourceTree = "<group>"; };
-		CC5CFD46F39E8626FA8BAC3D /* EXPMatchers+raiseWithReason.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+raiseWithReason.m"; path = "Expecta/Matchers/EXPMatchers+raiseWithReason.m"; sourceTree = "<group>"; };
-		CCBD2D5A8EA013714222800A /* Pods-URLTransaction_Tests-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-URLTransaction_Tests-environment.h"; sourceTree = "<group>"; };
-		CDE27B836EF7A5ED6C051182 /* Pods-URLTransaction_Tests-URLTransaction-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-URLTransaction_Tests-URLTransaction-Private.xcconfig"; path = "../Pods-URLTransaction_Tests-URLTransaction/Pods-URLTransaction_Tests-URLTransaction-Private.xcconfig"; sourceTree = "<group>"; };
-		CE841AD8971F9E668D99765E /* ExpectaSupport.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ExpectaSupport.m; path = Expecta/ExpectaSupport.m; sourceTree = "<group>"; };
-		CF520C18180E3791E8406316 /* EXPMatchers+beKindOf.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+beKindOf.h"; path = "Expecta/Matchers/EXPMatchers+beKindOf.h"; sourceTree = "<group>"; };
-		D1A2AC51A7C4280FAE133FAF /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D495EAFFF707A881A4C221C5 /* SPTExcludeGlobalBeforeAfterEach.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SPTExcludeGlobalBeforeAfterEach.h; path = Specta/Specta/SPTExcludeGlobalBeforeAfterEach.h; sourceTree = "<group>"; };
-		D4CD9389E2DD034474379502 /* SPTTestSuite.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SPTTestSuite.m; path = Specta/Specta/SPTTestSuite.m; sourceTree = "<group>"; };
-		D5019D5BADD52284571915CC /* SpectaDSL.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SpectaDSL.m; path = Specta/Specta/SpectaDSL.m; sourceTree = "<group>"; };
-		D5BE8AB89273D78F9373A604 /* Expecta.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Expecta.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		D6C85CDC2541002DDBC94CD6 /* EXPMatcherHelpers.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EXPMatcherHelpers.h; path = Expecta/Matchers/EXPMatcherHelpers.h; sourceTree = "<group>"; };
-		D716F61B65EE7E756D2EA114 /* EXPMatchers+raiseWithReason.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+raiseWithReason.h"; path = "Expecta/Matchers/EXPMatchers+raiseWithReason.h"; sourceTree = "<group>"; };
-		D7992C6F6246B28D19DB6D0F /* EXPMatchers+beNil.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+beNil.h"; path = "Expecta/Matchers/EXPMatchers+beNil.h"; sourceTree = "<group>"; };
-		D7B17719532BF61CD812F794 /* Pods-URLTransaction_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-URLTransaction_Example-dummy.m"; sourceTree = "<group>"; };
-		D8BD04C8C1088A88851508CA /* EXPMatchers+respondTo.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+respondTo.m"; path = "Expecta/Matchers/EXPMatchers+respondTo.m"; sourceTree = "<group>"; };
-		DCAFB9F9654D71DA5630BB3C /* EXPMatchers+beSupersetOf.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+beSupersetOf.m"; path = "Expecta/Matchers/EXPMatchers+beSupersetOf.m"; sourceTree = "<group>"; };
-		E29F2DA7144E6345DEFC236B /* EXPMatchers+match.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+match.h"; path = "Expecta/Matchers/EXPMatchers+match.h"; sourceTree = "<group>"; };
-		E3BFFB32858D8A6FAE4C9152 /* EXPMatchers+FBSnapshotTest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "EXPMatchers+FBSnapshotTest.m"; sourceTree = "<group>"; };
-		E77A60291B6B7A3700AA3BD8 /* URLRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = URLRequest.h; sourceTree = "<group>"; };
-		E77A602A1B6B7A3700AA3BD8 /* URLTransaction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = URLTransaction.m; sourceTree = "<group>"; };
-		E77A602B1B6B7A3700AA3BD8 /* URLTransaction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = URLTransaction.h; sourceTree = "<group>"; };
-		E77A602C1B6B7A3700AA3BD8 /* URLRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = URLRequest.m; sourceTree = "<group>"; };
-		E9F2E72C8C7B3BA94509F6CB /* Pods-URLTransaction_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-URLTransaction_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
-		EA43CF4A07AA6F3DAD327C7E /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		F09641BF449E3D4B580970F9 /* SPTCompiledExample.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SPTCompiledExample.h; path = Specta/Specta/SPTCompiledExample.h; sourceTree = "<group>"; };
-		F18B78E5D7BF153FCA16A342 /* SpectaTypes.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SpectaTypes.h; path = Specta/Specta/SpectaTypes.h; sourceTree = "<group>"; };
-		F2439119C155E6D837F3F431 /* EXPMatchers+beIdenticalTo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+beIdenticalTo.h"; path = "Expecta/Matchers/EXPMatchers+beIdenticalTo.h"; sourceTree = "<group>"; };
-		F256F1957EBB85E408AB2024 /* Pods-URLTransaction_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-URLTransaction_Tests-resources.sh"; sourceTree = "<group>"; };
-		F5FC16A8852E75CE7668D1D4 /* Pods-URLTransaction_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-URLTransaction_Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		FA62C5C38A780B053A5902E2 /* ExpectaObject.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ExpectaObject.h; path = Expecta/ExpectaObject.h; sourceTree = "<group>"; };
-		FBD7862587F45562F054B9E6 /* FBSnapshotTestCase.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSnapshotTestCase.h; path = FBSnapshotTestCase/FBSnapshotTestCase.h; sourceTree = "<group>"; };
-		FC5809816B9B130532EB7CB9 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = Info.plist; path = "../Pods-URLTransaction_Tests-URLTransaction/Info.plist"; sourceTree = "<group>"; };
-		FC8E472AF077EA27F17280F3 /* URLTransaction.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = URLTransaction.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		FF0D7969462D34A353E7AA13 /* URLTransaction.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = URLTransaction.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		06081C4D0D1CD69098F3CEE0EA870731 /* Pods-URLTransaction_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-URLTransaction_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		0BAEBC78DCB256B9BE9F8DFA16B7696F /* URLTransaction-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "URLTransaction-prefix.pch"; sourceTree = "<group>"; };
+		1B2666202F839BBFDC2CE8C5598B5ADC /* Pods-URLTransaction_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-URLTransaction_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		1C531B5B17F9B49B03418F60585EF91E /* Pods-URLTransaction_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-URLTransaction_Tests-resources.sh"; sourceTree = "<group>"; };
+		1E6EB24F0201C6B32130B4ADE4FFDAB7 /* URLTransaction.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = URLTransaction.modulemap; sourceTree = "<group>"; };
+		2634F22E2D9049720C6ECD6B92D31A98 /* URLTransaction.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = URLTransaction.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		2F9F80557F2C0DE4227021DA7AD24E26 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		30AF23876EEBBE642211081BDC95BDDB /* Pods-URLTransaction_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-URLTransaction_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		3B3B5A351C0B92C52752C7AEF1CA32DA /* Pods-URLTransaction_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-URLTransaction_Example-resources.sh"; sourceTree = "<group>"; };
+		3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		41B15FAF8C3A00BAA7FDCBF0954D8070 /* Pods-URLTransaction_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-URLTransaction_Tests.modulemap"; sourceTree = "<group>"; };
+		44F177A8533012BA0ECE959372F0D3B0 /* Pods-URLTransaction_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-URLTransaction_Example.release.xcconfig"; sourceTree = "<group>"; };
+		450EE2F697FB37FCFEAF344A0AB7B25B /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4BFF1DAF0E6EC8CFEA1C8E61E928BB73 /* Pods-URLTransaction_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-URLTransaction_Example-frameworks.sh"; sourceTree = "<group>"; };
+		4F497225F5C692EC0EF05D62FC18A0B5 /* URLTransaction.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = URLTransaction.m; sourceTree = "<group>"; };
+		5024267F08339E1DFEFD865CF53B4B78 /* Pods-URLTransaction_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-URLTransaction_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		55EA1D86F63606E4E61D1B5BD6628CF7 /* Pods_URLTransaction_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_URLTransaction_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		59693675AB28B30A9DAFD679D4D9BFC3 /* Pods-URLTransaction_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-URLTransaction_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		59D92F0F1FD7B323E96EE74140282D18 /* Pods-URLTransaction_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-URLTransaction_Tests-dummy.m"; sourceTree = "<group>"; };
+		5F32338C327C8BF99AC7F8759866EA4F /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		687BDA157F8E21BF3020CAAE325FBBD7 /* URLTransaction.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = URLTransaction.h; sourceTree = "<group>"; };
+		693017B0055870EBC78E0133E2C1147B /* URLRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = URLRequest.h; sourceTree = "<group>"; };
+		6C5CD7382344FF8DB49D7BE807B27478 /* URLTransaction.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = URLTransaction.xcconfig; sourceTree = "<group>"; };
+		82B09CFF6A4F8CB19A34ABBE05A0ABA7 /* Pods-URLTransaction_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-URLTransaction_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		93E91BD9F7802E9E475EA415C31CF445 /* Pods-URLTransaction_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-URLTransaction_Example-dummy.m"; sourceTree = "<group>"; };
+		98ADC179C08409853DA39E14EB573A1A /* Pods-URLTransaction_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-URLTransaction_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		B00DB25794FE1AD5622BFDB709932580 /* Pods-URLTransaction_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-URLTransaction_Tests-umbrella.h"; sourceTree = "<group>"; };
+		B996909FDF0777E417BC2BABAB59CA1C /* Pods_URLTransaction_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_URLTransaction_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		BFE9D4107324DFD0F968E015BB98E34A /* URLTransaction.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = URLTransaction.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C05972E4CDB5180AB50FFA3EAD8DD364 /* URLTransaction-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "URLTransaction-dummy.m"; sourceTree = "<group>"; };
+		CDF7503E86FF5C43C839EDE86B499C88 /* URLTransaction-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "URLTransaction-umbrella.h"; sourceTree = "<group>"; };
+		D1042879CAFABD9A1C856E261CA51479 /* Pods-URLTransaction_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-URLTransaction_Example-umbrella.h"; sourceTree = "<group>"; };
+		D20705A9E150282E5548C08FDE40CF4F /* Pods-URLTransaction_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-URLTransaction_Example.modulemap"; sourceTree = "<group>"; };
+		FE11F9D0D877E31C5EE74EE6D1E5D950 /* Pods-URLTransaction_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-URLTransaction_Tests-frameworks.sh"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		2D479BCBE5EF6594F3E80F02 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				A130A9CDFEB1BD1EACFC34D2 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		6599BB7E855CE21D6FBA697C /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				8137B39533ADFE7245D494E1 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		66E7A0511BDB44E48EB57208 /* Frameworks */ = {
+		4410D9CB4775FF9F837D68043C69DCB0 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		7052EE231B1BDD0C9E7842C2 /* Frameworks */ = {
+		6F0F036145F1578E105FC0971347AC3B /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				15BD00565E9B1541D957957D /* Foundation.framework in Frameworks */,
-				0452AFE32A15B8DF77C912B1 /* XCTest.framework in Frameworks */,
+				944CCD9A79AC0BF495A26201124AD7C3 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		7E55E81B4D7A24B5EDADCA5D /* Frameworks */ = {
+		A71B491ADB3884CA0467D9616E9C99F4 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				900122B93316CA5996D93B3D9887A085 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		8B6D4A0915D76414FAA2EA4E /* Frameworks */ = {
+		AE64F45D8EF9420538A47E6CBABA7240 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2B907F566AAFFE3CF2450012 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		B350108D3E48AA82DB8BC045 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				2AECFBDD5A6E77D288C9106D /* Expecta.framework in Frameworks */,
-				736438C3F26B9A6843663483 /* FBSnapshotTestCase.framework in Frameworks */,
-				BE296977C2AA1815E56ED67D /* Foundation.framework in Frameworks */,
-				D292FA0717E6E0F506271BFD /* XCTest.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		C59E6A88F6B9F7D1AC81474F /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				0AEAFC204ED3C311B50315F9 /* Foundation.framework in Frameworks */,
-				49C5EA9BDEE17B48732980AB /* XCTest.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		F9807CF1849D2961A5ADF28A /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				C75B72D77A948506B969055B /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		F99C053A96CAA2A5B71D7534 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				ECF8F10FFF8CA8420CC9A969 /* Foundation.framework in Frameworks */,
-				C23AB3681BCE5186E40935C6 /* XCTest.framework in Frameworks */,
+				08DBD9D2A924DD25D056EDA8EA9E4E8C /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		15DEE8229997585730F7DA3E /* Classes */ = {
+		0ACA7434D1A56AE0E72A4B378D6503CD /* URLTransaction */ = {
 			isa = PBXGroup;
 			children = (
-				E77A60291B6B7A3700AA3BD8 /* URLRequest.h */,
-				E77A602A1B6B7A3700AA3BD8 /* URLTransaction.m */,
-				E77A602B1B6B7A3700AA3BD8 /* URLTransaction.h */,
-				E77A602C1B6B7A3700AA3BD8 /* URLRequest.m */,
-			);
-			path = Classes;
-			sourceTree = "<group>";
-		};
-		25860DA5086190269E9A6C23 /* URLTransaction */ = {
-			isa = PBXGroup;
-			children = (
-				898F2A9F28600EE4889B2B88 /* Pod */,
-				5A1A6C336ED3612D0737024D /* Support Files */,
+				CDA7B0BF5FD300EDBACA3937DEDAAE6C /* Pod */,
+				2E594939545E02C27199B69CAD33BFEF /* Support Files */,
 			);
 			name = URLTransaction;
 			path = ../..;
 			sourceTree = "<group>";
 		};
-		264786AF40F6FE54A6662BB0 /* Support Files */ = {
+		2E594939545E02C27199B69CAD33BFEF /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				C952F16CCB7F1CBD9DFB65EA /* Info.plist */,
-				8B85AB40D0DD8901032672C4 /* Pods-URLTransaction_Tests-Expecta.modulemap */,
-				937C8AEA9C2A8F8820A0856C /* Pods-URLTransaction_Tests-Expecta.xcconfig */,
-				30185080BD97F50D38A990C5 /* Pods-URLTransaction_Tests-Expecta-Private.xcconfig */,
-				5522BAA3811FBC7211CC2087 /* Pods-URLTransaction_Tests-Expecta-dummy.m */,
-				C9916B2FBDEB318DC6E07DB6 /* Pods-URLTransaction_Tests-Expecta-prefix.pch */,
-				04EF0A9186659E4D7855291D /* Pods-URLTransaction_Tests-Expecta-umbrella.h */,
+				2F9F80557F2C0DE4227021DA7AD24E26 /* Info.plist */,
+				1E6EB24F0201C6B32130B4ADE4FFDAB7 /* URLTransaction.modulemap */,
+				6C5CD7382344FF8DB49D7BE807B27478 /* URLTransaction.xcconfig */,
+				C05972E4CDB5180AB50FFA3EAD8DD364 /* URLTransaction-dummy.m */,
+				0BAEBC78DCB256B9BE9F8DFA16B7696F /* URLTransaction-prefix.pch */,
+				CDF7503E86FF5C43C839EDE86B499C88 /* URLTransaction-umbrella.h */,
 			);
 			name = "Support Files";
-			path = "../Target Support Files/Pods-URLTransaction_Tests-Expecta";
+			path = "Example/Pods/Target Support Files/URLTransaction";
 			sourceTree = "<group>";
 		};
-		2BD040524B83469D6E50CF4F /* Frameworks */ = {
+		35B64093AFFB1153AF6413FC9274F4A1 /* Pods-URLTransaction_Example */ = {
 			isa = PBXGroup;
 			children = (
-				D5BE8AB89273D78F9373A604 /* Expecta.framework */,
-				8D3BEA749A4F97B092EBF695 /* FBSnapshotTestCase.framework */,
-				A0C1C7F5A5E911884CC05076 /* iOS */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		5A1A6C336ED3612D0737024D /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				D1A2AC51A7C4280FAE133FAF /* Info.plist */,
-				FC5809816B9B130532EB7CB9 /* Info.plist */,
-				80F6FC1A518521201D4455F8 /* Pods-URLTransaction_Example-URLTransaction.modulemap */,
-				590B0E82FE8DEBB6F4A86307 /* Pods-URLTransaction_Example-URLTransaction.xcconfig */,
-				2DC569A689D8630F33E7937E /* Pods-URLTransaction_Example-URLTransaction-Private.xcconfig */,
-				89239874331D0D187FF31555 /* Pods-URLTransaction_Example-URLTransaction-dummy.m */,
-				506227C33CE24FF120C29844 /* Pods-URLTransaction_Example-URLTransaction-prefix.pch */,
-				560E84CF71A6F509E9C01343 /* Pods-URLTransaction_Example-URLTransaction-umbrella.h */,
-				619A45D3B14BE8CA4AF9A978 /* Pods-URLTransaction_Tests-URLTransaction.modulemap */,
-				6BE5EE845EF59A8EF0C88068 /* Pods-URLTransaction_Tests-URLTransaction.xcconfig */,
-				CDE27B836EF7A5ED6C051182 /* Pods-URLTransaction_Tests-URLTransaction-Private.xcconfig */,
-				18EF5BF31255C228962C038F /* Pods-URLTransaction_Tests-URLTransaction-dummy.m */,
-				068AA05D6671330D4550E714 /* Pods-URLTransaction_Tests-URLTransaction-prefix.pch */,
-				40A202FC4CB7F7500B191E95 /* Pods-URLTransaction_Tests-URLTransaction-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/Pods-URLTransaction_Example-URLTransaction";
-			sourceTree = "<group>";
-		};
-		61E81C03DDB39D5CF2E9589C /* Pods-URLTransaction_Example */ = {
-			isa = PBXGroup;
-			children = (
-				AB01DA6FFE4A29BEAD63C230 /* Info.plist */,
-				C7A3A981E75D7DED3552B5A7 /* Pods-URLTransaction_Example.modulemap */,
-				7FB6462BC3D30C45C71FF030 /* Pods-URLTransaction_Example-acknowledgements.markdown */,
-				F5FC16A8852E75CE7668D1D4 /* Pods-URLTransaction_Example-acknowledgements.plist */,
-				D7B17719532BF61CD812F794 /* Pods-URLTransaction_Example-dummy.m */,
-				B2736EB2291B809F68C28C23 /* Pods-URLTransaction_Example-environment.h */,
-				82FB881A423A506772E010AF /* Pods-URLTransaction_Example-frameworks.sh */,
-				6759D8C8DDC0342A608BE9B6 /* Pods-URLTransaction_Example-resources.sh */,
-				09036DCD950BB52CB89A45ED /* Pods-URLTransaction_Example-umbrella.h */,
-				60EC0D74DC8874B700EDE66F /* Pods-URLTransaction_Example.debug.xcconfig */,
-				9BE4B18DD7C782D33CDAE4D9 /* Pods-URLTransaction_Example.release.xcconfig */,
+				5F32338C327C8BF99AC7F8759866EA4F /* Info.plist */,
+				D20705A9E150282E5548C08FDE40CF4F /* Pods-URLTransaction_Example.modulemap */,
+				59693675AB28B30A9DAFD679D4D9BFC3 /* Pods-URLTransaction_Example-acknowledgements.markdown */,
+				06081C4D0D1CD69098F3CEE0EA870731 /* Pods-URLTransaction_Example-acknowledgements.plist */,
+				93E91BD9F7802E9E475EA415C31CF445 /* Pods-URLTransaction_Example-dummy.m */,
+				4BFF1DAF0E6EC8CFEA1C8E61E928BB73 /* Pods-URLTransaction_Example-frameworks.sh */,
+				3B3B5A351C0B92C52752C7AEF1CA32DA /* Pods-URLTransaction_Example-resources.sh */,
+				D1042879CAFABD9A1C856E261CA51479 /* Pods-URLTransaction_Example-umbrella.h */,
+				30AF23876EEBBE642211081BDC95BDDB /* Pods-URLTransaction_Example.debug.xcconfig */,
+				44F177A8533012BA0ECE959372F0D3B0 /* Pods-URLTransaction_Example.release.xcconfig */,
 			);
 			name = "Pods-URLTransaction_Example";
 			path = "Target Support Files/Pods-URLTransaction_Example";
 			sourceTree = "<group>";
 		};
-		7411B19F7DDBC7FA664835CB /* Expecta+Snapshots */ = {
+		3FEF986EDB8396D7F406C7CE1E865142 /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
-				40F60FB57FDD6A23FFAB7EB5 /* EXPMatchers+FBSnapshotTest.h */,
-				E3BFFB32858D8A6FAE4C9152 /* EXPMatchers+FBSnapshotTest.m */,
-				9BC5CA279461E9F3222843AF /* Support Files */,
-			);
-			path = "Expecta+Snapshots";
-			sourceTree = "<group>";
-		};
-		74F82E444D3AE552C615B3B0 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				DD787ADD441A7D859737614F /* Expecta */,
-				7411B19F7DDBC7FA664835CB /* Expecta+Snapshots */,
-				78D91EB2834AAA48B8932743 /* FBSnapshotTestCase */,
-				E09F7664B5743D31116858E5 /* Specta */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		78D91EB2834AAA48B8932743 /* FBSnapshotTestCase */ = {
-			isa = PBXGroup;
-			children = (
-				FBD7862587F45562F054B9E6 /* FBSnapshotTestCase.h */,
-				4956FBC04669AF953259C3B9 /* FBSnapshotTestCase.m */,
-				979C38DD2CA2CD3FD8FA4D73 /* FBSnapshotTestCasePlatform.h */,
-				0E48461FFE5C5029A382AA4E /* FBSnapshotTestCasePlatform.m */,
-				230AEB73CF862F46AB682B53 /* FBSnapshotTestController.h */,
-				61935CCD137423E4B2785CBD /* FBSnapshotTestController.m */,
-				6C98B8737EE00F797966E313 /* UIImage+Compare.h */,
-				197774D5308D589B708F2F6E /* UIImage+Compare.m */,
-				C2D445D9E2E6E790BB466F9E /* UIImage+Diff.h */,
-				AF7B014B45CF4CDBD9E3E811 /* UIImage+Diff.m */,
-				FB7CF282D72C3011F35A49BF /* Support Files */,
-			);
-			path = FBSnapshotTestCase;
-			sourceTree = "<group>";
-		};
-		898F2A9F28600EE4889B2B88 /* Pod */ = {
-			isa = PBXGroup;
-			children = (
-				15DEE8229997585730F7DA3E /* Classes */,
-			);
-			path = Pod;
-			sourceTree = "<group>";
-		};
-		9BC5CA279461E9F3222843AF /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				4DC829790D42DDF36FD7BD0C /* Info.plist */,
-				9F5CC47994362B8B9D3C03E3 /* Pods-URLTransaction_Tests-Expecta+Snapshots.modulemap */,
-				8070C3B71338D39C56D19A8F /* Pods-URLTransaction_Tests-Expecta+Snapshots.xcconfig */,
-				461AFC566C44CBEA534EC8B7 /* Pods-URLTransaction_Tests-Expecta+Snapshots-Private.xcconfig */,
-				930510D77D0D5A02380E6A41 /* Pods-URLTransaction_Tests-Expecta+Snapshots-dummy.m */,
-				A39B7ED0E18B0B2615955F11 /* Pods-URLTransaction_Tests-Expecta+Snapshots-prefix.pch */,
-				B225C9F1AFCCFAE06B77E40E /* Pods-URLTransaction_Tests-Expecta+Snapshots-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/Pods-URLTransaction_Tests-Expecta+Snapshots";
-			sourceTree = "<group>";
-		};
-		A0C1C7F5A5E911884CC05076 /* iOS */ = {
-			isa = PBXGroup;
-			children = (
-				9AC08D0C4B31256E718BF13B /* Foundation.framework */,
-				EA43CF4A07AA6F3DAD327C7E /* XCTest.framework */,
-			);
-			name = iOS;
-			sourceTree = "<group>";
-		};
-		AE1D3C2228D35276F9D8FCF9 = {
-			isa = PBXGroup;
-			children = (
-				BB84D23E7FCF2EB131C2E400 /* Podfile */,
-				D0B25E37FE77A542AAB52F2B /* Development Pods */,
-				2BD040524B83469D6E50CF4F /* Frameworks */,
-				74F82E444D3AE552C615B3B0 /* Pods */,
-				E6F9DA5E0980BC1FA48C9DFB /* Products */,
-				C305F435A57694B042678B62 /* Targets Support Files */,
-			);
-			sourceTree = "<group>";
-		};
-		C305F435A57694B042678B62 /* Targets Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				61E81C03DDB39D5CF2E9589C /* Pods-URLTransaction_Example */,
-				DC8568DF3666A25C7C09A9A9 /* Pods-URLTransaction_Tests */,
-			);
-			name = "Targets Support Files";
-			sourceTree = "<group>";
-		};
-		D0B25E37FE77A542AAB52F2B /* Development Pods */ = {
-			isa = PBXGroup;
-			children = (
-				25860DA5086190269E9A6C23 /* URLTransaction */,
+				0ACA7434D1A56AE0E72A4B378D6503CD /* URLTransaction */,
 			);
 			name = "Development Pods";
 			sourceTree = "<group>";
 		};
-		DC8568DF3666A25C7C09A9A9 /* Pods-URLTransaction_Tests */ = {
+		4EB06889BC8A334EB56BE5FF5ABC330B /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				7550F9F9E9BB81CAADA136A1 /* Info.plist */,
-				9F676CEFC3F6A69FBC1F93AD /* Pods-URLTransaction_Tests.modulemap */,
-				7C90502BE11E72E052388A5E /* Pods-URLTransaction_Tests-acknowledgements.markdown */,
-				E9F2E72C8C7B3BA94509F6CB /* Pods-URLTransaction_Tests-acknowledgements.plist */,
-				C0068B010FBEC6F8C262A02A /* Pods-URLTransaction_Tests-dummy.m */,
-				CCBD2D5A8EA013714222800A /* Pods-URLTransaction_Tests-environment.h */,
-				32A2738CD9E62070DABE6999 /* Pods-URLTransaction_Tests-frameworks.sh */,
-				F256F1957EBB85E408AB2024 /* Pods-URLTransaction_Tests-resources.sh */,
-				6E31A76B5E14D9EA79611D23 /* Pods-URLTransaction_Tests-umbrella.h */,
-				324B2A413408B423E3DCAB60 /* Pods-URLTransaction_Tests.debug.xcconfig */,
-				4D6B2B151451D5C760A02B03 /* Pods-URLTransaction_Tests.release.xcconfig */,
+				B996909FDF0777E417BC2BABAB59CA1C /* Pods_URLTransaction_Example.framework */,
+				55EA1D86F63606E4E61D1B5BD6628CF7 /* Pods_URLTransaction_Tests.framework */,
+				2634F22E2D9049720C6ECD6B92D31A98 /* URLTransaction.bundle */,
+				BFE9D4107324DFD0F968E015BB98E34A /* URLTransaction.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		54C6D7ED1EC9655756AF5F6DE6F77F07 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				35B64093AFFB1153AF6413FC9274F4A1 /* Pods-URLTransaction_Example */,
+				DC7908D53EF9DCD3DDC36A804CF4B917 /* Pods-URLTransaction_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */,
+				3FEF986EDB8396D7F406C7CE1E865142 /* Development Pods */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				4EB06889BC8A334EB56BE5FF5ABC330B /* Products */,
+				54C6D7ED1EC9655756AF5F6DE6F77F07 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BF6342C8B29F4CEEA088EFF7AB4DE362 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BF6342C8B29F4CEEA088EFF7AB4DE362 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		CDA7B0BF5FD300EDBACA3937DEDAAE6C /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				FCD2C997D0D191E2549D60FBD02C2A3F /* Classes */,
+			);
+			path = Pod;
+			sourceTree = "<group>";
+		};
+		DC7908D53EF9DCD3DDC36A804CF4B917 /* Pods-URLTransaction_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				450EE2F697FB37FCFEAF344A0AB7B25B /* Info.plist */,
+				41B15FAF8C3A00BAA7FDCBF0954D8070 /* Pods-URLTransaction_Tests.modulemap */,
+				1B2666202F839BBFDC2CE8C5598B5ADC /* Pods-URLTransaction_Tests-acknowledgements.markdown */,
+				5024267F08339E1DFEFD865CF53B4B78 /* Pods-URLTransaction_Tests-acknowledgements.plist */,
+				59D92F0F1FD7B323E96EE74140282D18 /* Pods-URLTransaction_Tests-dummy.m */,
+				FE11F9D0D877E31C5EE74EE6D1E5D950 /* Pods-URLTransaction_Tests-frameworks.sh */,
+				1C531B5B17F9B49B03418F60585EF91E /* Pods-URLTransaction_Tests-resources.sh */,
+				B00DB25794FE1AD5622BFDB709932580 /* Pods-URLTransaction_Tests-umbrella.h */,
+				98ADC179C08409853DA39E14EB573A1A /* Pods-URLTransaction_Tests.debug.xcconfig */,
+				82B09CFF6A4F8CB19A34ABBE05A0ABA7 /* Pods-URLTransaction_Tests.release.xcconfig */,
 			);
 			name = "Pods-URLTransaction_Tests";
 			path = "Target Support Files/Pods-URLTransaction_Tests";
 			sourceTree = "<group>";
 		};
-		DD787ADD441A7D859737614F /* Expecta */ = {
+		FCD2C997D0D191E2549D60FBD02C2A3F /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				BF1AD00799611EE4CBC5A37A /* EXPBlockDefinedMatcher.h */,
-				BC02530728F29F2086D4B63B /* EXPBlockDefinedMatcher.m */,
-				6BB9BA3DA46B60B8C0A6ADA9 /* EXPDefines.h */,
-				B03D045044BE88F167EF5327 /* EXPDoubleTuple.h */,
-				7CE4A925A93A5D946AAA0548 /* EXPDoubleTuple.m */,
-				B98FC37B6B425BEAF16C5868 /* EXPExpect.h */,
-				7325D3013070A37B8161359C /* EXPExpect.m */,
-				3B20FF0A06FDEDCB1C0C9EFD /* EXPFloatTuple.h */,
-				17242603369A7E718FA3D779 /* EXPFloatTuple.m */,
-				395AD65FE5B77EB829177DC4 /* EXPMatcher.h */,
-				D6C85CDC2541002DDBC94CD6 /* EXPMatcherHelpers.h */,
-				227D7864AC4C7A35FA280DE1 /* EXPMatcherHelpers.m */,
-				BB5F57E7A60CC08DDC00B74E /* EXPMatchers.h */,
-				3F1899616D29D84DB3272DA7 /* EXPMatchers+beCloseTo.h */,
-				885428967FE3298FFA02453E /* EXPMatchers+beCloseTo.m */,
-				3CE899069DC0676329C37D19 /* EXPMatchers+beFalsy.h */,
-				117F0333F247382B7CD70AD6 /* EXPMatchers+beFalsy.m */,
-				9590EB2D8903A61DE360DC6F /* EXPMatchers+beGreaterThan.h */,
-				229BCEDF5CDD4FCA300B5A0C /* EXPMatchers+beGreaterThan.m */,
-				73E65A28944B0EA292573655 /* EXPMatchers+beGreaterThanOrEqualTo.h */,
-				02B7C0F31B9E0B5CEB4EBEED /* EXPMatchers+beGreaterThanOrEqualTo.m */,
-				F2439119C155E6D837F3F431 /* EXPMatchers+beIdenticalTo.h */,
-				2FAE9928EB715A519CBF17B7 /* EXPMatchers+beIdenticalTo.m */,
-				6C46DC6421E6A464749B740F /* EXPMatchers+beInTheRangeOf.h */,
-				B92CA5EB4E6C70712E2D77F2 /* EXPMatchers+beInTheRangeOf.m */,
-				32B3772C46E6ADF6C7FB8236 /* EXPMatchers+beInstanceOf.h */,
-				6DE2EBB6CAE4B6352C5FEDCA /* EXPMatchers+beInstanceOf.m */,
-				CF520C18180E3791E8406316 /* EXPMatchers+beKindOf.h */,
-				56945B4DA92DA83C7B38A608 /* EXPMatchers+beKindOf.m */,
-				0DE0348364255D64BFFE4489 /* EXPMatchers+beLessThan.h */,
-				6D81AFDAE698F668C058EF3D /* EXPMatchers+beLessThan.m */,
-				4C69914A60B0DDBDC706BD36 /* EXPMatchers+beLessThanOrEqualTo.h */,
-				967821D4B80BD100908EC408 /* EXPMatchers+beLessThanOrEqualTo.m */,
-				D7992C6F6246B28D19DB6D0F /* EXPMatchers+beNil.h */,
-				C2E8B59E5FF19D4D6EAE0C71 /* EXPMatchers+beNil.m */,
-				06DD417025003DB2134423EB /* EXPMatchers+beSubclassOf.h */,
-				B812735CBF86F1A0691D3F58 /* EXPMatchers+beSubclassOf.m */,
-				CA37635A516AF1A24E89A3A1 /* EXPMatchers+beSupersetOf.h */,
-				DCAFB9F9654D71DA5630BB3C /* EXPMatchers+beSupersetOf.m */,
-				27BB22C50ED47388C098F5A2 /* EXPMatchers+beTruthy.h */,
-				22457994711B786E5EC5232F /* EXPMatchers+beTruthy.m */,
-				739EBD259EF3DA1530C37953 /* EXPMatchers+beginWith.h */,
-				B7300ABA0419749776EF2241 /* EXPMatchers+beginWith.m */,
-				4C0FA58B732AEA245D3EFA4F /* EXPMatchers+conformTo.h */,
-				9E4A1C472995A541BDC5FF0C /* EXPMatchers+conformTo.m */,
-				46BB8C00F3F6E6BD1CC958AD /* EXPMatchers+contain.h */,
-				2764DA7716115B89F9791F94 /* EXPMatchers+contain.m */,
-				70FC23AF24561939A5E7EEC9 /* EXPMatchers+endWith.h */,
-				BF9FF2B7745780EF69BC2A62 /* EXPMatchers+endWith.m */,
-				03AAA555B9CE8EB057669ACC /* EXPMatchers+equal.h */,
-				C10A7BDDD0BBF61D2EF4BA10 /* EXPMatchers+equal.m */,
-				345346C1A7063A49DE94903C /* EXPMatchers+haveCountOf.h */,
-				A6B69FCA0EB223534AA3DB13 /* EXPMatchers+haveCountOf.m */,
-				E29F2DA7144E6345DEFC236B /* EXPMatchers+match.h */,
-				79F8117325F61B1764FF13B3 /* EXPMatchers+match.m */,
-				8D1ED2D54CF2E9A4973604FE /* EXPMatchers+postNotification.h */,
-				25B5718BE82813D9192BC505 /* EXPMatchers+postNotification.m */,
-				032E7169BEDC2EC46996BF7E /* EXPMatchers+raise.h */,
-				14EDC9854E4156D80F2F7F3A /* EXPMatchers+raise.m */,
-				D716F61B65EE7E756D2EA114 /* EXPMatchers+raiseWithReason.h */,
-				CC5CFD46F39E8626FA8BAC3D /* EXPMatchers+raiseWithReason.m */,
-				9553D7248D5CB94DA70E5E76 /* EXPMatchers+respondTo.h */,
-				D8BD04C8C1088A88851508CA /* EXPMatchers+respondTo.m */,
-				5817E0F342C132904686EC4F /* EXPUnsupportedObject.h */,
-				99996C4AD2AEBE8731410ABA /* EXPUnsupportedObject.m */,
-				70EA0F5E39AC59568CDD94EF /* Expecta.h */,
-				FA62C5C38A780B053A5902E2 /* ExpectaObject.h */,
-				CA8CCC0D1A7F0EA2BAF999F8 /* ExpectaObject.m */,
-				A89B274998D17CC40F243317 /* ExpectaSupport.h */,
-				CE841AD8971F9E668D99765E /* ExpectaSupport.m */,
-				29510F0101CC7E4561F4B9BA /* NSObject+Expecta.h */,
-				829F4BC7186BB920DC00E1EA /* NSValue+Expecta.h */,
-				791247E024560E9C209EFB05 /* NSValue+Expecta.m */,
-				264786AF40F6FE54A6662BB0 /* Support Files */,
+				693017B0055870EBC78E0133E2C1147B /* URLRequest.h */,
+				687BDA157F8E21BF3020CAAE325FBBD7 /* URLTransaction.h */,
+				4F497225F5C692EC0EF05D62FC18A0B5 /* URLTransaction.m */,
 			);
-			path = Expecta;
-			sourceTree = "<group>";
-		};
-		E09F7664B5743D31116858E5 /* Specta */ = {
-			isa = PBXGroup;
-			children = (
-				3837977545F4A340CDC37BD1 /* SPTCallSite.h */,
-				89CCF20FAB05B059C4CE5BCA /* SPTCallSite.m */,
-				F09641BF449E3D4B580970F9 /* SPTCompiledExample.h */,
-				078FCADE8FD8BAF6E19C342A /* SPTCompiledExample.m */,
-				0C4FC0C9F80B156B3BE1FCE9 /* SPTExample.h */,
-				BB6F8C31109DB5D7ED7B3572 /* SPTExample.m */,
-				A76FC1E35857832D6A7B32E3 /* SPTExampleGroup.h */,
-				402BE01A9FEF29504DEA356A /* SPTExampleGroup.m */,
-				D495EAFFF707A881A4C221C5 /* SPTExcludeGlobalBeforeAfterEach.h */,
-				911208C0D3138BD01A53FDA8 /* SPTGlobalBeforeAfterEach.h */,
-				565682467FA3A48F8160B0EB /* SPTSharedExampleGroups.h */,
-				0B1B063E6E96CD4C3A505B82 /* SPTSharedExampleGroups.m */,
-				4A885D8703E39DCD0A0073AB /* SPTSpec.h */,
-				85E049B0E8E189D0575C03D7 /* SPTSpec.m */,
-				168130CA0B68CF78631DB698 /* SPTTestSuite.h */,
-				D4CD9389E2DD034474379502 /* SPTTestSuite.m */,
-				803CC0A416B25F40EA945BEC /* Specta.h */,
-				8C617243B6AF24FFE0AF6F40 /* SpectaDSL.h */,
-				D5019D5BADD52284571915CC /* SpectaDSL.m */,
-				F18B78E5D7BF153FCA16A342 /* SpectaTypes.h */,
-				AA30017DE5A5A930B881A40D /* SpectaUtility.h */,
-				741A4D8BAAEAD6D49A1B3344 /* SpectaUtility.m */,
-				3E37BF84BAC2628B29F239FF /* XCTest+Private.h */,
-				0FE919C44E533949F74B80D1 /* XCTestCase+Specta.h */,
-				54AAF92BDF8A041CBA30992A /* XCTestCase+Specta.m */,
-				F7262F898BC2B2FAD86F0706 /* Support Files */,
-			);
-			path = Specta;
-			sourceTree = "<group>";
-		};
-		E6F9DA5E0980BC1FA48C9DFB /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				C871E72F97EB5AC33657D415 /* Expecta.framework */,
-				3326C221A1E5C2A44D3B00C5 /* Expecta_Snapshots.framework */,
-				A8530DB16C77226CAC36E1DC /* FBSnapshotTestCase.framework */,
-				B82505755A7F230056CD5B15 /* Pods_URLTransaction_Example.framework */,
-				1F2C125D734DD975DBD77E98 /* Pods_URLTransaction_Tests.framework */,
-				58317119375B8489F283365A /* Specta.framework */,
-				FF0D7969462D34A353E7AA13 /* URLTransaction.bundle */,
-				1D738FE4518248F9E10839A8 /* URLTransaction.bundle */,
-				FC8E472AF077EA27F17280F3 /* URLTransaction.framework */,
-				2B1EDFC3BD9AAB36EF5CF9B1 /* URLTransaction.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		F7262F898BC2B2FAD86F0706 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				430C9B183624798F0F46ECF9 /* Info.plist */,
-				1307DBB6486DB1C5EF7743BE /* Pods-URLTransaction_Tests-Specta.modulemap */,
-				87D4E5554A1AED3D03F999B6 /* Pods-URLTransaction_Tests-Specta.xcconfig */,
-				548631970CD8625CEE06DA29 /* Pods-URLTransaction_Tests-Specta-Private.xcconfig */,
-				3AD2D54E4849168439648877 /* Pods-URLTransaction_Tests-Specta-dummy.m */,
-				78B1F9877F6AC72C73CCDF62 /* Pods-URLTransaction_Tests-Specta-prefix.pch */,
-				2D480F5BDEFCF2B803F498E3 /* Pods-URLTransaction_Tests-Specta-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/Pods-URLTransaction_Tests-Specta";
-			sourceTree = "<group>";
-		};
-		FB7CF282D72C3011F35A49BF /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				52B86608D47C9ECB035F900F /* Info.plist */,
-				98D7CF87F68ED6F71E9B8D96 /* Pods-URLTransaction_Tests-FBSnapshotTestCase.modulemap */,
-				7E09CF77153D73401EED740A /* Pods-URLTransaction_Tests-FBSnapshotTestCase.xcconfig */,
-				B60603EE30789F5F447708DD /* Pods-URLTransaction_Tests-FBSnapshotTestCase-Private.xcconfig */,
-				B1F586B5D3C1085DBF9F3ACF /* Pods-URLTransaction_Tests-FBSnapshotTestCase-dummy.m */,
-				4D7333AC46CC65F4FEE1D29D /* Pods-URLTransaction_Tests-FBSnapshotTestCase-prefix.pch */,
-				85FB4CC3494011CC06E07C68 /* Pods-URLTransaction_Tests-FBSnapshotTestCase-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/Pods-URLTransaction_Tests-FBSnapshotTestCase";
+			path = Classes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		06270AAD3076FEF41A1A173C /* Headers */ = {
+		29CDBA81581F858FC55F5B5660317C75 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3FAB884EFE979F78B5BBC36B /* EXPMatchers+FBSnapshotTest.h in Headers */,
-				1C6495832A9C64CB842BD51A /* Pods-URLTransaction_Tests-Expecta+Snapshots-umbrella.h in Headers */,
+				E4D0CD31D85D7E55DE40FC2E837E22CE /* Pods-URLTransaction_Example-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		10F89B669A448032A3ABC808 /* Headers */ = {
+		875353CBB254111A826056BEF12EABC1 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E77A602D1B6B7A3700AA3BD8 /* URLRequest.h in Headers */,
-				D1183011BFBD2EF3F3A88D4A /* Pods-URLTransaction_Example-umbrella.h in Headers */,
-				E77A602F1B6B7A3700AA3BD8 /* URLTransaction.h in Headers */,
+				25F992303EFA7B5CFCAB8542F6E514EB /* Pods-URLTransaction_Tests-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		32D2CDF6ACE24119F76C2A64 /* Headers */ = {
+		9BDA4E74E6E6EAF99D96BBC6CB362741 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				00FBFBD536CF456EBB87B52E /* FBSnapshotTestCase.h in Headers */,
-				61380A45B1E3C15D074C2214 /* FBSnapshotTestCasePlatform.h in Headers */,
-				69219E7EB6C2E652BD090CAE /* FBSnapshotTestController.h in Headers */,
-				B5179542DB26957D6DE82875 /* Pods-URLTransaction_Tests-FBSnapshotTestCase-umbrella.h in Headers */,
-				9C88F5EEE2FA627A1EBF8D61 /* UIImage+Compare.h in Headers */,
-				36526D4BF1C50E1CADC5092E /* UIImage+Diff.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		8AAE0074B7F216479D6E39F1 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				9EB83B21AC2C13BFCDA473AD /* Pods-URLTransaction_Tests-Specta-umbrella.h in Headers */,
-				DC952B44CDF21A39408A171C /* SPTCallSite.h in Headers */,
-				14A4556A35AC1A3E1513D40C /* SPTCompiledExample.h in Headers */,
-				18AE91DC081271098870B437 /* SPTExample.h in Headers */,
-				C894A9787ECB9CF7473DCAF0 /* SPTExampleGroup.h in Headers */,
-				00523688E034381ACEAF0551 /* SPTExcludeGlobalBeforeAfterEach.h in Headers */,
-				E82C583A90C9DEFA1B641291 /* SPTGlobalBeforeAfterEach.h in Headers */,
-				ABCFB5AEF503F7F490695AE8 /* SPTSharedExampleGroups.h in Headers */,
-				2EAA914BEBEB594C4FEFE8EF /* SPTSpec.h in Headers */,
-				B9BB6257F633B14B2AB46290 /* SPTTestSuite.h in Headers */,
-				48297CE50CF2DC60DE70CDD3 /* Specta.h in Headers */,
-				CD20D9AFE48AB6E098E9F933 /* SpectaDSL.h in Headers */,
-				38C32736084369DD95156427 /* SpectaTypes.h in Headers */,
-				944D588EF347B6BF580A1A07 /* SpectaUtility.h in Headers */,
-				E77EB9FFF591721DB599D511 /* XCTest+Private.h in Headers */,
-				16D5A3BB4F94B5B34F365129 /* XCTestCase+Specta.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A43E4CC76AC9B0705E8C832C /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				4593FD04F2BB3CFA2DC8A550 /* Pods-URLTransaction_Tests-URLTransaction-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		B95A04760583A10B7377C260 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				AC11EDEF49624F8C26480E3A /* Pods-URLTransaction_Tests-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		BA09F824FCEC8375E5BDA064 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				412F5E6EE549B41396A94906 /* EXPBlockDefinedMatcher.h in Headers */,
-				3BE426B02E7174CD2FA2D968 /* EXPDefines.h in Headers */,
-				1A66B0B5548B3A77899D2777 /* EXPDoubleTuple.h in Headers */,
-				A661BF562BE923FDD8A9AD06 /* EXPExpect.h in Headers */,
-				ED29DBA18DB726BEF52EB7B2 /* EXPFloatTuple.h in Headers */,
-				A572D998A0B389073C48BF45 /* EXPMatcher.h in Headers */,
-				86079BD915C3E3645C2AE94A /* EXPMatcherHelpers.h in Headers */,
-				EB313D2A11A2B53BE6B9388A /* EXPMatchers+beCloseTo.h in Headers */,
-				7E01DA05789E5A1344336BAE /* EXPMatchers+beFalsy.h in Headers */,
-				B475259AEE0C1EAEFD0EFC50 /* EXPMatchers+beGreaterThan.h in Headers */,
-				9C06F382F76E78A351252D3D /* EXPMatchers+beGreaterThanOrEqualTo.h in Headers */,
-				0B7BA6D01E220D7E9D6B7867 /* EXPMatchers+beIdenticalTo.h in Headers */,
-				FB41DEC190C18CEA0A64DBB9 /* EXPMatchers+beInTheRangeOf.h in Headers */,
-				4886237FA95E6D9E2FC7200E /* EXPMatchers+beInstanceOf.h in Headers */,
-				435505C035D142F8D0AED57A /* EXPMatchers+beKindOf.h in Headers */,
-				5F514406D832CFC9628355C8 /* EXPMatchers+beLessThan.h in Headers */,
-				FE1E986D434D9F4857293907 /* EXPMatchers+beLessThanOrEqualTo.h in Headers */,
-				BF9FC8E73B52E133ED0A0D9B /* EXPMatchers+beNil.h in Headers */,
-				057C50198D544CF7A23F4525 /* EXPMatchers+beSubclassOf.h in Headers */,
-				0E2BD7526D7FE0E3ED7D2E8E /* EXPMatchers+beSupersetOf.h in Headers */,
-				3680995BFC4A4E73C8DFD956 /* EXPMatchers+beTruthy.h in Headers */,
-				2181CDCC14E18AB5D3FEC626 /* EXPMatchers+beginWith.h in Headers */,
-				C3C7ECD4C509BEA5AAE68CCA /* EXPMatchers+conformTo.h in Headers */,
-				B749D0CD547CE41E0B8159A8 /* EXPMatchers+contain.h in Headers */,
-				0BD78D63B36A4223D7B3B281 /* EXPMatchers+endWith.h in Headers */,
-				C12124942179E2D46F6033DE /* EXPMatchers+equal.h in Headers */,
-				4E9EED29413C46C6CCDCDC12 /* EXPMatchers+haveCountOf.h in Headers */,
-				A03715C045D62E529636B37C /* EXPMatchers+match.h in Headers */,
-				D7B10B5AF0E258C4299D6887 /* EXPMatchers+postNotification.h in Headers */,
-				7D7E67F5A34E5C246ED17762 /* EXPMatchers+raise.h in Headers */,
-				A0F50F619461D0BF1FEC0A33 /* EXPMatchers+raiseWithReason.h in Headers */,
-				95364F621B99A3C536556EA3 /* EXPMatchers+respondTo.h in Headers */,
-				2C3184BD15421701788E30C5 /* EXPMatchers.h in Headers */,
-				09F4FE86C28B96837FDABE4C /* EXPUnsupportedObject.h in Headers */,
-				7E68CD1BCB4BC6E1E1A69A03 /* Expecta.h in Headers */,
-				CDA64D29F6FD96DDEF44BAA1 /* ExpectaObject.h in Headers */,
-				E498C20E9C551D496DEAFF1E /* ExpectaSupport.h in Headers */,
-				7F3267DDF932E7D92202E373 /* NSObject+Expecta.h in Headers */,
-				133B4C5C68C33D121459DB2B /* NSValue+Expecta.h in Headers */,
-				E6B285D658352007441E22C7 /* Pods-URLTransaction_Tests-Expecta-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		F2C15AE4ACF61A9403AE596A /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				7CCF88CA1D3C962CA91C4CE3 /* Pods-URLTransaction_Example-URLTransaction-umbrella.h in Headers */,
+				FE16C81AE53B5A9C0A16E954B0136F42 /* URLRequest.h in Headers */,
+				97B8F08498E462D1665439579B93E4E0 /* URLTransaction-umbrella.h in Headers */,
+				0E8B7A781E32B8DD8EA270EDE4B09CF9 /* URLTransaction.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		4650EC356A999232ABA45E2E /* Pods-URLTransaction_Tests-URLTransaction */ = {
+		08F95A8661F792AB4BB686C08C310987 /* Pods-URLTransaction_Tests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B2FA923DBDF945F387218CD4 /* Build configuration list for PBXNativeTarget "Pods-URLTransaction_Tests-URLTransaction" */;
+			buildConfigurationList = 8FD605F031B8B69C53A796967CE2B335 /* Build configuration list for PBXNativeTarget "Pods-URLTransaction_Tests" */;
 			buildPhases = (
-				BECD3C4A7AC0002EF919D820 /* Sources */,
-				6599BB7E855CE21D6FBA697C /* Frameworks */,
-				FAA5D13497ED069CBCD8BFBF /* Resources */,
-				A43E4CC76AC9B0705E8C832C /* Headers */,
+				3DAFC21A928EFE2A0954A71550701573 /* Sources */,
+				AE64F45D8EF9420538A47E6CBABA7240 /* Frameworks */,
+				875353CBB254111A826056BEF12EABC1 /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				BF190EE4F9FB7B0E85A5016F /* PBXTargetDependency */,
-			);
-			name = "Pods-URLTransaction_Tests-URLTransaction";
-			productName = "Pods-URLTransaction_Tests-URLTransaction";
-			productReference = FC8E472AF077EA27F17280F3 /* URLTransaction.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		4F6E3D606F36630AEC4B45D0 /* Pods-URLTransaction_Example-URLTransaction-URLTransaction */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 6A6BD360AE4EF9C8E3DD440B /* Build configuration list for PBXNativeTarget "Pods-URLTransaction_Example-URLTransaction-URLTransaction" */;
-			buildPhases = (
-				993178095DDE58D6E6962736 /* Sources */,
-				7E55E81B4D7A24B5EDADCA5D /* Frameworks */,
-				B50935240F2116E7D4C9015D /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "Pods-URLTransaction_Example-URLTransaction-URLTransaction";
-			productName = "Pods-URLTransaction_Example-URLTransaction-URLTransaction";
-			productReference = FF0D7969462D34A353E7AA13 /* URLTransaction.bundle */;
-			productType = "com.apple.product-type.bundle";
-		};
-		5CA1D47D71F4081D52ACB190 /* Pods-URLTransaction_Example-URLTransaction */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = B6B3B7B97B4FEEDA17238A81 /* Build configuration list for PBXNativeTarget "Pods-URLTransaction_Example-URLTransaction" */;
-			buildPhases = (
-				48E1B04D16270DB11CAB7770 /* Sources */,
-				F9807CF1849D2961A5ADF28A /* Frameworks */,
-				F02825DF91BA8D5A82BFBCD4 /* Resources */,
-				F2C15AE4ACF61A9403AE596A /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				0F12957C1E94B6F700FC2B51 /* PBXTargetDependency */,
-			);
-			name = "Pods-URLTransaction_Example-URLTransaction";
-			productName = "Pods-URLTransaction_Example-URLTransaction";
-			productReference = 2B1EDFC3BD9AAB36EF5CF9B1 /* URLTransaction.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		7F78CE58FF5A080922A0C5A3 /* Pods-URLTransaction_Tests-Expecta+Snapshots */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 6FAFBB51A25BB231453FB234 /* Build configuration list for PBXNativeTarget "Pods-URLTransaction_Tests-Expecta+Snapshots" */;
-			buildPhases = (
-				0DC1544A73D452DA0DBAF167 /* Sources */,
-				B350108D3E48AA82DB8BC045 /* Frameworks */,
-				06270AAD3076FEF41A1A173C /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				73F07899A68EE97B0C7A493C /* PBXTargetDependency */,
-				0C61C1F16FC9B1B0DB86945E /* PBXTargetDependency */,
-			);
-			name = "Pods-URLTransaction_Tests-Expecta+Snapshots";
-			productName = "Pods-URLTransaction_Tests-Expecta+Snapshots";
-			productReference = 3326C221A1E5C2A44D3B00C5 /* Expecta_Snapshots.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		9059F38F7AAA8111CFB2B088 /* Pods-URLTransaction_Tests-Expecta */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = A4609449AECDF8D44586A403 /* Build configuration list for PBXNativeTarget "Pods-URLTransaction_Tests-Expecta" */;
-			buildPhases = (
-				A373BBC525F17A2E021CE221 /* Sources */,
-				C59E6A88F6B9F7D1AC81474F /* Frameworks */,
-				BA09F824FCEC8375E5BDA064 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "Pods-URLTransaction_Tests-Expecta";
-			productName = "Pods-URLTransaction_Tests-Expecta";
-			productReference = C871E72F97EB5AC33657D415 /* Expecta.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		AD13DAB3883312A70A0E70A9 /* Pods-URLTransaction_Tests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 62320EAF1185A15A7C381F80 /* Build configuration list for PBXNativeTarget "Pods-URLTransaction_Tests" */;
-			buildPhases = (
-				824984398924D04D8C27AD75 /* Sources */,
-				8B6D4A0915D76414FAA2EA4E /* Frameworks */,
-				B95A04760583A10B7377C260 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				0227E1F6FA5609FE6C634B0E /* PBXTargetDependency */,
-				26EA65FD531CDA842055CB90 /* PBXTargetDependency */,
-				AE1402EB4DA7D42F91720A34 /* PBXTargetDependency */,
-				9579362E3AC0A85273FC856D /* PBXTargetDependency */,
-				645752B77C9F613DBEB15B27 /* PBXTargetDependency */,
+				DB75F1A82DC80A63BEFBDF6B22416323 /* PBXTargetDependency */,
 			);
 			name = "Pods-URLTransaction_Tests";
 			productName = "Pods-URLTransaction_Tests";
-			productReference = 1F2C125D734DD975DBD77E98 /* Pods_URLTransaction_Tests.framework */;
+			productReference = 55EA1D86F63606E4E61D1B5BD6628CF7 /* Pods_URLTransaction_Tests.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		B3D870815954A6006B2CE212 /* Pods-URLTransaction_Tests-Specta */ = {
+		39B8FC13EC3E59A6A3EA84739C7D2CCC /* URLTransaction-URLTransaction */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 74D28F8C684910A349A64E6D /* Build configuration list for PBXNativeTarget "Pods-URLTransaction_Tests-Specta" */;
+			buildConfigurationList = 44BB56652897F6B2A6647DFFB4BA9E98 /* Build configuration list for PBXNativeTarget "URLTransaction-URLTransaction" */;
 			buildPhases = (
-				0EE26E5E72FFB891C6ED8356 /* Sources */,
-				7052EE231B1BDD0C9E7842C2 /* Frameworks */,
-				8AAE0074B7F216479D6E39F1 /* Headers */,
+				B68E4C0DBC553C60077AAB1FFCD80D66 /* Sources */,
+				4410D9CB4775FF9F837D68043C69DCB0 /* Frameworks */,
+				144F1A1BE71CA9465E8C05B5E70FCE31 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = "Pods-URLTransaction_Tests-Specta";
-			productName = "Pods-URLTransaction_Tests-Specta";
-			productReference = 58317119375B8489F283365A /* Specta.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		B708ABC0988A9493EECC05EE /* Pods-URLTransaction_Tests-FBSnapshotTestCase */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 0DCBFE1FD3D8E0B65F49D333 /* Build configuration list for PBXNativeTarget "Pods-URLTransaction_Tests-FBSnapshotTestCase" */;
-			buildPhases = (
-				E63DDCE250BFFB5CFC1E2F80 /* Sources */,
-				F99C053A96CAA2A5B71D7534 /* Frameworks */,
-				32D2CDF6ACE24119F76C2A64 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "Pods-URLTransaction_Tests-FBSnapshotTestCase";
-			productName = "Pods-URLTransaction_Tests-FBSnapshotTestCase";
-			productReference = A8530DB16C77226CAC36E1DC /* FBSnapshotTestCase.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		D9BECADE968444576162B691 /* Pods-URLTransaction_Tests-URLTransaction-URLTransaction */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 557670549F1A8C6F3AAD3926 /* Build configuration list for PBXNativeTarget "Pods-URLTransaction_Tests-URLTransaction-URLTransaction" */;
-			buildPhases = (
-				12194563DD9703DFBEE84314 /* Sources */,
-				66E7A0511BDB44E48EB57208 /* Frameworks */,
-				C75615D9395D26B23EDBF77C /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "Pods-URLTransaction_Tests-URLTransaction-URLTransaction";
-			productName = "Pods-URLTransaction_Tests-URLTransaction-URLTransaction";
-			productReference = 1D738FE4518248F9E10839A8 /* URLTransaction.bundle */;
+			name = "URLTransaction-URLTransaction";
+			productName = "URLTransaction-URLTransaction";
+			productReference = 2634F22E2D9049720C6ECD6B92D31A98 /* URLTransaction.bundle */;
 			productType = "com.apple.product-type.bundle";
 		};
-		F9D5F37F39C117614CDBBE94 /* Pods-URLTransaction_Example */ = {
+		76246A4F80DA1488AA50D9EDB54E0612 /* Pods-URLTransaction_Example */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D1B0C2E7FE355CAF58ACD2CF /* Build configuration list for PBXNativeTarget "Pods-URLTransaction_Example" */;
+			buildConfigurationList = B34BEB6153FE15426BA27749F611FD6D /* Build configuration list for PBXNativeTarget "Pods-URLTransaction_Example" */;
 			buildPhases = (
-				CAF8BB83865D7C6DD51102E7 /* Sources */,
-				2D479BCBE5EF6594F3E80F02 /* Frameworks */,
-				10F89B669A448032A3ABC808 /* Headers */,
+				C938A0B6ABF6AE498519BBEF394AD41A /* Sources */,
+				A71B491ADB3884CA0467D9616E9C99F4 /* Frameworks */,
+				29CDBA81581F858FC55F5B5660317C75 /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				A3D25371CBC68B3D6CE2BE7E /* PBXTargetDependency */,
+				5A67F3CB211052F388619DDC1501EF6B /* PBXTargetDependency */,
 			);
 			name = "Pods-URLTransaction_Example";
 			productName = "Pods-URLTransaction_Example";
-			productReference = B82505755A7F230056CD5B15 /* Pods_URLTransaction_Example.framework */;
+			productReference = B996909FDF0777E417BC2BABAB59CA1C /* Pods_URLTransaction_Example.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		98DFA25DEAE30D39E0822774DD8D221C /* URLTransaction */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 821EBF764577BEA7F055BEA4AAC2002A /* Build configuration list for PBXNativeTarget "URLTransaction" */;
+			buildPhases = (
+				9D634BA070B2910A420DCCE7111E76C3 /* Sources */,
+				6F0F036145F1578E105FC0971347AC3B /* Frameworks */,
+				3B8D2BDEFA37DD023692D6AF17E22C6C /* Resources */,
+				9BDA4E74E6E6EAF99D96BBC6CB362741 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9615B9CBBB4EADFA2E513B35F7804FF6 /* PBXTargetDependency */,
+			);
+			name = URLTransaction;
+			productName = URLTransaction;
+			productReference = BFE9D4107324DFD0F968E015BB98E34A /* URLTransaction.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		12BB134265CE583C97B0CA24 /* Project object */ = {
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0510;
+				LastSwiftUpdateCheck = 0700;
+				LastUpgradeCheck = 0700;
 			};
-			buildConfigurationList = 35C944A2A3FC1E498E8E8A91 /* Build configuration list for PBXProject "Pods" */;
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 			);
-			mainGroup = AE1D3C2228D35276F9D8FCF9;
-			productRefGroup = E6F9DA5E0980BC1FA48C9DFB /* Products */;
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 4EB06889BC8A334EB56BE5FF5ABC330B /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				F9D5F37F39C117614CDBBE94 /* Pods-URLTransaction_Example */,
-				5CA1D47D71F4081D52ACB190 /* Pods-URLTransaction_Example-URLTransaction */,
-				4F6E3D606F36630AEC4B45D0 /* Pods-URLTransaction_Example-URLTransaction-URLTransaction */,
-				AD13DAB3883312A70A0E70A9 /* Pods-URLTransaction_Tests */,
-				9059F38F7AAA8111CFB2B088 /* Pods-URLTransaction_Tests-Expecta */,
-				7F78CE58FF5A080922A0C5A3 /* Pods-URLTransaction_Tests-Expecta+Snapshots */,
-				B708ABC0988A9493EECC05EE /* Pods-URLTransaction_Tests-FBSnapshotTestCase */,
-				B3D870815954A6006B2CE212 /* Pods-URLTransaction_Tests-Specta */,
-				4650EC356A999232ABA45E2E /* Pods-URLTransaction_Tests-URLTransaction */,
-				D9BECADE968444576162B691 /* Pods-URLTransaction_Tests-URLTransaction-URLTransaction */,
+				76246A4F80DA1488AA50D9EDB54E0612 /* Pods-URLTransaction_Example */,
+				08F95A8661F792AB4BB686C08C310987 /* Pods-URLTransaction_Tests */,
+				98DFA25DEAE30D39E0822774DD8D221C /* URLTransaction */,
+				39B8FC13EC3E59A6A3EA84739C7D2CCC /* URLTransaction-URLTransaction */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		B50935240F2116E7D4C9015D /* Resources */ = {
+		144F1A1BE71CA9465E8C05B5E70FCE31 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C75615D9395D26B23EDBF77C /* Resources */ = {
+		3B8D2BDEFA37DD023692D6AF17E22C6C /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		F02825DF91BA8D5A82BFBCD4 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				0776D82A8291B0907D890DBC /* URLTransaction.bundle in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		FAA5D13497ED069CBCD8BFBF /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				D09256FA12C9DC81B174621B /* URLTransaction.bundle in Resources */,
+				62EF3C2367F912849EDDA743CB418377 /* URLTransaction.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		0DC1544A73D452DA0DBAF167 /* Sources */ = {
+		3DAFC21A928EFE2A0954A71550701573 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DEF98D6886C25D8B08C8A83C /* EXPMatchers+FBSnapshotTest.m in Sources */,
-				2EA06F53BBD453075604D73A /* Pods-URLTransaction_Tests-Expecta+Snapshots-dummy.m in Sources */,
+				4288423A3904EE5D1808A4F56A0D22FC /* Pods-URLTransaction_Tests-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		0EE26E5E72FFB891C6ED8356 /* Sources */ = {
+		9D634BA070B2910A420DCCE7111E76C3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				39940986A8B967A964B1857D /* Pods-URLTransaction_Tests-Specta-dummy.m in Sources */,
-				6E69697F84C8A2F7FA884D04 /* SPTCallSite.m in Sources */,
-				A374FC002B1E5E31A6C58DA9 /* SPTCompiledExample.m in Sources */,
-				66925E562BF11A850FE736D3 /* SPTExample.m in Sources */,
-				12FABE841F001FE10AF1FFBE /* SPTExampleGroup.m in Sources */,
-				5AAB486B3C9863706AAA948F /* SPTSharedExampleGroups.m in Sources */,
-				AC3C81C61683C27062F878EF /* SPTSpec.m in Sources */,
-				76B961C41C741CBFA410C890 /* SPTTestSuite.m in Sources */,
-				2035B37B9EAC044D4034BEFE /* SpectaDSL.m in Sources */,
-				2C25E9C1D8E2E81916E86A62 /* SpectaUtility.m in Sources */,
-				8A1263181145554754F5C63F /* XCTestCase+Specta.m in Sources */,
+				15AF4FB869D2FF347427E776584BDD25 /* URLTransaction-dummy.m in Sources */,
+				F673DC3FCB06794CD769D1AEE3950B83 /* URLTransaction.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		12194563DD9703DFBEE84314 /* Sources */ = {
+		B68E4C0DBC553C60077AAB1FFCD80D66 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		48E1B04D16270DB11CAB7770 /* Sources */ = {
+		C938A0B6ABF6AE498519BBEF394AD41A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A234B6E73747C9698A26D65C /* Pods-URLTransaction_Example-URLTransaction-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		824984398924D04D8C27AD75 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				7628E67B8218E4C7C5EB9B36 /* Pods-URLTransaction_Tests-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		993178095DDE58D6E6962736 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A373BBC525F17A2E021CE221 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				6E8BD7CCC77717DCD6103DD7 /* EXPBlockDefinedMatcher.m in Sources */,
-				D531D19AA0FB413565805F17 /* EXPDoubleTuple.m in Sources */,
-				94AF0B36D0D0A0B291C5F993 /* EXPExpect.m in Sources */,
-				A46B1FAD2306BB784AD665DA /* EXPFloatTuple.m in Sources */,
-				49D9AB41C57F22F3377D95FB /* EXPMatcherHelpers.m in Sources */,
-				1D2DE27465E3D352CB52EF12 /* EXPMatchers+beCloseTo.m in Sources */,
-				70EC051FEFF6C7EC80A39333 /* EXPMatchers+beFalsy.m in Sources */,
-				DC1FAAD8083F772ABB2DF289 /* EXPMatchers+beGreaterThan.m in Sources */,
-				DC84D23BD218730F87D18D4C /* EXPMatchers+beGreaterThanOrEqualTo.m in Sources */,
-				80582273150F72A9C52E913B /* EXPMatchers+beIdenticalTo.m in Sources */,
-				EDB445889F8EB877DA379848 /* EXPMatchers+beInTheRangeOf.m in Sources */,
-				4550A313DC5CDD8DEA02A70C /* EXPMatchers+beInstanceOf.m in Sources */,
-				7C4E0006418F109E9D1CB501 /* EXPMatchers+beKindOf.m in Sources */,
-				F8820EA6E68568A3E6CF5035 /* EXPMatchers+beLessThan.m in Sources */,
-				4A370741E2DA17A4CCCDC847 /* EXPMatchers+beLessThanOrEqualTo.m in Sources */,
-				C4859870C371DCC6EBB7ECE4 /* EXPMatchers+beNil.m in Sources */,
-				4F5E2A140FEFDC18D6162C90 /* EXPMatchers+beSubclassOf.m in Sources */,
-				030B2849EEBDEC1341791D5D /* EXPMatchers+beSupersetOf.m in Sources */,
-				90B2F859C112E5D6DA9CEF52 /* EXPMatchers+beTruthy.m in Sources */,
-				3EC21B0EE1530BC0EE5E5FC8 /* EXPMatchers+beginWith.m in Sources */,
-				79E3283AE62CD3B33894B66A /* EXPMatchers+conformTo.m in Sources */,
-				BB1795546FA3AA31B41089D8 /* EXPMatchers+contain.m in Sources */,
-				9BA980C70356DB653D44AB6B /* EXPMatchers+endWith.m in Sources */,
-				F4F603C712C51306AE19AA87 /* EXPMatchers+equal.m in Sources */,
-				215E1F30A42C73CAAFADF255 /* EXPMatchers+haveCountOf.m in Sources */,
-				42190830F67AD51D84462DC6 /* EXPMatchers+match.m in Sources */,
-				0D29B09CDFE6A9621FEFD3FE /* EXPMatchers+postNotification.m in Sources */,
-				BC8CA9EDFCDEEC4203C187C6 /* EXPMatchers+raise.m in Sources */,
-				A3F14E2A6050CB9E747198F2 /* EXPMatchers+raiseWithReason.m in Sources */,
-				93CF4F6B12A42519197D6DF3 /* EXPMatchers+respondTo.m in Sources */,
-				915DC671992C56771D032536 /* EXPUnsupportedObject.m in Sources */,
-				EC61B40A856DB159855D3CE6 /* ExpectaObject.m in Sources */,
-				AA514B7A915785AF7356FDBE /* ExpectaSupport.m in Sources */,
-				BF11E2527F1CEEAE06C6A61B /* NSValue+Expecta.m in Sources */,
-				C31D7B305FA28195A41BDA57 /* Pods-URLTransaction_Tests-Expecta-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		BECD3C4A7AC0002EF919D820 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				49FAF16842C1342B71B83F0F /* Pods-URLTransaction_Tests-URLTransaction-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		CAF8BB83865D7C6DD51102E7 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				E77A602E1B6B7A3700AA3BD8 /* URLTransaction.m in Sources */,
-				F3988845202907F199A2AEDD /* Pods-URLTransaction_Example-dummy.m in Sources */,
-				E77A60301B6B7A3700AA3BD8 /* URLRequest.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		E63DDCE250BFFB5CFC1E2F80 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				7F6A80EE0328EE7C70F93076 /* FBSnapshotTestCase.m in Sources */,
-				C5838344004C4ECF45A21885 /* FBSnapshotTestCasePlatform.m in Sources */,
-				033DAC4C0D6105A4BF7DBA69 /* FBSnapshotTestController.m in Sources */,
-				C99A86489E8E0FDF9BFEA2BC /* Pods-URLTransaction_Tests-FBSnapshotTestCase-dummy.m in Sources */,
-				43598FF737A2A7DA2E5033C8 /* UIImage+Compare.m in Sources */,
-				6545B88EFA72AF3E42A76300 /* UIImage+Diff.m in Sources */,
+				8AFA72C1DB7C72D33E9448182A642168 /* Pods-URLTransaction_Example-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		0227E1F6FA5609FE6C634B0E /* PBXTargetDependency */ = {
+		5A67F3CB211052F388619DDC1501EF6B /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = "Pods-URLTransaction_Tests-Expecta";
-			target = 9059F38F7AAA8111CFB2B088 /* Pods-URLTransaction_Tests-Expecta */;
-			targetProxy = 889C0E79E5F09081DFDA8066 /* PBXContainerItemProxy */;
+			name = URLTransaction;
+			target = 98DFA25DEAE30D39E0822774DD8D221C /* URLTransaction */;
+			targetProxy = A6E4C2C3985043F7025D0DCB44B5CFDE /* PBXContainerItemProxy */;
 		};
-		0C61C1F16FC9B1B0DB86945E /* PBXTargetDependency */ = {
+		9615B9CBBB4EADFA2E513B35F7804FF6 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = "Pods-URLTransaction_Tests-FBSnapshotTestCase";
-			target = B708ABC0988A9493EECC05EE /* Pods-URLTransaction_Tests-FBSnapshotTestCase */;
-			targetProxy = D325BC34914D007F407C6313 /* PBXContainerItemProxy */;
+			name = "URLTransaction-URLTransaction";
+			target = 39B8FC13EC3E59A6A3EA84739C7D2CCC /* URLTransaction-URLTransaction */;
+			targetProxy = 65F5F40AC5119CF49C488045C04B49E7 /* PBXContainerItemProxy */;
 		};
-		0F12957C1E94B6F700FC2B51 /* PBXTargetDependency */ = {
+		DB75F1A82DC80A63BEFBDF6B22416323 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = "Pods-URLTransaction_Example-URLTransaction-URLTransaction";
-			target = 4F6E3D606F36630AEC4B45D0 /* Pods-URLTransaction_Example-URLTransaction-URLTransaction */;
-			targetProxy = AB010CD5FF7A58CE931F9D34 /* PBXContainerItemProxy */;
-		};
-		26EA65FD531CDA842055CB90 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "Pods-URLTransaction_Tests-Expecta+Snapshots";
-			target = 7F78CE58FF5A080922A0C5A3 /* Pods-URLTransaction_Tests-Expecta+Snapshots */;
-			targetProxy = 5762B7D01F98443AA814FA6B /* PBXContainerItemProxy */;
-		};
-		645752B77C9F613DBEB15B27 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "Pods-URLTransaction_Tests-URLTransaction";
-			target = 4650EC356A999232ABA45E2E /* Pods-URLTransaction_Tests-URLTransaction */;
-			targetProxy = 8780F43FAED21B494D8B67A0 /* PBXContainerItemProxy */;
-		};
-		73F07899A68EE97B0C7A493C /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "Pods-URLTransaction_Tests-Expecta";
-			target = 9059F38F7AAA8111CFB2B088 /* Pods-URLTransaction_Tests-Expecta */;
-			targetProxy = 0592652FE52E8099A1E09B13 /* PBXContainerItemProxy */;
-		};
-		9579362E3AC0A85273FC856D /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "Pods-URLTransaction_Tests-Specta";
-			target = B3D870815954A6006B2CE212 /* Pods-URLTransaction_Tests-Specta */;
-			targetProxy = 7AA0351724B297536B5D683F /* PBXContainerItemProxy */;
-		};
-		A3D25371CBC68B3D6CE2BE7E /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "Pods-URLTransaction_Example-URLTransaction";
-			target = 5CA1D47D71F4081D52ACB190 /* Pods-URLTransaction_Example-URLTransaction */;
-			targetProxy = FB62CA81A6BB3EF7B0A6DA56 /* PBXContainerItemProxy */;
-		};
-		AE1402EB4DA7D42F91720A34 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "Pods-URLTransaction_Tests-FBSnapshotTestCase";
-			target = B708ABC0988A9493EECC05EE /* Pods-URLTransaction_Tests-FBSnapshotTestCase */;
-			targetProxy = A8DD721406B5AC9BD7AD2E38 /* PBXContainerItemProxy */;
-		};
-		BF190EE4F9FB7B0E85A5016F /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "Pods-URLTransaction_Tests-URLTransaction-URLTransaction";
-			target = D9BECADE968444576162B691 /* Pods-URLTransaction_Tests-URLTransaction-URLTransaction */;
-			targetProxy = B6E63855E8739E6E94436407 /* PBXContainerItemProxy */;
+			name = URLTransaction;
+			target = 98DFA25DEAE30D39E0822774DD8D221C /* URLTransaction */;
+			targetProxy = 8B4E1BE6EFAF08DC33CC1D52EAC78DA5 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		11337FF972C3808A85F77DCE /* Release */ = {
+		03CA91998D6773EC5D02B3DB87B8353E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4D6B2B151451D5C760A02B03 /* Pods-URLTransaction_Tests.release.xcconfig */;
 			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-URLTransaction_Tests/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = "RELEASE=1";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Pods-URLTransaction_Tests/Pods-URLTransaction_Tests.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_NAME = Pods_URLTransaction_Tests;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
-		15FC00732090FD5115A12D3A /* Release */ = {
+		06A4C05D597213C64913B2677CC59CFE /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 461AFC566C44CBEA534EC8B7 /* Pods-URLTransaction_Tests-Expecta+Snapshots-Private.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Pods-URLTransaction_Tests-Expecta+Snapshots/Pods-URLTransaction_Tests-Expecta+Snapshots-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Pods-URLTransaction_Tests-Expecta+Snapshots/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Pods-URLTransaction_Tests-Expecta+Snapshots/Pods-URLTransaction_Tests-Expecta+Snapshots.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = Expecta_Snapshots;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		220B71FCDFD10669E6922BE1 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 60EC0D74DC8874B700EDE66F /* Pods-URLTransaction_Example.debug.xcconfig */;
+			baseConfigurationReference = 44F177A8533012BA0ECE959372F0D3B0 /* Pods-URLTransaction_Example.release.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -1528,8 +509,9 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-URLTransaction_Example/Pods-URLTransaction_Example.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
@@ -1540,75 +522,9 @@
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Debug;
-		};
-		3F2E9FFAD6E4DCEBFE19C342 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = B60603EE30789F5F447708DD /* Pods-URLTransaction_Tests-FBSnapshotTestCase-Private.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Pods-URLTransaction_Tests-FBSnapshotTestCase/Pods-URLTransaction_Tests-FBSnapshotTestCase-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Pods-URLTransaction_Tests-FBSnapshotTestCase/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Pods-URLTransaction_Tests-FBSnapshotTestCase/Pods-URLTransaction_Tests-FBSnapshotTestCase.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = FBSnapshotTestCase;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
 			name = Release;
 		};
-		45D087A3BDFC559017F47974 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/Pods-URLTransaction_Tests";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				PRODUCT_NAME = URLTransaction;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				WRAPPER_EXTENSION = bundle;
-			};
-			name = Debug;
-		};
-		4FAB0462C172A3407E8925DE /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 30185080BD97F50D38A990C5 /* Pods-URLTransaction_Tests-Expecta-Private.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Pods-URLTransaction_Tests-Expecta/Pods-URLTransaction_Tests-Expecta-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Pods-URLTransaction_Tests-Expecta/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Pods-URLTransaction_Tests-Expecta/Pods-URLTransaction_Tests-Expecta.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = Expecta;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		55D0CD076C539B005546F6BA /* Debug */ = {
+		0B57334D6C23DADAA4F7D802A5760EB2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -1647,9 +563,9 @@
 			};
 			name = Debug;
 		};
-		5CBDF0E51D41D66C407C556D /* Debug */ = {
+		4AD2F94D89FA55406EF3187D7E718CCF /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B60603EE30789F5F447708DD /* Pods-URLTransaction_Tests-FBSnapshotTestCase-Private.xcconfig */;
+			baseConfigurationReference = 6C5CD7382344FF8DB49D7BE807B27478 /* URLTransaction.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -1658,73 +574,12 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Pods-URLTransaction_Tests-FBSnapshotTestCase/Pods-URLTransaction_Tests-FBSnapshotTestCase-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Pods-URLTransaction_Tests-FBSnapshotTestCase/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/URLTransaction/URLTransaction-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/URLTransaction/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Pods-URLTransaction_Tests-FBSnapshotTestCase/Pods-URLTransaction_Tests-FBSnapshotTestCase.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = FBSnapshotTestCase;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		72E0C5873662531ED4ECF0B4 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				COPY_PHASE_STRIP = YES;
-				ENABLE_NS_ASSERTIONS = NO;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_PREPROCESSOR_DEFINITIONS = "RELEASE=1";
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
-				STRIP_INSTALLED_PRODUCT = NO;
-				SYMROOT = "${SRCROOT}/../build";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		76C7171DAFF8156301544CA4 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = CDE27B836EF7A5ED6C051182 /* Pods-URLTransaction_Tests-URLTransaction-Private.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Pods-URLTransaction_Tests-URLTransaction/Pods-URLTransaction_Tests-URLTransaction-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Pods-URLTransaction_Tests-URLTransaction/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Pods-URLTransaction_Tests-URLTransaction/Pods-URLTransaction_Tests-URLTransaction.modulemap";
+				MODULEMAP_FILE = "Target Support Files/URLTransaction/URLTransaction.modulemap";
 				MTL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_NAME = URLTransaction;
 				SDKROOT = iphoneos;
@@ -1735,114 +590,9 @@
 			};
 			name = Release;
 		};
-		8289F53D3F04EBC354391FF8 /* Debug */ = {
+		55048F276DBB7086A5BE09DFEB93EBCF /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2DC569A689D8630F33E7937E /* Pods-URLTransaction_Example-URLTransaction-Private.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Pods-URLTransaction_Example-URLTransaction/Pods-URLTransaction_Example-URLTransaction-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Pods-URLTransaction_Example-URLTransaction/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Pods-URLTransaction_Example-URLTransaction/Pods-URLTransaction_Example-URLTransaction.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = URLTransaction;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		83F757BF961B9B3F9FD26CBB /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 548631970CD8625CEE06DA29 /* Pods-URLTransaction_Tests-Specta-Private.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Pods-URLTransaction_Tests-Specta/Pods-URLTransaction_Tests-Specta-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Pods-URLTransaction_Tests-Specta/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Pods-URLTransaction_Tests-Specta/Pods-URLTransaction_Tests-Specta.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = Specta;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		8A1F75BA18BB32C2A7BE79A4 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/Pods-URLTransaction_Example";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				PRODUCT_NAME = URLTransaction;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				WRAPPER_EXTENSION = bundle;
-			};
-			name = Debug;
-		};
-		9C3255034DB2C21BC45372BC /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2DC569A689D8630F33E7937E /* Pods-URLTransaction_Example-URLTransaction-Private.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Pods-URLTransaction_Example-URLTransaction/Pods-URLTransaction_Example-URLTransaction-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Pods-URLTransaction_Example-URLTransaction/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Pods-URLTransaction_Example-URLTransaction/Pods-URLTransaction_Example-URLTransaction.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = URLTransaction;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		A00FEEA385AA678FB4E1C234 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/Pods-URLTransaction_Example";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				PRODUCT_NAME = URLTransaction;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				WRAPPER_EXTENSION = bundle;
-			};
-			name = Release;
-		};
-		AB040BAD5E0A817F6EF55F67 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 324B2A413408B423E3DCAB60 /* Pods-URLTransaction_Tests.debug.xcconfig */;
+			baseConfigurationReference = 98ADC179C08409853DA39E14EB573A1A /* Pods-URLTransaction_Tests.debug.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -1855,6 +605,7 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-URLTransaction_Tests/Pods-URLTransaction_Tests.modulemap";
 				MTL_ENABLE_DEBUG_INFO = YES;
 				OTHER_LDFLAGS = "";
@@ -1869,9 +620,33 @@
 			};
 			name = Debug;
 		};
-		AC4B7870B6097A0BA0275F99 /* Release */ = {
+		7D3AD78848C2A537A24E2DA3622D259B /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9BE4B18DD7C782D33CDAE4D9 /* Pods-URLTransaction_Example.release.xcconfig */;
+			baseConfigurationReference = 6C5CD7382344FF8DB49D7BE807B27478 /* URLTransaction.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				PRODUCT_NAME = URLTransaction;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		95320E4312AD76C6574DC5EA811B737B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6C5CD7382344FF8DB49D7BE807B27478 /* URLTransaction.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				PRODUCT_NAME = URLTransaction;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		99FD80B06CDF64A216BC041F6A2835C3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 30AF23876EEBBE642211081BDC95BDDB /* Pods-URLTransaction_Example.debug.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -1884,8 +659,9 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-URLTransaction_Example/Pods-URLTransaction_Example.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_ENABLE_DEBUG_INFO = YES;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
@@ -1896,11 +672,11 @@
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Release;
+			name = Debug;
 		};
-		B1701E71929BC85F36254953 /* Debug */ = {
+		BC47FAEE2C0DC835E3B15CDCC1A03065 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 461AFC566C44CBEA534EC8B7 /* Pods-URLTransaction_Tests-Expecta+Snapshots-Private.xcconfig */;
+			baseConfigurationReference = 82B09CFF6A4F8CB19A34ABBE05A0ABA7 /* Pods-URLTransaction_Tests.release.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -1909,64 +685,28 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Pods-URLTransaction_Tests-Expecta+Snapshots/Pods-URLTransaction_Tests-Expecta+Snapshots-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Pods-URLTransaction_Tests-Expecta+Snapshots/Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-URLTransaction_Tests/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Pods-URLTransaction_Tests-Expecta+Snapshots/Pods-URLTransaction_Tests-Expecta+Snapshots.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = Expecta_Snapshots;
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-URLTransaction_Tests/Pods-URLTransaction_Tests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_URLTransaction_Tests;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		E2709749C03F2E2D24553F0B /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 548631970CD8625CEE06DA29 /* Pods-URLTransaction_Tests-Specta-Private.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Pods-URLTransaction_Tests-Specta/Pods-URLTransaction_Tests-Specta-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Pods-URLTransaction_Tests-Specta/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Pods-URLTransaction_Tests-Specta/Pods-URLTransaction_Tests-Specta.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = Specta;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		EDC697EAC3BBA10F6DC3AADB /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/Pods-URLTransaction_Tests";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				PRODUCT_NAME = URLTransaction;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				WRAPPER_EXTENSION = bundle;
 			};
 			name = Release;
 		};
-		F1159311A26C91C4BE67ADC6 /* Debug */ = {
+		CDFA8A858BA158269949E24296DD688C /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = CDE27B836EF7A5ED6C051182 /* Pods-URLTransaction_Tests-URLTransaction-Private.xcconfig */;
+			baseConfigurationReference = 6C5CD7382344FF8DB49D7BE807B27478 /* URLTransaction.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -1975,41 +715,14 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Pods-URLTransaction_Tests-URLTransaction/Pods-URLTransaction_Tests-URLTransaction-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Pods-URLTransaction_Tests-URLTransaction/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/URLTransaction/URLTransaction-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/URLTransaction/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Pods-URLTransaction_Tests-URLTransaction/Pods-URLTransaction_Tests-URLTransaction.modulemap";
+				MODULEMAP_FILE = "Target Support Files/URLTransaction/URLTransaction.modulemap";
 				MTL_ENABLE_DEBUG_INFO = YES;
 				PRODUCT_NAME = URLTransaction;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		FD7721DB67B4CB6A1BB9C93E /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 30185080BD97F50D38A990C5 /* Pods-URLTransaction_Tests-Expecta-Private.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Pods-URLTransaction_Tests-Expecta/Pods-URLTransaction_Tests-Expecta-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Pods-URLTransaction_Tests-Expecta/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Pods-URLTransaction_Tests-Expecta/Pods-URLTransaction_Tests-Expecta.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = Expecta;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -2021,106 +734,52 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		0DCBFE1FD3D8E0B65F49D333 /* Build configuration list for PBXNativeTarget "Pods-URLTransaction_Tests-FBSnapshotTestCase" */ = {
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				5CBDF0E51D41D66C407C556D /* Debug */,
-				3F2E9FFAD6E4DCEBFE19C342 /* Release */,
+				0B57334D6C23DADAA4F7D802A5760EB2 /* Debug */,
+				03CA91998D6773EC5D02B3DB87B8353E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		35C944A2A3FC1E498E8E8A91 /* Build configuration list for PBXProject "Pods" */ = {
+		44BB56652897F6B2A6647DFFB4BA9E98 /* Build configuration list for PBXNativeTarget "URLTransaction-URLTransaction" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				55D0CD076C539B005546F6BA /* Debug */,
-				72E0C5873662531ED4ECF0B4 /* Release */,
+				95320E4312AD76C6574DC5EA811B737B /* Debug */,
+				7D3AD78848C2A537A24E2DA3622D259B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		557670549F1A8C6F3AAD3926 /* Build configuration list for PBXNativeTarget "Pods-URLTransaction_Tests-URLTransaction-URLTransaction" */ = {
+		821EBF764577BEA7F055BEA4AAC2002A /* Build configuration list for PBXNativeTarget "URLTransaction" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				45D087A3BDFC559017F47974 /* Debug */,
-				EDC697EAC3BBA10F6DC3AADB /* Release */,
+				CDFA8A858BA158269949E24296DD688C /* Debug */,
+				4AD2F94D89FA55406EF3187D7E718CCF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		62320EAF1185A15A7C381F80 /* Build configuration list for PBXNativeTarget "Pods-URLTransaction_Tests" */ = {
+		8FD605F031B8B69C53A796967CE2B335 /* Build configuration list for PBXNativeTarget "Pods-URLTransaction_Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				AB040BAD5E0A817F6EF55F67 /* Debug */,
-				11337FF972C3808A85F77DCE /* Release */,
+				55048F276DBB7086A5BE09DFEB93EBCF /* Debug */,
+				BC47FAEE2C0DC835E3B15CDCC1A03065 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		6A6BD360AE4EF9C8E3DD440B /* Build configuration list for PBXNativeTarget "Pods-URLTransaction_Example-URLTransaction-URLTransaction" */ = {
+		B34BEB6153FE15426BA27749F611FD6D /* Build configuration list for PBXNativeTarget "Pods-URLTransaction_Example" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				8A1F75BA18BB32C2A7BE79A4 /* Debug */,
-				A00FEEA385AA678FB4E1C234 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		6FAFBB51A25BB231453FB234 /* Build configuration list for PBXNativeTarget "Pods-URLTransaction_Tests-Expecta+Snapshots" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				B1701E71929BC85F36254953 /* Debug */,
-				15FC00732090FD5115A12D3A /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		74D28F8C684910A349A64E6D /* Build configuration list for PBXNativeTarget "Pods-URLTransaction_Tests-Specta" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				E2709749C03F2E2D24553F0B /* Debug */,
-				83F757BF961B9B3F9FD26CBB /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		A4609449AECDF8D44586A403 /* Build configuration list for PBXNativeTarget "Pods-URLTransaction_Tests-Expecta" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				FD7721DB67B4CB6A1BB9C93E /* Debug */,
-				4FAB0462C172A3407E8925DE /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		B2FA923DBDF945F387218CD4 /* Build configuration list for PBXNativeTarget "Pods-URLTransaction_Tests-URLTransaction" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				F1159311A26C91C4BE67ADC6 /* Debug */,
-				76C7171DAFF8156301544CA4 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		B6B3B7B97B4FEEDA17238A81 /* Build configuration list for PBXNativeTarget "Pods-URLTransaction_Example-URLTransaction" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				8289F53D3F04EBC354391FF8 /* Debug */,
-				9C3255034DB2C21BC45372BC /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		D1B0C2E7FE355CAF58ACD2CF /* Build configuration list for PBXNativeTarget "Pods-URLTransaction_Example" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				220B71FCDFD10669E6922BE1 /* Debug */,
-				AC4B7870B6097A0BA0275F99 /* Release */,
+				99FD80B06CDF64A216BC041F6A2835C3 /* Debug */,
+				06A4C05D597213C64913B2677CC59CFE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 12BB134265CE583C97B0CA24 /* Project object */;
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 }
