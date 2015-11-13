@@ -305,10 +305,10 @@
 			isa = PBXGroup;
 			children = (
 				E7728EA11BF56BE30019B7EC /* Assets.xcassets */,
-				E7728EA21BF56BE30019B7EC /* Hotel */,
-				E7728EAD1BF56BE30019B7EC /* Hotels */,
 				E7728EB21BF56BE30019B7EC /* LaunchScreen.xib */,
 				E7728EB31BF56BE30019B7EC /* Main.storyboard */,
+				E7728EAD1BF56BE30019B7EC /* Hotels */,
+				E7728EA21BF56BE30019B7EC /* Hotel */,
 				E7728EB41BF56BE30019B7EC /* StarsView.h */,
 				E7728EB51BF56BE30019B7EC /* StarsView.m */,
 			);
@@ -318,16 +318,16 @@
 		E7728EA21BF56BE30019B7EC /* Hotel */ = {
 			isa = PBXGroup;
 			children = (
-				E7728EA31BF56BE30019B7EC /* HotelInfoCell.h */,
-				E7728EA41BF56BE30019B7EC /* HotelInfoCell.m */,
 				E7728EA51BF56BE30019B7EC /* HotelVC.h */,
 				E7728EA61BF56BE30019B7EC /* HotelVC.m */,
 				E7728EA71BF56BE30019B7EC /* MapImagesCell.h */,
 				E7728EA81BF56BE30019B7EC /* MapImagesCell.m */,
-				E7728EA91BF56BE30019B7EC /* NoReviewsCell.h */,
-				E7728EAA1BF56BE30019B7EC /* NoReviewsCell.m */,
+				E7728EA31BF56BE30019B7EC /* HotelInfoCell.h */,
+				E7728EA41BF56BE30019B7EC /* HotelInfoCell.m */,
 				E7728EAB1BF56BE30019B7EC /* ReviewCell.h */,
 				E7728EAC1BF56BE30019B7EC /* ReviewCell.m */,
+				E7728EA91BF56BE30019B7EC /* NoReviewsCell.h */,
+				E7728EAA1BF56BE30019B7EC /* NoReviewsCell.m */,
 			);
 			path = Hotel;
 			sourceTree = "<group>";
@@ -335,10 +335,10 @@
 		E7728EAD1BF56BE30019B7EC /* Hotels */ = {
 			isa = PBXGroup;
 			children = (
-				E7728EAE1BF56BE30019B7EC /* HotelCell.h */,
-				E7728EAF1BF56BE30019B7EC /* HotelCell.m */,
 				E7728EB01BF56BE30019B7EC /* HotelsVC.h */,
 				E7728EB11BF56BE30019B7EC /* HotelsVC.m */,
+				E7728EAE1BF56BE30019B7EC /* HotelCell.h */,
+				E7728EAF1BF56BE30019B7EC /* HotelCell.m */,
 			);
 			path = Hotels;
 			sourceTree = "<group>";
