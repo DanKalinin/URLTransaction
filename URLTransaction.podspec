@@ -13,7 +13,7 @@ Pod::Spec.new do |s|
   s.name                = "URLTransaction"
   s.version             = "1.0"
   s.author              = { "DanKalinin" => "daniil5511@gmail.com" }
-  s.license             = 'MIT'
+  s.license             = "MIT"
   s.homepage            = "https://github.com/DanKalinin/URLTransaction"
   s.source              = { :git => "https://github.com/DanKalinin/URLTransaction.git", :tag => s.version.to_s }
   s.summary             = "Simple, but powerful iOS networking framework."
@@ -31,16 +31,23 @@ Pod::Spec.new do |s|
                           * Possibility of specifying a dispatch queue where completion blocks should be executed. This is usefull when comletion blocks are used for mapping response to Core Data entities or for any other expensive operation.
                           * After completion of asynchronous transaction, request completion blocks will be called in same order they were added into transaction. Finally, transaction completion blocks will be called. Request completion blocks can be used to map response body to Core Data entity. Transaction completion blocks can be used to establish relationships between mapped entities and save the context.
                           DESC
+  s.screenshots         = [ "https://dl.dropboxusercontent.com/s/rw0khcvk6npwp6i/1.PNG",
+                            "https://dl.dropboxusercontent.com/s/og1cq3g6zz9mdhe/2.PNG",
+                            "https://dl.dropboxusercontent.com/s/zyrjkd1z0fokt9c/3.PNG",
+                            "https://dl.dropboxusercontent.com/s/lrfpl9rdvl71sog/4.PNG",
+                            "https://dl.dropboxusercontent.com/s/2obdv918rn4qfpc/5.PNG",
+                            "https://dl.dropboxusercontent.com/s/yta4z5pb34uh594/6.PNG",
+                            "https://dl.dropboxusercontent.com/s/khjfqt40hcxwmr1/7.PNG" ]
 
 # Platform
-  s.platform            = :ios, '7.0'
+  s.platform            = :ios, "7.0"
 
 # Build settings
   s.requires_arc        = true
-  s.framework           = 'UIKit'
+  s.framework           = "UIKit"
 
 # File patterns
-  s.source_files        = 'Pod/Classes/**/*.{h,m}'
-  s.public_header_files = 'Pod/Classes/**/*.h'
+  s.source_files        = "Pod/Classes/**/*.{h,m}"
+  s.public_header_files = "Pod/Classes/**/*.h"
 
 end
