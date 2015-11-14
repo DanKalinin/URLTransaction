@@ -1,4 +1,4 @@
 language: objective-c
 xcode_workspace: Example/URLTransaction.xcworkspace
 xcode_scheme: URLTransaction-Example
-xcode_sdk: iphonesimulator
+xcode_sdk: iphonesimulator9.1
