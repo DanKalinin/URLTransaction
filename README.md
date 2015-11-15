@@ -128,7 +128,6 @@ Next we should to prepare REST API requests and their responses mapping logic. T
 ```objectivec
 @implementation URLRequest (Hotels)
 
-// Host components convenience method
 + (NSURLComponents *)baseComponents {
     NSURLComponents *components = [NSURLComponents new];
     components.scheme = @"http";
@@ -222,6 +221,26 @@ Next we should to prepare REST API requests and their responses mapping logic. T
 
 @end
 ```
+
+### Sending requests
+
+Finally we should to perform neccessary requests, map responses to model objects and display results in UI.
+
+* Hotels
+```objectivec
+// Show activity indicator
+
+[[URLRequest getHotels] sendWithSuccess:^(URLRequest *request) {  // try
+   self.hotels = [request mapHotels];
+   // Reload tableview, update UI
+} failure:^(URLRequest *request) {                                // catch
+   // Display error message
+} completion:^(URLRequest *request) {                             // finally
+   // Hide activity indicator
+} queue:dispatch_get_main_queue()];
+```
+* First image
+* Reviews
 
 ## Demo application
 
