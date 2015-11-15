@@ -70,6 +70,7 @@ Consider, we develop an application showing reviews of hotels in different count
 * GET /image/&lt;ID&gt;
 
 All requests can be divided by time to next categories:
+
 1. Primary loading.
    First we use `GET /hotels` request to populate the table view of master view controller with basic info about available hotels.
 2. Lazy loading.
