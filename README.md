@@ -5,6 +5,48 @@
 [![License](https://img.shields.io/cocoapods/l/URLTransaction.svg?style=flat)](http://cocoapods.org/pods/URLTransaction)
 [![Platform](https://img.shields.io/cocoapods/p/URLTransaction.svg?style=flat)](http://cocoapods.org/pods/URLTransaction)
 
+### API
+
+* GET /hotels
+```json
+[
+    {
+        "id": 0,
+        "stars": 3,
+        "name": "Hotel Edison",
+        "latitude": 40.759649,
+        "longitude": -73.986130,
+        "price": 363,
+        "images": ["icc1ahyxdntbokw", "4hhdri604i8d1bl", "pcrgrkicohvef7j"],
+        "reviews": ["s5q61xg82cqyyd5", "jv860jelyp01pb8", "92eo5x9dnaee762"]
+    },
+    {
+        "id": 1,
+        "stars": 4,
+        "name": "Park Hotel Tokyo",
+        "latitude": 35.663189,
+        "longitude": 139.759555,
+        "price": 287,
+        "images": ["8jipxct9qbw67ru", "rw27z4nb35md3mi", "m4vfabpzfyj8yy3"],
+        "reviews": ["euofdw2glov8se1", "0x9wc65h10cwv8n", "eou2rnq9ock03bm"]
+    }
+]
+```
+
+* GET /review/&lt;ID&gt;
+```json
+{
+    "id": "y3oxlsdqma8w0dh",
+    "user": "Jerzy",
+    "date": 1423958400,
+    "pros": "Forthcoming staff with decent English, great breakfasts, discreet service, clean room, nice relaxing view from the rooftop. Overall, hotel location in the neighborhood of Old Town whereas a bit off the beaches has many advantages.",
+    "cons": "Not on the part of the hotel, but services by a collaborating tourist bureau could be better.",
+    "rating": 8
+}
+```
+
+* GET /image/&lt;ID&gt;
+
 ## Description
 
 ![](https://www.dropbox.com/s/3y2c9nupbjdt3og/URLRequest.svg?raw=1)
