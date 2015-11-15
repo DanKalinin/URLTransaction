@@ -5,6 +5,19 @@
 [![License](https://img.shields.io/cocoapods/l/URLTransaction.svg?style=flat)](http://cocoapods.org/pods/URLTransaction)
 [![Platform](https://img.shields.io/cocoapods/p/URLTransaction.svg?style=flat)](http://cocoapods.org/pods/URLTransaction)
 
+URLTransaction library provides a convenient API to send single HTTP requests, group them into transactions and send them asynchronously. If one request in transaction fails - entire transaction fails.
+Features:
+* Convenient `Get-Map` pattern to construct request using factory methods which allows to hold initialization and response mapping code in single class.
+* Requests can be sent immediately after creation or added into transaction for sending them asynchronously.
+* Request and transaction objects have three completion blocks which allows to handle responses in `try-catch-finally` manner:
+    * success - called when response HTTP status code is 200.
+    * failure - called either when HTTP status code of response is other than 200, network problems occured or request timeout expired.
+    * completion - called anyway to notify that request is completed. Can be used to hide activity indicator or clean some allocated resources.
+* Every completion block receives the current request object itself as parameter, thus source request can be processed within block without capturing and creating an external weak request pointer.
+* URLRequest has an `error` property which can be accessed in failure block to determine the failure reason.
+* Possibility of specifying a dispatch queue where completion blocks should be executed. This is usefull when comletion blocks are used for mapping response to Core Data entities or for any other expensive operation.
+* After completion of asynchronous transaction, request completion blocks will be called in the same order they were added into transaction. Finally, transaction completion blocks will be called. Request completion blocks can be used to map response body to Core Data entity. Transaction completion blocks can be used to establish relationships between mapped entities and save the context.
+
 ## Demo application
 
 description
@@ -15,7 +28,7 @@ pod try
 
 ### API
 
-1. GET /hotels
+* GET /hotels
 ```json
 [
     {
@@ -41,7 +54,7 @@ pod try
 ]
 ```
 
-2. GET /review/&lt;ID&gt;
+* GET /review/&lt;ID&gt;
 ```json
 {
     "id": "y3oxlsdqma8w0dh",
@@ -53,7 +66,7 @@ pod try
 }
 ```
 
-3. GET /image/&lt;ID&gt;
+* GET /image/&lt;ID&gt;
 
 ## Description
 
