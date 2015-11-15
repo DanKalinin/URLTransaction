@@ -27,6 +27,8 @@ URLTransaction library provides a convenient API to send single HTTP requests, g
 
 ## Usage
 
+### Problem
+
 Consider, we develop an application showing reviews of hotels in different countries and have the following REST API:
 
 * GET /hotels
@@ -69,13 +71,40 @@ Consider, we develop an application showing reviews of hotels in different count
 
 * GET /image/&lt;ID&gt;
 
+### Solution
+
 All requests can be separated by execution time:
 
-1. **Primary loading.**
+1. *Primary loading.*
    First we use `GET /hotels` request to populate the table view of master view controller with basic info about available hotels.
-2. **Lazy loading.**
+2. *Lazy loading.*
    When basic hotel info is loaded we need to display the first image and average rating for all currently visible hotels. In order to do that we should to perform necessary requests passing the image and review IDs obtained from previous request. First image can be loaded by single `GET /image/<ID>` request. To calculate an average rating we should to load all hotel reviews using `GET /review/<ID>` request, but this is more difficult than making a single request. We should to perform them asynchronously and want to receive any notification when all responses are received. `URLTransaction` class gives this posibility to us.
 
+### Model
+
+First we should to create corresponding model objects:
+* Hotel
+```objectivec
+@interface Hotel : NSObject
+
+@property int ID;
+@property float price;
+@property int stars;
+@property CLLocation *location;
+@property NSString *name;
+@property NSArray<Image *> *images;
+@property NSArray<Review *> *reviews;
+
+@end
+```
+* Review
+```objectivec
+```
+* Image
+```objectivec
+```
+
+### Get-Map pattern
 
 
 ## Demo application
