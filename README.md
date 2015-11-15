@@ -19,6 +19,8 @@ URLTransaction library provides a convenient API to send single HTTP requests, g
 * Possibility of specifying a dispatch queue where completion blocks should be executed. This is usefull when comletion blocks are used for mapping response to Core Data entities or for any other expensive operation.
 * After completion of asynchronous transaction, request completion blocks will be called in the same order they were added into transaction. Finally, transaction completion blocks will be called. Request completion blocks can be used to map response body to Core Data entity. Transaction completion blocks can be used to establish relationships between mapped entities and save the context.
 
+![](https://dl.dropboxusercontent/s/3y2c9nupbjdt3og/URLRequest.svg)
+
 ## Demo application
 
 description
@@ -71,7 +73,7 @@ pod try
 
 ## Description
 
-![](https://www.dropbox.com/s/3y2c9nupbjdt3og/URLRequest.svg?raw=1)
+
 
 ## Usage
 
