@@ -27,7 +27,7 @@ URLTransaction library provides a convenient API to send single HTTP requests, g
 
 ## Usage
 
-Consider, we develop an application allowing to browse hotels in different countries and have the following REST API:
+Consider, we develop an application showing reviews of hotels in different countries and have the following REST API:
 
 * GET /hotels
 ```json
