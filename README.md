@@ -5,6 +5,8 @@
 [![License](https://img.shields.io/cocoapods/l/URLTransaction.svg?style=flat)](http://cocoapods.org/pods/URLTransaction)
 [![Platform](https://img.shields.io/cocoapods/p/URLTransaction.svg?style=flat)](http://cocoapods.org/pods/URLTransaction)
 
+## Description
+
 URLTransaction library provides a convenient API to send single HTTP requests, group them into transactions and send them asynchronously. If one request in transaction fails - entire transaction fails.
 
 **Features:**
@@ -71,7 +73,7 @@ pod try
 
 * GET /image/&lt;ID&gt;
 
-## Description
+
 
 
 
