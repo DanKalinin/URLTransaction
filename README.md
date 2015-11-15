@@ -232,15 +232,53 @@ Finally we should to perform neccessary requests, map responses to model objects
 
 [[URLRequest getHotels] sendWithSuccess:^(URLRequest *request) {  // try
    self.hotels = [request mapHotels];
-   // Reload tableview, update UI
+   // Reload table view, update UI
 } failure:^(URLRequest *request) {                                // catch
    // Display error message
 } completion:^(URLRequest *request) {                             // finally
    // Hide activity indicator
 } queue:dispatch_get_main_queue()];
 ```
+
 * First image
+```objectivec
+// Show activity indicator
+
+[[URLRequest getImage:hotel.images.firstObject.ID] sendWithSuccess:^(URLRequest *request) {
+   hotel.images.firstObject.image = [request mapImage];
+   // Put image to table view cell
+} failure:^(URLRequest *request) {
+   // Display error placeholder
+} completion:^(URLRequest *request) {
+   // Hide activity indicator
+} queue:dispatch_get_main_queue()];
+```
+
 * Reviews
+```objectivec
+
+// Show activity indicator
+
+NSMutableArray *reviews = [NSMutableArray array];
+
+for (Review *review in hotel.reviews) {
+   [[URLRequest getReview:review.ID] addToTransaction:@10 success:^(URLRequest *request) {   // Add all review requests into transaction with ID 10. Transaction ID is used to retrieve it later for execution. Numeric or string values can be specified.
+      [reviews addObject:[request mapReview]];                                               // Map every incomming response to review model object and add it to mutable array
+   } failure:nil completion:nil];
+}
+
+[[URLTransaction transaction:@10] sendWithSuccess:^(URLTransaction *transaction) {           // Retrieve transaction by ID and execute it
+   // Success block is called when all requests in tranction completed successfully
+   hotel.reviews = reviews;                                                                  // Assign mapped reviews to hotel object
+   NSNumber *avgRating = [hotel valueForKeyPath:@"reviews.@avg.rating"];                     // Calculate average hotel rating
+   // Put average rating value to table view cell
+} failure:^(URLTransaction *transaction) {
+   // Failure block is called when at least one transaction request is failed
+   // Display error placeholder
+} completion:^(URLTransaction *transaction) {
+   // Hide activity indicator
+} queue:dispatch_get_main_queue()];
+```
 
 ## Demo application
 
