@@ -77,12 +77,13 @@ All requests can be separated by execution time:
 
 1. Primary loading.
    First we use `GET /hotels` request to populate the table view of master view controller with basic info about available hotels.
-2. *Lazy loading.
+2. Lazy loading.
    When basic hotel info is loaded we need to display the first image and average rating for all currently visible hotels. In order to do that we should to perform necessary requests passing the image and review IDs obtained from previous request. First image can be loaded by single `GET /image/<ID>` request. To calculate an average rating we should to load all hotel reviews using `GET /review/<ID>` request, but this is more difficult than making a single request. We should to perform them asynchronously and want to receive any notification when all responses are received. `URLTransaction` class gives this posibility to us.
 
 ### Model
 
 First we should to create corresponding model objects:
+
 * Hotel
 ```objectivec
 @interface Hotel : NSObject
@@ -122,6 +123,105 @@ First we should to create corresponding model objects:
 
 ### Get-Map pattern
 
+Next we should to prepare REST API requests and their responses mapping logic. This logic can be inplemented in single `URLRequest` category using Get-Map pattern.
+
+```objectivec
+@implementation URLRequest (Hotels)
+
+// Host components convenience method
++ (NSURLComponents *)baseComponents {
+    NSURLComponents *components = [NSURLComponents new];
+    components.scheme = @"http";
+    components.host = @"my.hotels.com";
+    return components;
+}
+
+#pragma mark - Get
+
++ (instancetype)getHotels {
+    NSURLComponents *components = self.baseComponents;
+    components.path = @"/hotels";
+    
+    URLRequest *request = [URLRequest requestWithURL:components.URL cachePolicy:NSURLRequestReturnCacheDataElseLoad timeoutInterval:30.0];
+    [request setValue:@"application/json" forHTTPHeaderField:@"Accept"];
+    return request;
+}
+
++ (instancetype)getImage:(NSString *)ID {
+    NSURLComponents *components = self.baseComponents;
+    components.path = [NSString stringWithFormat:@"/image/%@", ID];
+    
+    URLRequest *request = [URLRequest requestWithURL:components.URL cachePolicy:NSURLRequestReturnCacheDataElseLoad timeoutInterval:30.0];
+    [request setValue:@"image/jpeg" forHTTPHeaderField:@"Accept"];
+    return request;
+}
+
++ (instancetype)getReview:(NSString *)ID {
+    NSURLComponents *components = self.baseComponents;
+    components.path = [NSString stringWithFormat:@"/review/%@", ID];
+    
+    URLRequest *request = [URLRequest requestWithURL:components.URL cachePolicy:NSURLRequestReturnCacheDataElseLoad timeoutInterval:30.0];
+    [request setValue:@"application/json" forHTTPHeaderField:@"Accept"];
+    return request;
+}
+
+#pragma mark - Map
+
+- (NSArray<Hotel *> *)mapHotels {
+    NSMutableArray *hotels = [NSMutableArray array];
+    NSArray *objects = [NSJSONSerialization JSONObjectWithData:self.data options:0 error:nil];
+    for (NSDictionary *object in objects) {
+        Hotel *hotel = [Hotel new];
+        hotel.ID = [object[@"id"] intValue];
+        hotel.stars = [object[@"stars"] intValue];
+        hotel.name = object[@"name"];
+        hotel.price = [object[@"price"] floatValue];
+        
+        CLLocationDegrees latitude = [object[@"latitude"] doubleValue];
+        CLLocationDegrees longitude = [object[@"longitude"] doubleValue];
+        hotel.location = [[CLLocation alloc] initWithLatitude:latitude longitude:longitude];
+        
+        NSMutableArray *images = [NSMutableArray array];
+        for (NSString *ID in object[@"images"]) {
+            Image *image = [Image new];
+            image.ID = ID;
+            [images addObject:image];
+        }
+        hotel.images = images;
+        
+        NSMutableArray *reviews = [NSMutableArray array];
+        for (NSString *ID in object[@"reviews"]) {
+            Review *review = [Review new];
+            review.ID = ID;
+            [reviews addObject:review];
+        }
+        hotel.reviews = reviews;
+        
+        [hotels addObject:hotel];
+    }
+    return hotels;
+}
+
+- (UIImage *)mapImage {
+    return [UIImage imageWithData:self.data];
+}
+
+- (Review *)mapReview {
+    Review *review = [Review new];
+    NSDictionary *object = [NSJSONSerialization JSONObjectWithData:self.data options:0 error:nil];
+    if (object) {
+        review.ID = object[@"id"];
+        review.user = object[@"user"];
+        review.date = [NSDate dateWithTimeIntervalSince1970:[object[@"date"] doubleValue]];
+        review.pros = object[@"pros"];
+        review.cons = object[@"cons"];
+        review.rating = [object[@"rating"] intValue];
+    }
+    return review;
+}
+
+@end
+```
 
 ## Demo application
 
