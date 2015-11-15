@@ -6,6 +6,7 @@
 [![Platform](https://img.shields.io/cocoapods/p/URLTransaction.svg?style=flat)](http://cocoapods.org/pods/URLTransaction)
 
 URLTransaction library provides a convenient API to send single HTTP requests, group them into transactions and send them asynchronously. If one request in transaction fails - entire transaction fails.
+
 Features:
 * Convenient `Get-Map` pattern to construct request using factory methods which allows to hold initialization and response mapping code in single class.
 * Requests can be sent immediately after creation or added into transaction for sending them asynchronously.
