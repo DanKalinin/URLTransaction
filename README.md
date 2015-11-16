@@ -287,11 +287,11 @@ for (Review *review in hotel.reviews) {
 This project illustrates the steps described above and can be used as foundation to implement your applications based on `URLTransaction` library.
 
 [![](https://dl.dropboxusercontent.com/s/1kh0tdoz44iwg6b/1.png)](https://dl.dropboxusercontent.com/s/xhllb2wsl8qscp9/1.png)
-[![](https://dl.dropboxusercontent.com/s/ehtrzim4ovawamo/2.png)](https://dl.dropboxusercontent.com/s/og1cq3g6zz9mdhe/2.PNG)
-[![](https://dl.dropboxusercontent.com/s/nx7efr7dkxh27fw/3.png)](https://dl.dropboxusercontent.com/s/zyrjkd1z0fokt9c/3.PNG)
-[![](https://dl.dropboxusercontent.com/s/xefhxo2kfwp44d5/5.png)](https://dl.dropboxusercontent.com/s/2obdv918rn4qfpc/5.PNG)
-[![](https://dl.dropboxusercontent.com/s/khivcargm88e7rs/6.png)](https://dl.dropboxusercontent.com/s/yta4z5pb34uh594/6.PNG)
-[![](https://dl.dropboxusercontent.com/s/vizmh54wd4psmvh/7.png)](https://dl.dropboxusercontent.com/s/khjfqt40hcxwmr1/7.PNG)
+[![](https://dl.dropboxusercontent.com/s/ehtrzim4ovawamo/2.png)](https://dl.dropboxusercontent.com/s/inxfu2k36ld550b/2.png)
+[![](https://dl.dropboxusercontent.com/s/nx7efr7dkxh27fw/3.png)](https://dl.dropboxusercontent.com/s/wid1ukuevw2b586/3.png)
+[![](https://dl.dropboxusercontent.com/s/xefhxo2kfwp44d5/5.png)](https://dl.dropboxusercontent.com/s/95pu32h8ivdldx1/5.png)
+[![](https://dl.dropboxusercontent.com/s/khivcargm88e7rs/6.png)](https://dl.dropboxusercontent.com/s/1gymrdokl55iowh/6.png)
+[![](https://dl.dropboxusercontent.com/s/vizmh54wd4psmvh/7.png)](https://dl.dropboxusercontent.com/s/3vxinzr75x05v8v/7.png)
 
 ## Requirements
 
