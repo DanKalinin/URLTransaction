@@ -235,6 +235,7 @@ Finally we should to perform neccessary requests, map responses to model objects
    // Reload table view, update UI
 } failure:^(URLRequest *request) {                                // catch
    // Display error message
+   NSLog(@"Request error - %@", request.error);
 } completion:^(URLRequest *request) {                             // finally
    // Hide activity indicator
 } queue:dispatch_get_main_queue()];
@@ -275,6 +276,7 @@ for (Review *review in hotel.reviews) {
 } failure:^(URLTransaction *transaction) {
    // Failure block is called when at least one request in transaction is failed
    // Display error placeholder
+   NSLog(@"Transaction error - %@", transaction.error);
 } completion:^(URLTransaction *transaction) {
    // Hide activity indicator
 } queue:dispatch_get_main_queue()];
