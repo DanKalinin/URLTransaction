@@ -282,18 +282,16 @@ for (Review *review in hotel.reviews) {
 
 ## Demo application
 
-To run the example project, clone the repo, and run `pod install` from the Example directory first.
-It also can be launched just by typing `pod try URLTransaction` in Terminal.
+`pod try URLTransaction`
 
 This project illustrates the steps described above and can be used as foundation to implement your applications based on `URLTransaction` library.
 
-![](https://dl.dropboxusercontent.com/s/xhllb2wsl8qscp9/1.png)
-![](https://dl.dropboxusercontent.com/s/og1cq3g6zz9mdhe/2.PNG)
-![](https://dl.dropboxusercontent.com/s/zyrjkd1z0fokt9c/3.PNG)
-![](https://dl.dropboxusercontent.com/s/lrfpl9rdvl71sog/4.PNG)
-![](https://dl.dropboxusercontent.com/s/2obdv918rn4qfpc/5.PNG)
-![](https://dl.dropboxusercontent.com/s/yta4z5pb34uh594/6.PNG)
-![](https://dl.dropboxusercontent.com/s/khjfqt40hcxwmr1/7.PNG)
+[![](https://dl.dropboxusercontent.com/s/1kh0tdoz44iwg6b/1.png)](https://dl.dropboxusercontent.com/s/xhllb2wsl8qscp9/1.png)
+[![](https://dl.dropboxusercontent.com/s/ehtrzim4ovawamo/2.png)](https://dl.dropboxusercontent.com/s/og1cq3g6zz9mdhe/2.PNG)
+[![](https://dl.dropboxusercontent.com/s/nx7efr7dkxh27fw/3.png)](https://dl.dropboxusercontent.com/s/zyrjkd1z0fokt9c/3.PNG)
+[![](https://dl.dropboxusercontent.com/s/xefhxo2kfwp44d5/5.png)](https://dl.dropboxusercontent.com/s/2obdv918rn4qfpc/5.PNG)
+[![](https://dl.dropboxusercontent.com/s/khivcargm88e7rs/6.png)](https://dl.dropboxusercontent.com/s/yta4z5pb34uh594/6.PNG)
+[![](https://dl.dropboxusercontent.com/s/vizmh54wd4psmvh/7.png)](https://dl.dropboxusercontent.com/s/khjfqt40hcxwmr1/7.PNG)
 
 ## Requirements
 
