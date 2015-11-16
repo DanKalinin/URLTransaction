@@ -12,7 +12,7 @@ Simple, but powerful iOS networking framework.
 URLTransaction library provides a convenient API to send single HTTP requests, group them into transactions and send them asynchronously. If one request in transaction fails - entire transaction fails.
 
 **Features:**
-* Convenient [Get-Map pattern](###Get-Map) to construct request using factory methods which allows to hold initialization and response mapping code in single class.
+* Convenient [Get-Map pattern](#Get-Map pattern) to construct request using factory methods which allows to hold initialization and response mapping code in single class.
 * Requests can be sent immediately after creation or added into transaction for sending them asynchronously.
 * Request and transaction objects have three completion blocks which allows to handle responses in `try-catch-finally` manner:
     * `success` - called when response HTTP status code is 200.
