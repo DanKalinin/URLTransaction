@@ -287,7 +287,7 @@ It also can be launched just by typing `pod try URLTransaction` in Terminal.
 
 This project illustrates the steps described above and can be used as foundation to implement your applications based on `URLTransaction` library.
 
-![](https://dl.dropboxusercontent.com/s/rw0khcvk6npwp6i/1.PNG)
+![](https://dl.dropboxusercontent.com/s/xhllb2wsl8qscp9/1.png)
 ![](https://dl.dropboxusercontent.com/s/og1cq3g6zz9mdhe/2.PNG)
 ![](https://dl.dropboxusercontent.com/s/zyrjkd1z0fokt9c/3.PNG)
 ![](https://dl.dropboxusercontent.com/s/lrfpl9rdvl71sog/4.PNG)
