@@ -85,7 +85,7 @@ All requests can be separated by execution time:
 First we should to create corresponding model objects:
 
 * Hotel
-```objectivec
+```objc
 @interface Hotel : NSObject
 
 @property int ID;
@@ -99,7 +99,7 @@ First we should to create corresponding model objects:
 @end
 ```
 * Review
-```objectivec
+```objc
 @interface Review : NSObject
 
 @property NSString *ID;
@@ -112,7 +112,7 @@ First we should to create corresponding model objects:
 @end
 ```
 * Image
-```objectivec
+```objc
 @interface Image : NSObject
 
 @property NSString *ID;
@@ -125,7 +125,7 @@ First we should to create corresponding model objects:
 
 Next we should to prepare REST API requests and their responses mapping logic. This logic can be inplemented in single `URLRequest` category using Get-Map pattern.
 
-```objectivec
+```objc
 @implementation URLRequest (Hotels)
 
 + (NSURLComponents *)baseComponents {
@@ -227,7 +227,7 @@ Next we should to prepare REST API requests and their responses mapping logic. T
 Finally we should to perform neccessary requests, map responses to model objects and display results in UI.
 
 * Hotels
-```objectivec
+```objc
 // Show activity indicator
 
 [[URLRequest getHotels] sendWithSuccess:^(URLRequest *request) {  // try
@@ -242,7 +242,7 @@ Finally we should to perform neccessary requests, map responses to model objects
 ```
 
 * First image
-```objectivec
+```objc
 // Show activity indicator
 
 [[URLRequest getImage:hotel.images.firstObject.ID] sendWithSuccess:^(URLRequest *request) {
@@ -256,7 +256,7 @@ Finally we should to perform neccessary requests, map responses to model objects
 ```
 
 * Reviews
-```objectivec
+```objc
 
 // Show activity indicator
 
