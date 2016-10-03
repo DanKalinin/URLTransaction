@@ -1,5 +1,0 @@
-language: objective-c
-xcode_workspace: Example/URLTransaction.xcworkspace
-xcode_scheme: URLTransaction-Example
-xcode_sdk: iphonesimulator
-osx_image: xcode7.1
