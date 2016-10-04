@@ -182,8 +182,12 @@ static NSMutableDictionary *_baseComponents = nil;
 }
 
 - (id)json {
-    id object = [NSJSONSerialization JSONObjectWithData:self.data options:0 error:nil];
-    return object;
+    @try {
+        id object = [NSJSONSerialization JSONObjectWithData:self.data options:0 error:nil];
+        return object;
+    } @catch (NSException *exception) {
+        return nil;
+    }
 }
 
 #pragma mark - Helpers
