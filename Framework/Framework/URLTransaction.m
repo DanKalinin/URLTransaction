@@ -9,6 +9,8 @@
 #import "URLTransaction.h"
 #import <objc/runtime.h>
 
+NSString *const HTTPErrorDomain = @"HTTPErrorDomain";
+
 
 
 
@@ -288,16 +290,19 @@ static NSMutableDictionary *_baseComponents = nil;
         
         request.task = [[NSURLSession sharedSession] dataTaskWithRequest:request completionHandler:^(NSData *data, NSURLResponse *response, NSError *error) {
             
-            request.data = data;
-            request.response = (NSHTTPURLResponse *)response;
-            request.error = error;
-            
-            NSInteger statusCode = request.response.statusCode;
-            if (statusCode >= 400) {
-                NSMutableDictionary *userInfo = [NSMutableDictionary dictionary];
-                userInfo[NSLocalizedDescriptionKey] = [NSHTTPURLResponse localizedStringForStatusCode:statusCode];
-                userInfo[NSURLErrorKey] = request.URL;
-                request.error = [NSError errorWithDomain:NSURLErrorDomain code:statusCode userInfo:userInfo];
+            if (error) {
+                request.error = error;
+            } else {
+                request.data = data;
+                request.response = (NSHTTPURLResponse *)response;
+                
+                NSInteger statusCode = request.response.statusCode;
+                if (statusCode >= 400) {
+                    NSMutableDictionary *userInfo = [NSMutableDictionary dictionary];
+                    userInfo[NSLocalizedDescriptionKey] = [NSHTTPURLResponse localizedStringForStatusCode:statusCode];
+                    userInfo[NSURLErrorKey] = request.URL;
+                    request.error = [NSError errorWithDomain:HTTPErrorDomain code:statusCode userInfo:userInfo];
+                }
             }
             
             dispatch_group_leave(group);

@@ -26,7 +26,7 @@
         NSLog(@"completed - 1");
     }];
     
-    NSURL *googleURL = [NSURL URLWithString:@"https://google.com"];
+    NSURL *googleURL = [NSURL URLWithString:@"http://content-server.readyforsky.com/backend"];
     NSURLRequest *googleRequest = [NSURLRequest requestWithURL:googleURL];
     [googleRequest completion:^(NSURLRequest *request) {
         NSLog(@"completed - 2");
