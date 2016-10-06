@@ -14,10 +14,10 @@ NSString *const HTTPErrorDomain = @"HTTPErrorDomain";
 NSString *const HTTPMethodGet = @"GET";
 NSString *const HTTPMethodPost = @"POST";
 
-NSString *const HTTPHeaderAccept = @"Accept";
-NSString *const HTTPHeaderContentType = @"Content-Type";
-NSString *const HTTPHeaderIfModifiedSince = @"If-Modified-Since";
-NSString *const HTTPHeaderLastModified = @"Last-Modified";
+NSString *const HTTPHeaderFieldAccept = @"Accept";
+NSString *const HTTPHeaderFieldContentType = @"Content-Type";
+NSString *const HTTPHeaderFieldIfModifiedSince = @"If-Modified-Since";
+NSString *const HTTPHeaderFieldLastModified = @"Last-Modified";
 
 NSString *const MediaTypeApplicationJSON = @"application/json";
 

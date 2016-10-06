@@ -17,10 +17,10 @@ extern NSString *const HTTPErrorDomain;
 extern NSString *const HTTPMethodGet;
 extern NSString *const HTTPMethodPost;
 
-extern NSString *const HTTPHeaderAccept;
-extern NSString *const HTTPHeaderContentType;
-extern NSString *const HTTPHeaderIfModifiedSince;
-extern NSString *const HTTPHeaderLastModified;
+extern NSString *const HTTPHeaderFieldAccept;
+extern NSString *const HTTPHeaderFieldContentType;
+extern NSString *const HTTPHeaderFieldIfModifiedSince;
+extern NSString *const HTTPHeaderFieldLastModified;
 
 extern NSString *const MediaTypeApplicationJSON;
 
