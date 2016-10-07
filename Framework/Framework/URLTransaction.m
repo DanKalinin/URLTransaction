@@ -15,10 +15,12 @@ NSString *const HTTPMethodGet = @"GET";
 NSString *const HTTPMethodPost = @"POST";
 
 NSString *const HTTPHeaderFieldAccept = @"Accept";
+NSString *const HTTPHeaderFieldAuthorization = @"Authorization";
 NSString *const HTTPHeaderFieldContentType = @"Content-Type";
 NSString *const HTTPHeaderFieldIfModifiedSince = @"If-Modified-Since";
 NSString *const HTTPHeaderFieldLastModified = @"Last-Modified";
 
+NSString *const MediaTypeApplicationForm = @"application/x-www-form-urlencoded";
 NSString *const MediaTypeApplicationJSON = @"application/json";
 
 

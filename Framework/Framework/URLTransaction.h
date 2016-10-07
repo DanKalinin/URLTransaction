@@ -18,10 +18,12 @@ extern NSString *const HTTPMethodGet;
 extern NSString *const HTTPMethodPost;
 
 extern NSString *const HTTPHeaderFieldAccept;
+extern NSString *const HTTPHeaderFieldAuthorization;
 extern NSString *const HTTPHeaderFieldContentType;
 extern NSString *const HTTPHeaderFieldIfModifiedSince;
 extern NSString *const HTTPHeaderFieldLastModified;
 
+extern NSString *const MediaTypeApplicationForm;
 extern NSString *const MediaTypeApplicationJSON;
 
 
