@@ -39,6 +39,7 @@ NSString *const MediaTypeApplicationJSON = @"application/json";
 @property id info;
 
 @property NSData *data;
+@property id cachedJSON;
 @property NSHTTPURLResponse *response;
 @property NSError *error;
 
@@ -150,6 +151,14 @@ static NSMutableDictionary *_baseComponents = nil;
     return objc_getAssociatedObject(self, @selector(data));
 }
 
+- (void)setCachedJSON:(id)cachedJSON {
+    objc_setAssociatedObject(self, @selector(cachedJSON), cachedJSON, OBJC_ASSOCIATION_RETAIN);
+}
+
+- (id)cachedJSON {
+    return objc_getAssociatedObject(self, @selector(cachedJSON));
+}
+
 - (void)setResponse:(NSHTTPURLResponse *)response {
     objc_setAssociatedObject(self, @selector(response), response, OBJC_ASSOCIATION_RETAIN);
 }
@@ -207,9 +216,13 @@ static NSMutableDictionary *_baseComponents = nil;
 }
 
 - (id)json {
+    
+    if (self.cachedJSON) return self.cachedJSON;
+    
     @try {
-        id object = [NSJSONSerialization JSONObjectWithData:self.data options:0 error:nil];
-        return object;
+        id json = [NSJSONSerialization JSONObjectWithData:self.data options:0 error:nil];
+        self.cachedJSON = json;
+        return json;
     } @catch (NSException *exception) {
         return nil;
     }
