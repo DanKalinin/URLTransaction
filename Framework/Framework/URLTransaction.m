@@ -367,7 +367,7 @@ static NSMutableDictionary *_baseComponents = nil;
             NSOperationQueue *queue = [NSOperationQueue new];
             [queue addOperationWithBlock:^{
                 NSError *error = nil;
-                BOOL valid = [request.JSONSchema validateData:request.data error:&error];
+                BOOL valid = [request.JSONSchema validateObject:request.json error:&error];
                 if (!valid) {
                     request.error = error;
                 }
