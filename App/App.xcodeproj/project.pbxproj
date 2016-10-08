@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		370182701DA903E8006C3A4F /* Helpers.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3701826F1DA903E8006C3A4F /* Helpers.framework */; };
+		370182711DA903E8006C3A4F /* Helpers.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3701826F1DA903E8006C3A4F /* Helpers.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		370182731DA903EE006C3A4F /* JSONSchema.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 370182721DA903EE006C3A4F /* JSONSchema.framework */; };
+		370182741DA903EE006C3A4F /* JSONSchema.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 370182721DA903EE006C3A4F /* JSONSchema.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		3717705A1D8B0B150027C322 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 371770591D8B0B150027C322 /* main.m */; };
 		3717705D1D8B0B150027C322 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3717705C1D8B0B150027C322 /* AppDelegate.m */; };
 		371770601D8B0B150027C322 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3717705F1D8B0B150027C322 /* ViewController.m */; };
@@ -41,6 +45,8 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				370182741DA903EE006C3A4F /* JSONSchema.framework in Embed Frameworks */,
+				370182711DA903E8006C3A4F /* Helpers.framework in Embed Frameworks */,
 				371770761D8B0B570027C322 /* URLTransaction.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
@@ -49,6 +55,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		3701826F1DA903E8006C3A4F /* Helpers.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Helpers.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		370182721DA903EE006C3A4F /* JSONSchema.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = JSONSchema.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		371770551D8B0B150027C322 /* App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = App.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		371770591D8B0B150027C322 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		3717705B1D8B0B150027C322 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -67,6 +75,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				370182731DA903EE006C3A4F /* JSONSchema.framework in Frameworks */,
+				370182701DA903E8006C3A4F /* Helpers.framework in Frameworks */,
 				371770751D8B0B570027C322 /* URLTransaction.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -77,6 +87,8 @@
 		3717704C1D8B0B150027C322 = {
 			isa = PBXGroup;
 			children = (
+				370182721DA903EE006C3A4F /* JSONSchema.framework */,
+				3701826F1DA903E8006C3A4F /* Helpers.framework */,
 				3717706F1D8B0B4C0027C322 /* Framework.xcodeproj */,
 				371770571D8B0B150027C322 /* App */,
 				371770561D8B0B150027C322 /* Products */,

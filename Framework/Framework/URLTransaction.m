@@ -60,6 +60,11 @@ NSString *const MediaTypeApplicationJSON = @"application/json";
     return self;
 }
 
+- (instancetype)JSONSchema:(JSONSchema *)schema {
+    self.JSONSchema = schema;
+    return self;
+}
+
 - (instancetype)moc:(NSManagedObjectContext *)moc {
     self.moc = moc;
     return self;
@@ -111,6 +116,14 @@ static NSMutableDictionary *_baseComponents = nil;
 
 - (NSOperationQueue *)queue {
     return objc_getAssociatedObject(self, @selector(queue));
+}
+
+- (void)setJSONSchema:(JSONSchema *)JSONSchema {
+    objc_setAssociatedObject(self, @selector(JSONSchema), JSONSchema, OBJC_ASSOCIATION_RETAIN);
+}
+
+- (JSONSchema *)JSONSchema {
+    return objc_getAssociatedObject(self, @selector(JSONSchema));
 }
 
 - (void)setMoc:(NSManagedObjectContext *)moc {
@@ -226,6 +239,7 @@ static NSMutableDictionary *_baseComponents = nil;
 @interface URLTransaction ()
 
 @property NSOperationQueue *queue;
+@property JSONSchema *JSONSchema;
 @property NSManagedObjectContext *moc;
 @property id info;
 
@@ -257,6 +271,11 @@ static NSMutableDictionary *_baseComponents = nil;
 
 - (instancetype)queue:(NSOperationQueue *)queue {
     self.queue = queue;
+    return self;
+}
+
+- (instancetype)JSONSchema:(JSONSchema *)schema {
+    self.JSONSchema = schema;
     return self;
 }
 
@@ -308,20 +327,41 @@ static NSMutableDictionary *_baseComponents = nil;
             
             if (error) {
                 request.error = error;
-            } else {
-                request.data = data;
-                request.response = (NSHTTPURLResponse *)response;
                 
-                NSInteger statusCode = request.response.statusCode;
-                if (statusCode >= 400) {
-                    NSMutableDictionary *userInfo = [NSMutableDictionary dictionary];
-                    userInfo[NSLocalizedDescriptionKey] = [NSHTTPURLResponse localizedStringForStatusCode:statusCode];
-                    userInfo[NSURLErrorKey] = request.URL;
-                    request.error = [NSError errorWithDomain:HTTPErrorDomain code:statusCode userInfo:userInfo];
-                }
+                dispatch_group_leave(group);
+                return;
             }
             
-            dispatch_group_leave(group);
+            request.data = data;
+            request.response = (NSHTTPURLResponse *)response;
+            
+            NSInteger statusCode = request.response.statusCode;
+            if (statusCode >= 400) {
+                NSMutableDictionary *userInfo = [NSMutableDictionary dictionary];
+                userInfo[NSLocalizedDescriptionKey] = [NSHTTPURLResponse localizedStringForStatusCode:statusCode];
+                userInfo[NSURLErrorKey] = request.URL;
+                request.error = [NSError errorWithDomain:HTTPErrorDomain code:statusCode userInfo:userInfo];
+                
+                dispatch_group_leave(group);
+                return;
+            }
+            
+            if (!request.JSONSchema) {
+                dispatch_group_leave(group);
+                return;
+            }
+            
+            NSOperationQueue *queue = [NSOperationQueue new];
+            [queue addOperationWithBlock:^{
+                NSError *error = nil;
+                BOOL valid = [request.JSONSchema validateData:request.data error:&error];
+                if (!valid) {
+                    request.error = error;
+                }
+                
+                dispatch_group_leave(group);
+            }];
+            
         }];
         
         [request.task resume];
@@ -386,6 +426,10 @@ static NSMutableDictionary *_baseComponents = nil;
     for (NSURLRequest *request in self.requests) {
         if (!request.queue) {
             request.queue = self.queue;
+        }
+        
+        if (!request.JSONSchema && self.JSONSchema) {
+            request.JSONSchema = self.JSONSchema;
         }
         
         if (!request.moc && self.moc) {

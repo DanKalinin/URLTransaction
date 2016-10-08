@@ -7,11 +7,39 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3701826A1DA903AB006C3A4F /* Helpers.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 370182691DA903A2006C3A4F /* Helpers.framework */; };
+		3701826B1DA903AF006C3A4F /* JSONSchema.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 370182611DA90399006C3A4F /* JSONSchema.framework */; };
 		371770491D8B067D0027C322 /* URLTransaction.h in Headers */ = {isa = PBXBuildFile; fileRef = 371770471D8B067D0027C322 /* URLTransaction.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3717704A1D8B067D0027C322 /* URLTransaction.m in Sources */ = {isa = PBXBuildFile; fileRef = 371770481D8B067D0027C322 /* URLTransaction.m */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		370182601DA90399006C3A4F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3701825A1DA90399006C3A4F /* Framework.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 37EEF8961D9AD15800AC52B6;
+			remoteInfo = JSONSchema;
+		};
+		370182621DA90399006C3A4F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3701825A1DA90399006C3A4F /* Framework.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 37EEF8E71D9D4C9C00AC52B6;
+			remoteInfo = JSONSchemaTests;
+		};
+		370182681DA903A2006C3A4F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 370182641DA903A1006C3A4F /* Framework.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 3743921C1D91EED7005E1075;
+			remoteInfo = Helpers;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		3701825A1DA90399006C3A4F /* Framework.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Framework.xcodeproj; path = ../../../../JSONSchema/Framework/Framework.xcodeproj; sourceTree = "<group>"; };
+		370182641DA903A1006C3A4F /* Framework.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Framework.xcodeproj; path = ../../../../Helpers/Framework/Framework.xcodeproj; sourceTree = "<group>"; };
 		3717703C1D8B05BB0027C322 /* URLTransaction.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = URLTransaction.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		371770401D8B05BB0027C322 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		371770471D8B067D0027C322 /* URLTransaction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = URLTransaction.h; sourceTree = "<group>"; };
@@ -23,15 +51,60 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3701826B1DA903AF006C3A4F /* JSONSchema.framework in Frameworks */,
+				3701826A1DA903AB006C3A4F /* Helpers.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3701824D1DA90365006C3A4F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3701824E1DA90365006C3A4F /* Helpers */,
+				3701824F1DA90365006C3A4F /* JSONSchema */,
+			);
+			path = Frameworks;
+			sourceTree = "<group>";
+		};
+		3701824E1DA90365006C3A4F /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				370182641DA903A1006C3A4F /* Framework.xcodeproj */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		3701824F1DA90365006C3A4F /* JSONSchema */ = {
+			isa = PBXGroup;
+			children = (
+				3701825A1DA90399006C3A4F /* Framework.xcodeproj */,
+			);
+			path = JSONSchema;
+			sourceTree = "<group>";
+		};
+		3701825B1DA90399006C3A4F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				370182611DA90399006C3A4F /* JSONSchema.framework */,
+				370182631DA90399006C3A4F /* JSONSchemaTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		370182651DA903A1006C3A4F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				370182691DA903A2006C3A4F /* Helpers.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		371770321D8B05BB0027C322 = {
 			isa = PBXGroup;
 			children = (
+				3701824D1DA90365006C3A4F /* Frameworks */,
 				3717703E1D8B05BB0027C322 /* Framework */,
 				3717703D1D8B05BB0027C322 /* Products */,
 			);
@@ -112,12 +185,46 @@
 			mainGroup = 371770321D8B05BB0027C322;
 			productRefGroup = 3717703D1D8B05BB0027C322 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 370182651DA903A1006C3A4F /* Products */;
+					ProjectRef = 370182641DA903A1006C3A4F /* Framework.xcodeproj */;
+				},
+				{
+					ProductGroup = 3701825B1DA90399006C3A4F /* Products */;
+					ProjectRef = 3701825A1DA90399006C3A4F /* Framework.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				3717703B1D8B05BB0027C322 /* URLTransaction */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		370182611DA90399006C3A4F /* JSONSchema.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = JSONSchema.framework;
+			remoteRef = 370182601DA90399006C3A4F /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		370182631DA90399006C3A4F /* JSONSchemaTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = JSONSchemaTests.xctest;
+			remoteRef = 370182621DA90399006C3A4F /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		370182691DA903A2006C3A4F /* Helpers.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Helpers.framework;
+			remoteRef = 370182681DA903A2006C3A4F /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		3717703A1D8B05BB0027C322 /* Resources */ = {
@@ -290,6 +397,7 @@
 				371770461D8B05BB0027C322 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

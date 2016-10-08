@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import <CoreData/CoreData.h>
+#import <JSONSchema/JSONSchema.h>
 
 FOUNDATION_EXPORT double URLTransactionVersionNumber;
 FOUNDATION_EXPORT const unsigned char URLTransactionVersionString[];
@@ -40,6 +41,7 @@ extern NSString *const MediaTypeApplicationJSON;
 typedef void (^URLRequestHandler)(__kindof NSURLRequest *);
 
 - (instancetype)queue:(NSOperationQueue *)queue;
+- (instancetype)JSONSchema:(JSONSchema *)schema;
 - (instancetype)moc:(NSManagedObjectContext *)moc;
 - (instancetype)info:(id)info;
 - (instancetype)success:(URLRequestHandler)success;
@@ -51,6 +53,7 @@ typedef void (^URLRequestHandler)(__kindof NSURLRequest *);
 
 @property (class, readonly) NSMutableDictionary<NSString *, NSURLComponents *> *baseComponents;
 @property (readonly) NSOperationQueue *queue;
+@property (readonly) JSONSchema *JSONSchema;
 @property (readonly) NSManagedObjectContext *moc;
 @property (readonly) id info;
 @property (readonly) NSData *data;
@@ -74,6 +77,7 @@ typedef void (^URLRequestHandler)(__kindof NSURLRequest *);
 typedef void (^URLTransactionHandler)(URLTransaction *);
 
 - (instancetype)queue:(NSOperationQueue *)queue;
+- (instancetype)JSONSchema:(JSONSchema *)schema;
 - (instancetype)moc:(NSManagedObjectContext *)moc;
 - (instancetype)info:(id)info;
 - (instancetype)addRequest:(NSURLRequest *)request;
@@ -85,6 +89,7 @@ typedef void (^URLTransactionHandler)(URLTransaction *);
 - (void)cancel;
 
 @property (readonly) NSOperationQueue *queue;
+@property (readonly) JSONSchema *JSONSchema;
 @property (readonly) NSManagedObjectContext *moc;
 @property (readonly) id info;
 @property (readonly) NSArray *requests;
