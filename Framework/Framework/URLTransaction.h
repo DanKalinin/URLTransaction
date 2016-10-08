@@ -37,7 +37,7 @@ extern NSString *const MediaTypeApplicationJSON;
 
 @interface NSURLRequest (URLTransaction)
 
-typedef void (^URLRequestHandler)(NSURLRequest *);
+typedef void (^URLRequestHandler)(__kindof NSURLRequest *);
 
 - (instancetype)queue:(NSOperationQueue *)queue;
 - (instancetype)moc:(NSManagedObjectContext *)moc;
