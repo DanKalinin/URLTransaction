@@ -8,6 +8,7 @@
 
 #import "URLTransaction.h"
 #import <objc/runtime.h>
+#import <Helpers/Helpers.h>
 
 NSString *const HTTPErrorDomain = @"HTTPErrorDomain";
 
@@ -19,6 +20,7 @@ NSString *const HTTPHeaderFieldAuthorization = @"Authorization";
 NSString *const HTTPHeaderFieldContentType = @"Content-Type";
 NSString *const HTTPHeaderFieldIfModifiedSince = @"If-Modified-Since";
 NSString *const HTTPHeaderFieldLastModified = @"Last-Modified";
+NSString *const HTTPHeaderFieldDate = @"Date";
 
 NSString *const MediaTypeApplicationForm = @"application/x-www-form-urlencoded";
 NSString *const MediaTypeApplicationJSON = @"application/json";
@@ -49,6 +51,8 @@ NSString *const MediaTypeApplicationJSON = @"application/json";
 
 @property URLTransaction *transaction;
 @property NSURLSessionDataTask *task;
+
+@property NSDateFormatter *dateFormatter;
 
 @end
 
@@ -215,6 +219,18 @@ static NSMutableDictionary *_baseComponents = nil;
     return objc_getAssociatedObject(self, @selector(task));
 }
 
+- (void)setDateFormatter:(NSDateFormatter *)dateFormatter {
+    objc_setAssociatedObject(self, @selector(dateFormatter), dateFormatter, OBJC_ASSOCIATION_RETAIN);
+}
+
+- (NSDateFormatter *)dateFormatter {
+    NSDateFormatter *dateFormatter = objc_getAssociatedObject(self, @selector(dateFormatter));
+    if (dateFormatter) return dateFormatter;
+    
+    self.dateFormatter = [NSDateFormatter fixedDateFormatterWithDateFormat:DateFormatRFC1123];
+    return self.dateFormatter;
+}
+
 - (id)json {
     
     if (self.cachedJSON) return self.cachedJSON;
@@ -226,6 +242,12 @@ static NSMutableDictionary *_baseComponents = nil;
     } @catch (NSException *exception) {
         return nil;
     }
+}
+
+- (NSDate *)dateForHTTPHeaderField:(NSString *)field {
+    NSString *string = [self valueForHTTPHeaderField:field];
+    NSDate *date = [self.dateFormatter dateFromString:string];
+    return date;
 }
 
 #pragma mark - Helpers
@@ -465,6 +487,102 @@ static NSMutableDictionary *_baseComponents = nil;
             handler(self);
         }];
     }
+}
+
+@end
+
+
+
+
+
+
+
+
+
+
+@implementation NSMutableURLRequest (URLTransaction)
+
+- (void)setDate:(NSDate *)date forHTTPHeaderField:(NSString *)field {
+    NSString *string = [self.dateFormatter stringFromDate:date];
+    [self setValue:string forHTTPHeaderField:field];
+}
+
+@end
+
+
+
+
+
+
+
+
+
+
+@interface NSHTTPURLResponse (URLTransactionAssociations)
+
+@property NSDateFormatter *dateFormatter1;
+@property NSDateFormatter *dateFormatter2;
+@property NSDateFormatter *dateFormatter3;
+
+@end
+
+
+
+
+
+
+
+
+
+
+@implementation NSHTTPURLResponse (URLTransaction)
+
+- (void)setDateFormatter1:(NSDateFormatter *)dateFormatter1 {
+    objc_setAssociatedObject(self, @selector(dateFormatter1), dateFormatter1, OBJC_ASSOCIATION_RETAIN);
+}
+
+- (NSDateFormatter *)dateFormatter1 {
+    NSDateFormatter *dateFormatter = objc_getAssociatedObject(self, @selector(dateFormatter1));
+    if (dateFormatter) return dateFormatter;
+    
+    self.dateFormatter1 = [NSDateFormatter fixedDateFormatterWithDateFormat:DateFormatRFC1123];
+    return self.dateFormatter1;
+}
+
+- (void)setDateFormatter2:(NSDateFormatter *)dateFormatter2 {
+    objc_setAssociatedObject(self, @selector(dateFormatter2), dateFormatter2, OBJC_ASSOCIATION_RETAIN);
+}
+
+- (NSDateFormatter *)dateFormatter2 {
+    NSDateFormatter *dateFormatter = objc_getAssociatedObject(self, @selector(dateFormatter2));
+    if (dateFormatter) return dateFormatter;
+    
+    self.dateFormatter2 = [NSDateFormatter fixedDateFormatterWithDateFormat:DateFormatRFC850];
+    return self.dateFormatter2;
+}
+
+- (void)setDateFormatter3:(NSDateFormatter *)dateFormatter3 {
+    objc_setAssociatedObject(self, @selector(dateFormatter3), dateFormatter3, OBJC_ASSOCIATION_RETAIN);
+}
+
+- (NSDateFormatter *)dateFormatter3 {
+    NSDateFormatter *dateFormatter = objc_getAssociatedObject(self, @selector(dateFormatter3));
+    if (dateFormatter) return dateFormatter;
+    
+    self.dateFormatter3 = [NSDateFormatter fixedDateFormatterWithDateFormat:DateFormatAsctime];
+    return self.dateFormatter3;
+}
+
+- (NSDate *)dateForHTTPHeaderField:(NSString *)field {
+    NSString *string = self.allHeaderFields[field];
+    NSDate *date = [self.dateFormatter1 dateFromString:string];
+    if (date) return date;
+    
+    date = [self.dateFormatter2 dateFromString:string];
+    if (date) return date;
+    
+    date = [self.dateFormatter3 dateFromString:string];
+    return date;
 }
 
 @end

@@ -23,9 +23,16 @@ extern NSString *const HTTPHeaderFieldAuthorization;
 extern NSString *const HTTPHeaderFieldContentType;
 extern NSString *const HTTPHeaderFieldIfModifiedSince;
 extern NSString *const HTTPHeaderFieldLastModified;
+extern NSString *const HTTPHeaderFieldDate;
 
 extern NSString *const MediaTypeApplicationForm;
 extern NSString *const MediaTypeApplicationJSON;
+
+typedef NS_ENUM(NSInteger, HTTPStatusCode) {
+    HTTPStatusCodeOK = 200,
+    
+    HTTPStatusCodeNotModified = 304
+};
 
 
 
@@ -61,6 +68,8 @@ typedef void (^URLRequestHandler)(__kindof NSURLRequest *);
 @property (readonly) NSError *error;
 @property (readonly) id json;
 
+- (NSDate *)dateForHTTPHeaderField:(NSString *)field;
+
 @end
 
 
@@ -94,5 +103,35 @@ typedef void (^URLTransactionHandler)(URLTransaction *);
 @property (readonly) id info;
 @property (readonly) NSArray *requests;
 @property (readonly) NSError *error;
+
+@end
+
+
+
+
+
+
+
+
+
+
+@interface NSMutableURLRequest (URLTransaction)
+
+- (void)setDate:(NSDate *)date forHTTPHeaderField:(NSString *)field;
+
+@end
+
+
+
+
+
+
+
+
+
+
+@interface NSHTTPURLResponse (URLTransaction)
+
+- (NSDate *)dateForHTTPHeaderField:(NSString *)field;
 
 @end
