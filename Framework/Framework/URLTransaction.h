@@ -29,9 +29,62 @@ extern NSString *const MediaTypeApplicationForm;
 extern NSString *const MediaTypeApplicationJSON;
 
 typedef NS_ENUM(NSInteger, HTTPStatusCode) {
-    HTTPStatusCodeOK = 200,
     
-    HTTPStatusCodeNotModified = 304
+    // Informational
+    
+    HTTPStatusCodeContinue = 100,
+    HTTPStatusCodeSwitchingProtocols = 101,
+    
+    // Successful
+    
+    HTTPStatusCodeOK = 200,
+    HTTPStatusCodeCreated = 201,
+    HTTPStatusCodeAccepted = 202,
+    HTTPStatusCodeNonAuthoritativeInformation = 203,
+    HTTPStatusCodeNoContent = 204,
+    HTTPStatusCodeResetContent = 205,
+    HTTPStatusCodePartialContent = 206,
+    
+    // Redirection
+    
+    HTTPStatusCodeMultipleChoices = 300,
+    HTTPStatusCodeMovedPermanently = 301,
+    HTTPStatusCodeFound = 302,
+    HTTPStatusCodeSeeOther = 303,
+    HTTPStatusCodeNotModified = 304,
+    HTTPStatusCodeUseProxy = 305,
+    HTTPStatusCodeUnused = 306,
+    HTTPStatusCodeTemporaryRedirect = 307,
+    
+    // Client error
+    
+    HTTPStatusCodeBadRequest = 400,
+    HTTPStatusCodeUnathorized = 401,
+    HTTPStatusCodePaymentRequired = 402,
+    HTTPStatusCodeForbidden = 403,
+    HTTPStatusCodeNotFound = 404,
+    HTTPStatusCodeMethodNotAllowed = 405,
+    HTTPStatusCodeNotAcceptable = 406,
+    HTTPStatusCodeProxyAuthenticationRequired = 407,
+    HTTPStatusCodeRequestTimeout = 408,
+    HTTPStatusCodeConflict = 409,
+    HTTPStatusCodeGone = 410,
+    HTTPStatusCodeLengthRequired = 411,
+    HTTPStatusCodePreconditionFailed = 412,
+    HTTPStatusCodeRequestEntityTooLarge = 413,
+    HTTPStatusCodeRequestURITooLong = 414,
+    HTTPStatusCodeUnsupportedMediaType = 415,
+    HTTPStatusCodeRequestRangeNotSatisfiable = 416,
+    HTTPStatusCodeExpectationFailed = 417,
+    
+    // Server error
+    
+    HTTPStatusCodeInternalServerError = 500,
+    HTTPStatusCodeNotImplemented = 501,
+    HTTPStatusCodeBadGateway = 502,
+    HTTPStatusCodeServiceUnavailable = 503,
+    HTTPStatusCodeGatewayTimeout = 504,
+    HTTPStatusCodeHTTPVersionNotSupported = 505
 };
 
 

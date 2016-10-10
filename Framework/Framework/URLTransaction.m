@@ -371,7 +371,7 @@ static NSMutableDictionary *_baseComponents = nil;
             request.response = (NSHTTPURLResponse *)response;
             
             NSInteger statusCode = request.response.statusCode;
-            if (statusCode >= 400) {
+            if (statusCode >= HTTPStatusCodeBadRequest) {
                 NSMutableDictionary *userInfo = [NSMutableDictionary dictionary];
                 userInfo[NSLocalizedDescriptionKey] = [NSHTTPURLResponse localizedStringForStatusCode:statusCode];
                 userInfo[NSURLErrorKey] = request.URL;
