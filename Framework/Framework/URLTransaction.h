@@ -101,7 +101,6 @@ typedef NS_ENUM(NSInteger, HTTPStatusCode) {
 typedef void (^URLRequestHandler)(__kindof NSURLRequest *);
 
 - (instancetype)queue:(NSOperationQueue *)queue;
-- (instancetype)JSONSchema:(JSONSchema *)schema;
 - (instancetype)moc:(NSManagedObjectContext *)moc;
 - (instancetype)info:(id)info;
 - (instancetype)success:(URLRequestHandler)success;
@@ -113,7 +112,6 @@ typedef void (^URLRequestHandler)(__kindof NSURLRequest *);
 
 @property (class, readonly) NSMutableDictionary<NSString *, NSURLComponents *> *baseComponents;
 @property (readonly) NSOperationQueue *queue;
-@property (readonly) JSONSchema *JSONSchema;
 @property (readonly) NSManagedObjectContext *moc;
 @property (readonly) id info;
 @property (readonly) NSData *data;
@@ -122,6 +120,9 @@ typedef void (^URLRequestHandler)(__kindof NSURLRequest *);
 @property (readonly) id json;
 
 - (NSDate *)dateForHTTPHeaderField:(NSString *)field;
+
+- (void)setJSONSchema:(JSONSchema *)schema forStatusCode:(HTTPStatusCode)code;
+- (JSONSchema *)JSONSchemaForStatusCode:(HTTPStatusCode)code;
 
 @end
 
@@ -139,7 +140,6 @@ typedef void (^URLRequestHandler)(__kindof NSURLRequest *);
 typedef void (^URLTransactionHandler)(URLTransaction *);
 
 - (instancetype)queue:(NSOperationQueue *)queue;
-- (instancetype)JSONSchema:(JSONSchema *)schema;
 - (instancetype)moc:(NSManagedObjectContext *)moc;
 - (instancetype)info:(id)info;
 - (instancetype)addRequest:(NSURLRequest *)request;
@@ -151,11 +151,13 @@ typedef void (^URLTransactionHandler)(URLTransaction *);
 - (void)cancel;
 
 @property (readonly) NSOperationQueue *queue;
-@property (readonly) JSONSchema *JSONSchema;
 @property (readonly) NSManagedObjectContext *moc;
 @property (readonly) id info;
 @property (readonly) NSArray *requests;
 @property (readonly) NSError *error;
+
+- (void)setJSONSchema:(JSONSchema *)schema forStatusCode:(HTTPStatusCode)code;
+- (JSONSchema *)JSONSchemaForStatusCode:(HTTPStatusCode)code;
 
 @end
 

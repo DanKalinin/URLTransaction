@@ -53,6 +53,7 @@ NSString *const MediaTypeApplicationJSON = @"application/json";
 @property NSURLSessionDataTask *task;
 
 @property NSDateFormatter *dateFormatter;
+@property NSMutableDictionary<NSNumber *, JSONSchema *> *JSONSchemas;
 
 @end
 
@@ -60,13 +61,22 @@ NSString *const MediaTypeApplicationJSON = @"application/json";
 
 @implementation NSURLRequest (URLTransaction)
 
-- (instancetype)queue:(NSOperationQueue *)queue {
-    self.queue = queue;
++ (void)load {
+    SEL swizzling = @selector(initWithURL:cachePolicy:timeoutInterval:);
+    SEL swizzled = @selector(initSwizzledWithURL:cachePolicy:timeoutInterval:);
+    [self swizzleInstanceMethod:swizzling with:swizzled];
+}
+
+- (instancetype)initSwizzledWithURL:(NSURL *)URL cachePolicy:(NSURLRequestCachePolicy)cachePolicy timeoutInterval:(NSTimeInterval)timeoutInterval {
+    self = [self initSwizzledWithURL:URL cachePolicy:cachePolicy timeoutInterval:timeoutInterval];
+    if (self) {
+        self.JSONSchemas = [NSMutableDictionary dictionary];
+    }
     return self;
 }
 
-- (instancetype)JSONSchema:(JSONSchema *)schema {
-    self.JSONSchema = schema;
+- (instancetype)queue:(NSOperationQueue *)queue {
+    self.queue = queue;
     return self;
 }
 
@@ -123,12 +133,12 @@ static NSMutableDictionary *_baseComponents = nil;
     return objc_getAssociatedObject(self, @selector(queue));
 }
 
-- (void)setJSONSchema:(JSONSchema *)JSONSchema {
-    objc_setAssociatedObject(self, @selector(JSONSchema), JSONSchema, OBJC_ASSOCIATION_RETAIN);
+- (void)setJSONSchemas:(NSMutableDictionary *)JSONSchemas {
+    objc_setAssociatedObject(self, @selector(JSONSchemas), JSONSchemas, OBJC_ASSOCIATION_RETAIN);
 }
 
-- (JSONSchema *)JSONSchema {
-    return objc_getAssociatedObject(self, @selector(JSONSchema));
+- (NSMutableDictionary *)JSONSchemas {
+    return objc_getAssociatedObject(self, @selector(JSONSchemas));
 }
 
 - (void)setMoc:(NSManagedObjectContext *)moc {
@@ -250,6 +260,15 @@ static NSMutableDictionary *_baseComponents = nil;
     return date;
 }
 
+- (void)setJSONSchema:(JSONSchema *)schema forStatusCode:(HTTPStatusCode)code {
+    self.JSONSchemas[@(code)] = schema;
+}
+
+- (JSONSchema *)JSONSchemaForStatusCode:(HTTPStatusCode)code {
+    JSONSchema *schema = self.JSONSchemas[@(code)];
+    return schema;
+}
+
 #pragma mark - Helpers
 
 - (void)invokeHandler:(URLRequestHandler)handler {
@@ -274,7 +293,7 @@ static NSMutableDictionary *_baseComponents = nil;
 @interface URLTransaction ()
 
 @property NSOperationQueue *queue;
-@property JSONSchema *JSONSchema;
+@property NSMutableDictionary<NSNumber *, JSONSchema *> *JSONSchemas;
 @property NSManagedObjectContext *moc;
 @property id info;
 
@@ -300,6 +319,8 @@ static NSMutableDictionary *_baseComponents = nil;
         self.systemQueue.maxConcurrentOperationCount = 1;
         
         self.mutableRequests = [NSMutableArray array];
+        
+        self.JSONSchemas = [NSMutableDictionary dictionary];
     }
     return self;
 }
@@ -309,8 +330,8 @@ static NSMutableDictionary *_baseComponents = nil;
     return self;
 }
 
-- (instancetype)JSONSchema:(JSONSchema *)schema {
-    self.JSONSchema = schema;
+- (instancetype)JSONSchema:(JSONSchema *)schema forStatusCode:(HTTPStatusCode)statusCode {
+    self.JSONSchemas[@(statusCode)] = schema;
     return self;
 }
 
@@ -381,7 +402,8 @@ static NSMutableDictionary *_baseComponents = nil;
                 return;
             }
             
-            if (!request.JSONSchema) {
+            JSONSchema *schema = request.JSONSchemas[@(statusCode)];
+            if (!schema) {
                 dispatch_group_leave(group);
                 return;
             }
@@ -389,7 +411,7 @@ static NSMutableDictionary *_baseComponents = nil;
             NSOperationQueue *queue = [NSOperationQueue new];
             [queue addOperationWithBlock:^{
                 NSError *error = nil;
-                BOOL valid = [request.JSONSchema validateObject:request.json error:&error];
+                BOOL valid = [schema validateObject:request.json error:&error];
                 if (!valid) {
                     request.error = error;
                 }
@@ -446,6 +468,15 @@ static NSMutableDictionary *_baseComponents = nil;
     [tasks makeObjectsPerformSelector:@selector(cancel)];
 }
 
+- (void)setJSONSchema:(JSONSchema *)schema forStatusCode:(HTTPStatusCode)code {
+    self.JSONSchemas[@(code)] = schema;
+}
+
+- (JSONSchema *)JSONSchemaForStatusCode:(HTTPStatusCode)code {
+    JSONSchema *schema = self.JSONSchemas[@(code)];
+    return schema;
+}
+
 #pragma mark - Helpers
 
 - (void)prepare {
@@ -463,8 +494,11 @@ static NSMutableDictionary *_baseComponents = nil;
             request.queue = self.queue;
         }
         
-        if (!request.JSONSchema && self.JSONSchema) {
-            request.JSONSchema = self.JSONSchema;
+        for (NSNumber *code in self.JSONSchemas.allKeys) {
+            JSONSchema *schema = request.JSONSchemas[code];
+            if (!schema) {
+                request.JSONSchemas[code] = self.JSONSchemas[code];
+            }
         }
         
         if (!request.moc && self.moc) {

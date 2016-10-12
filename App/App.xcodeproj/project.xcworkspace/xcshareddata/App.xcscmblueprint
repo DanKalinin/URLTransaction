@@ -6,13 +6,15 @@
   "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
     "BFADB2A208B674039E55D77ECBE534817A51E4B7" : 9223372036854775807,
     "078E6104D13DDB7E626ECDABFAB4E3BAED514BBA" : 9223372036854775807,
-    "F0C896AFB0E9116E77330595A5FCF09ECF4BE6E5" : 9223372036854775807
+    "F0C896AFB0E9116E77330595A5FCF09ECF4BE6E5" : 9223372036854775807,
+    "2EAE61832618E21B45BA5E26E525B01F376F2099" : 9223372036854775807
   },
   "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "9CF3F182-E967-43A2-937E-8523514C1908",
   "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
     "BFADB2A208B674039E55D77ECBE534817A51E4B7" : "Helpers\/",
     "078E6104D13DDB7E626ECDABFAB4E3BAED514BBA" : "JSONSchema\/",
-    "F0C896AFB0E9116E77330595A5FCF09ECF4BE6E5" : "URLTransaction\/"
+    "F0C896AFB0E9116E77330595A5FCF09ECF4BE6E5" : "URLTransaction\/",
+    "2EAE61832618E21B45BA5E26E525B01F376F2099" : "OAuth\/"
   },
   "DVTSourceControlWorkspaceBlueprintNameKey" : "App",
   "DVTSourceControlWorkspaceBlueprintVersion" : 204,
@@ -22,6 +24,11 @@
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/DanKalinin\/JSONSchema.git",
       "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "078E6104D13DDB7E626ECDABFAB4E3BAED514BBA"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/DanKalinin\/OAuth.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "2EAE61832618E21B45BA5E26E525B01F376F2099"
     },
     {
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/DanKalinin\/Helpers.git",
