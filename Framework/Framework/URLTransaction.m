@@ -12,8 +12,15 @@
 
 NSString *const HTTPErrorDomain = @"HTTPErrorDomain";
 
+NSString *const HTTPMethodOptions = @"OPTIONS";
 NSString *const HTTPMethodGet = @"GET";
+NSString *const HTTPMethodHead = @"HEAD";
 NSString *const HTTPMethodPost = @"POST";
+NSString *const HTTPMethodPut = @"PUT";
+NSString *const HTTPMethodPatch = @"PATCH";
+NSString *const HTTPMethodDelete = @"DELETE";
+NSString *const HTTPMethodTrace = @"TRACE";
+NSString *const HTTPMethodConnect = @"CONNECT";
 
 NSString *const HTTPHeaderFieldAccept = @"Accept";
 NSString *const HTTPHeaderFieldAuthorization = @"Authorization";

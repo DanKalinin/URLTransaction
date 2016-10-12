@@ -15,8 +15,15 @@ FOUNDATION_EXPORT const unsigned char URLTransactionVersionString[];
 
 extern NSString *const HTTPErrorDomain;
 
+extern NSString *const HTTPMethodOptions;
 extern NSString *const HTTPMethodGet;
+extern NSString *const HTTPMethodHead;
 extern NSString *const HTTPMethodPost;
+extern NSString *const HTTPMethodPut;
+extern NSString *const HTTPMethodPatch;
+extern NSString *const HTTPMethodDelete;
+extern NSString *const HTTPMethodTrace;
+extern NSString *const HTTPMethodConnect;
 
 extern NSString *const HTTPHeaderFieldAccept;
 extern NSString *const HTTPHeaderFieldAuthorization;
