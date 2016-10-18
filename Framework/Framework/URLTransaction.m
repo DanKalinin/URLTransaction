@@ -126,9 +126,9 @@ NSString *const MediaTypeApplicationJSON = @"application/json";
 static NSMutableDictionary *_baseComponents = nil;
 
 + (NSMutableDictionary<NSString *, NSURLComponents *> *)baseComponents {
-    if (_baseComponents == nil) {
-        _baseComponents = [NSMutableDictionary dictionary];
-    }
+    if (_baseComponents) return _baseComponents;
+    
+    _baseComponents = [NSMutableDictionary dictionary];
     return _baseComponents;
 }
 
