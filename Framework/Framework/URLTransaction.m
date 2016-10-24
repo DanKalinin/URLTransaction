@@ -69,9 +69,9 @@ NSString *const MediaTypeApplicationJSON = @"application/json";
 @implementation NSURLRequest (URLTransaction)
 
 + (void)load {
-    SEL swizzling = @selector(initWithURL:cachePolicy:timeoutInterval:);
+    SEL original = @selector(initWithURL:cachePolicy:timeoutInterval:);
     SEL swizzled = @selector(initSwizzledWithURL:cachePolicy:timeoutInterval:);
-    [self swizzleInstanceMethod:swizzling with:swizzled];
+    [self swizzleInstanceMethod:original with:swizzled];
 }
 
 - (instancetype)initSwizzledWithURL:(NSURL *)URL cachePolicy:(NSURLRequestCachePolicy)cachePolicy timeoutInterval:(NSTimeInterval)timeoutInterval {
