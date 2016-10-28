@@ -13,7 +13,7 @@
 FOUNDATION_EXPORT double URLTransactionVersionNumber;
 FOUNDATION_EXPORT const unsigned char URLTransactionVersionString[];
 
-extern NSString *const HTTPErrorDomain;
+extern NSErrorDomain const HTTPErrorDomain;
 
 extern NSString *const HTTPMethodOptions;
 extern NSString *const HTTPMethodGet;

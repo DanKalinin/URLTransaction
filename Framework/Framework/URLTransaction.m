@@ -10,7 +10,7 @@
 #import <objc/runtime.h>
 #import <Helpers/Helpers.h>
 
-NSString *const HTTPErrorDomain = @"HTTPErrorDomain";
+NSErrorDomain const HTTPErrorDomain = @"HTTPErrorDomain";
 
 NSString *const HTTPMethodOptions = @"OPTIONS";
 NSString *const HTTPMethodGet = @"GET";
