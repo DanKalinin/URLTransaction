@@ -278,10 +278,10 @@ static NSMutableDictionary *_baseComponents = nil;
 
 #pragma mark - Helpers
 
-- (void)invokeHandler:(URLRequestHandler)handler {
+- (void)invokeHandler:(URLRequestHandler)handler request:(NSURLRequest *)request {
     if (handler) {
         [self.queue addOperationWithBlock:^{
-            handler(self);
+            handler(request);
         }];
     }
 }
@@ -448,21 +448,21 @@ static NSMutableDictionary *_baseComponents = nil;
                     self.error = request.error;
                 }
                 
-                [request invokeHandler:request.failure];
+                [request invokeHandler:request.failure request:request];
             } else {
-                [request invokeHandler:request.success];
+                [request invokeHandler:request.success request:request];
             }
-            [request invokeHandler:request.completion];
+            [request invokeHandler:request.completion request:request];
         }
         
         // Transaction
         
         if (self.error) {
-            [self invokeHandler:self.failure];
+            [self invokeHandler:self.failure transaction:self];
         } else {
-            [self invokeHandler:self.success];
+            [self invokeHandler:self.success transaction:self];
         }
-        [self invokeHandler:self.completion];
+        [self invokeHandler:self.completion transaction:self];
         
         [self cleanup];
     });
@@ -522,10 +522,10 @@ static NSMutableDictionary *_baseComponents = nil;
     
 }
 
-- (void)invokeHandler:(URLTransactionHandler)handler {
+- (void)invokeHandler:(URLTransactionHandler)handler transaction:(URLTransaction *)transaction {
     if (handler) {
         [self.queue addOperationWithBlock:^{
-            handler(self);
+            handler(transaction);
         }];
     }
 }
