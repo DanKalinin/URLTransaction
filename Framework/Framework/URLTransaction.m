@@ -49,6 +49,7 @@ NSString *const MediaTypeApplicationJSON = @"application/json";
 
 @property NSData *data;
 @property id cachedJSON;
+@property UIImage *cachedImage;
 @property NSHTTPURLResponse *response;
 @property NSError *error;
 
@@ -180,6 +181,14 @@ static NSMutableDictionary *_baseComponents = nil;
     return objc_getAssociatedObject(self, @selector(cachedJSON));
 }
 
+- (void)setCachedImage:(UIImage *)cachedImage {
+    objc_setAssociatedObject(self, @selector(cachedImage), cachedImage, OBJC_ASSOCIATION_RETAIN);
+}
+
+- (UIImage *)cachedImage {
+    return objc_getAssociatedObject(self, @selector(cachedImage));
+}
+
 - (void)setResponse:(NSHTTPURLResponse *)response {
     objc_setAssociatedObject(self, @selector(response), response, OBJC_ASSOCIATION_RETAIN);
 }
@@ -259,6 +268,11 @@ static NSMutableDictionary *_baseComponents = nil;
     } @catch (NSException *exception) {
         return nil;
     }
+}
+
+- (UIImage *)image {
+    if (self.cachedImage) return self.cachedImage;
+    self.cachedImage = [UIImage imageWithData:self.data];
 }
 
 - (NSDate *)dateForHTTPHeaderField:(NSString *)field {

@@ -20,6 +20,7 @@ typedef NS_ENUM(NSUInteger, ReachabilityStatus) {
 
 typedef void (^ReachabilityStatusHandler)(ReachabilityStatus status);
 
++ (instancetype)reachability;
 - (instancetype)initWithHost:(NSString *)host;
 
 @property (readonly) ReachabilityStatus status;

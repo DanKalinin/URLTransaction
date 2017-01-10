@@ -24,6 +24,15 @@ static void Callback(SCNetworkReachabilityRef target, SCNetworkReachabilityFlags
 
 @implementation Reachability
 
++ (instancetype)reachability {
+    static Reachability *reachability = nil;
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        reachability = [self.alloc initWithHost:nil];
+    });
+    return reachability;
+}
+
 - (instancetype)initWithHost:(NSString *)host {
     self = [super init];
     if (self) {
