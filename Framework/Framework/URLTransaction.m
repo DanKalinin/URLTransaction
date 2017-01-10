@@ -271,8 +271,11 @@ static NSMutableDictionary *_baseComponents = nil;
 }
 
 - (UIImage *)image {
+    
     if (self.cachedImage) return self.cachedImage;
+    
     self.cachedImage = [UIImage imageWithData:self.data];
+    return self.cachedImage;
 }
 
 - (NSDate *)dateForHTTPHeaderField:(NSString *)field {
