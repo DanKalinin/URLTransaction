@@ -11,6 +11,8 @@
 		3701826B1DA903AF006C3A4F /* JSONSchema.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 370182611DA90399006C3A4F /* JSONSchema.framework */; };
 		371770491D8B067D0027C322 /* URLTransaction.h in Headers */ = {isa = PBXBuildFile; fileRef = 371770471D8B067D0027C322 /* URLTransaction.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3717704A1D8B067D0027C322 /* URLTransaction.m in Sources */ = {isa = PBXBuildFile; fileRef = 371770481D8B067D0027C322 /* URLTransaction.m */; };
+		E71122041E24F90200CEF9A5 /* Reachability.h in Headers */ = {isa = PBXBuildFile; fileRef = E71122021E24F90200CEF9A5 /* Reachability.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E71122051E24F90200CEF9A5 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = E71122031E24F90200CEF9A5 /* Reachability.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +46,8 @@
 		371770401D8B05BB0027C322 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		371770471D8B067D0027C322 /* URLTransaction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = URLTransaction.h; sourceTree = "<group>"; };
 		371770481D8B067D0027C322 /* URLTransaction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = URLTransaction.m; sourceTree = "<group>"; };
+		E71122021E24F90200CEF9A5 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		E71122031E24F90200CEF9A5 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,6 +127,8 @@
 			children = (
 				371770471D8B067D0027C322 /* URLTransaction.h */,
 				371770481D8B067D0027C322 /* URLTransaction.m */,
+				E71122021E24F90200CEF9A5 /* Reachability.h */,
+				E71122031E24F90200CEF9A5 /* Reachability.m */,
 				371770401D8B05BB0027C322 /* Info.plist */,
 			);
 			path = Framework;
@@ -136,6 +142,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				371770491D8B067D0027C322 /* URLTransaction.h in Headers */,
+				E71122041E24F90200CEF9A5 /* Reachability.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -241,6 +248,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E71122051E24F90200CEF9A5 /* Reachability.m in Sources */,
 				3717704A1D8B067D0027C322 /* URLTransaction.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
