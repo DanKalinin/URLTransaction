@@ -41,7 +41,7 @@ NSString *const MediaTypeApplicationJSON = @"application/json";
 
 
 
-@interface NSURLRequest (URLTransactionAssociations)
+@interface NSURLRequest (URLTransactionSelectors)
 
 @property NSOperationQueue *queue;
 @property NSManagedObjectContext *moc;
@@ -403,7 +403,7 @@ static NSMutableDictionary *_baseComponents = nil;
         
         dispatch_group_enter(group);
         
-        request.task = [[NSURLSession sharedSession] dataTaskWithRequest:request completionHandler:^(NSData *data, NSURLResponse *response, NSError *error) {
+        request.task = [NSURLSession.sharedSession dataTaskWithRequest:request completionHandler:^(NSData *data, NSURLResponse *response, NSError *error) {
             
             if (error) {
                 request.error = error;
@@ -576,7 +576,7 @@ static NSMutableDictionary *_baseComponents = nil;
 
 
 
-@interface NSHTTPURLResponse (URLTransactionAssociations)
+@interface NSHTTPURLResponse (URLTransactionSelectors)
 
 @property NSDateFormatter *dateFormatter1;
 @property NSDateFormatter *dateFormatter2;
