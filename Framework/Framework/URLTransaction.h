@@ -6,7 +6,7 @@
 //  Copyright © 2016 Dan. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 #import <CoreData/CoreData.h>
 #import <JSONSchema/JSONSchema.h>
 
