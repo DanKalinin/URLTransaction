@@ -7,7 +7,6 @@
 //
 
 #import "Cache.h"
-#import "URLTransaction.h"
 
 
 

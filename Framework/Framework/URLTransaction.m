@@ -644,3 +644,34 @@ static NSMutableDictionary *_baseComponents = nil;
 }
 
 @end
+
+
+
+
+
+
+
+
+
+
+@implementation NSObject (URLTransaction)
+
+- (void)setRequest:(NSURLRequest *)request {
+    [self.request cancel];
+    objc_setAssociatedObject(self, @selector(request), request, OBJC_ASSOCIATION_RETAIN);
+}
+
+- (NSURLRequest *)request {
+    return objc_getAssociatedObject(self, @selector(request));
+}
+
+- (void)setTransaction:(URLTransaction *)transaction {
+    [self.transaction cancel];
+    objc_setAssociatedObject(self, @selector(transaction), transaction, OBJC_ASSOCIATION_RETAIN);
+}
+
+- (URLTransaction *)transaction {
+    return objc_getAssociatedObject(self, @selector(transaction));
+}
+
+@end

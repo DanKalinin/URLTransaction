@@ -14,7 +14,6 @@ FOUNDATION_EXPORT double URLTransactionVersionNumber;
 FOUNDATION_EXPORT const unsigned char URLTransactionVersionString[];
 
 #import <URLTransaction/Reachability.h>
-#import <URLTransaction/Cache.h>
 
 extern NSErrorDomain const HTTPErrorDomain;
 
@@ -199,5 +198,21 @@ typedef void (^URLTransactionHandler)(URLTransaction *);
 @interface NSHTTPURLResponse (URLTransaction)
 
 - (NSDate *)dateForHTTPHeaderField:(NSString *)field;
+
+@end
+
+
+
+
+
+
+
+
+
+
+@interface NSObject (URLTransaction)
+
+@property NSURLRequest *request;
+@property URLTransaction *transaction;
 
 @end

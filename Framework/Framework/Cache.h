@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import <Helpers/Helpers.h>
+#import "URLTransaction.h"
 
 
 
@@ -18,23 +19,41 @@
 
 
 
-@interface NSData (URLTransaction)
-
-+ (void)dataWithContentsOfURL:(NSURL *)URL completion:(DataBlock)completion;
-
-@end
 
 
 
 
 
+//@interface NSData (URLTransaction)
+//
+//+ (void)dataWithContentsOfURL:(NSURL *)URL completion:(DataBlock)completion;
+//
+//@end
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//@interface UIImage (URLTransaction)
+//
+//+ (void)imageWithContentsOfURL:(NSURL *)URL completion:(ImageBlock)completion;
+//
+//@end
 
 
 
 
 
-@interface UIImage (URLTransaction)
 
-+ (void)imageWithContentsOfURL:(NSURL *)URL completion:(ImageBlock)completion;
+
+
+
+
+@interface UITableViewCell (URLTransaction)
 
 @end
