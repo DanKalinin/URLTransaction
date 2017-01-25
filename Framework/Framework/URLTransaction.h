@@ -53,6 +53,8 @@ typedef NS_ENUM(NSInteger, HTTPStatusCode) {
     HTTPStatusCodeNoContent = 204,
     HTTPStatusCodeResetContent = 205,
     HTTPStatusCodePartialContent = 206,
+    HTTPStatusCodeMultiStatus = 207,
+    HTTPStatusCodeAlreadyReported = 208,
     
     // Redirection
     
