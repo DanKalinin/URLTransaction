@@ -36,7 +36,7 @@ static void Callback(SCNetworkReachabilityRef target, SCNetworkReachabilityFlags
 - (instancetype)initWithHost:(NSString *)host {
     self = [super init];
     if (self) {
-        host = host ? host : @"0.0.0.0";
+        if (!host) host = @"0.0.0.0";
         self.target = SCNetworkReachabilityCreateWithName(NULL, host.UTF8String);
         SCNetworkReachabilityScheduleWithRunLoop(self.target, CFRunLoopGetCurrent(), kCFRunLoopDefaultMode);
         
