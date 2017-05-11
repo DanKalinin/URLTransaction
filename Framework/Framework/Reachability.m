@@ -18,22 +18,15 @@ static void Callback(SCNetworkReachabilityRef target, SCNetworkReachabilityFlags
 @property SCNetworkReachabilityRef target;
 @property ReachabilityStatus status;
 
+@property (copy) ReachabilityStatusHandler statusHandler;
+
 @end
 
 
 
 @implementation Reachability
 
-+ (instancetype)reachability {
-    static Reachability *reachability = nil;
-    static dispatch_once_t onceToken;
-    dispatch_once(&onceToken, ^{
-        reachability = [self.alloc initWithHost:nil];
-    });
-    return reachability;
-}
-
-- (instancetype)initWithHost:(NSString *)host {
+- (instancetype)initWithHost:(NSString *)host statusHandler:(ReachabilityStatusHandler)handler {
     self = [super init];
     if (self) {
         if (!host) host = @"0.0.0.0";
@@ -51,6 +44,8 @@ static void Callback(SCNetworkReachabilityRef target, SCNetworkReachabilityFlags
         SCNetworkReachabilityFlags flags;
         SCNetworkReachabilityGetFlags(self.target, &flags);
         self.status = [self statusForFlags:flags];
+        self.statusHandler = handler;
+        [self invokeHandler:handler status:self.status];
     }
     return self;
 }
