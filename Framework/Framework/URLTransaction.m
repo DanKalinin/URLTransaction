@@ -48,8 +48,6 @@ NSString *const MediaTypeApplicationJSON = @"application/json";
 @property id info;
 
 @property NSData *data;
-@property id cachedJSON;
-@property UIImage *cachedImage;
 @property NSHTTPURLResponse *response;
 @property NSError *error;
 
@@ -173,22 +171,6 @@ static NSMutableDictionary *_baseComponents = nil;
     return objc_getAssociatedObject(self, @selector(data));
 }
 
-- (void)setCachedJSON:(id)cachedJSON {
-    objc_setAssociatedObject(self, @selector(cachedJSON), cachedJSON, OBJC_ASSOCIATION_RETAIN);
-}
-
-- (id)cachedJSON {
-    return objc_getAssociatedObject(self, @selector(cachedJSON));
-}
-
-- (void)setCachedImage:(UIImage *)cachedImage {
-    objc_setAssociatedObject(self, @selector(cachedImage), cachedImage, OBJC_ASSOCIATION_RETAIN);
-}
-
-- (UIImage *)cachedImage {
-    return objc_getAssociatedObject(self, @selector(cachedImage));
-}
-
 - (void)setResponse:(NSHTTPURLResponse *)response {
     objc_setAssociatedObject(self, @selector(response), response, OBJC_ASSOCIATION_RETAIN);
 }
@@ -255,28 +237,6 @@ static NSMutableDictionary *_baseComponents = nil;
     
     self.dateFormatter = [NSDateFormatter fixedDateFormatterWithDateFormat:DateFormatRFC1123];
     return self.dateFormatter;
-}
-
-- (id)json {
-    
-    if (self.cachedJSON) return self.cachedJSON;
-    
-    @try {
-        id json = [NSJSONSerialization JSONObjectWithData:self.data options:0 error:nil];
-        self.cachedJSON = json;
-        return json;
-    } @catch (NSException *exception) {
-        return nil;
-    }
-}
-
-- (UIImage *)image {
-    
-    if (self.cachedImage) return self.cachedImage;
-    
-    CGFloat scale = UIApplication.sharedApplication.keyWindow.screen.scale;
-    self.cachedImage = [UIImage imageWithData:self.data scale:scale];
-    return self.cachedImage;
 }
 
 - (NSDate *)dateForHTTPHeaderField:(NSString *)field {
@@ -436,7 +396,7 @@ static NSMutableDictionary *_baseComponents = nil;
             NSOperationQueue *queue = [NSOperationQueue new];
             [queue addOperationWithBlock:^{
                 NSError *error = nil;
-                BOOL valid = [schema validateObject:request.json error:&error];
+                BOOL valid = [schema validateObject:request.data.json error:&error];
                 if (!valid) {
                     request.error = error;
                 }
