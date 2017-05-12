@@ -18,12 +18,12 @@ typedef NS_ENUM(NSUInteger, ReachabilityStatus) {
 
 @interface Reachability : NSObject
 
-typedef void (^ReachabilityStatusHandler)(ReachabilityStatus status);
+typedef void (^ReachabilityHandler)(Reachability *reachability);
 
 + (instancetype)reachability;
 - (instancetype)initWithHost:(NSString *)host;
 
 @property (readonly) ReachabilityStatus status;
-@property (copy) ReachabilityStatusHandler statusHandler;
+@property (copy) ReachabilityHandler handler;
 
 @end

@@ -7,6 +7,7 @@
 //
 
 #import "Reachability.h"
+#import <Helpers/Helpers.h>
 #import <SystemConfiguration/SystemConfiguration.h>
 
 static void Callback(SCNetworkReachabilityRef target, SCNetworkReachabilityFlags flags, void *info);
@@ -78,12 +79,6 @@ static void Callback(SCNetworkReachabilityRef target, SCNetworkReachabilityFlags
     return status;
 }
 
-- (void)invokeHandler:(ReachabilityStatusHandler)handler status:(ReachabilityStatus)status {
-    if (handler) {
-        handler(status);
-    }
-}
-
 @end
 
 
@@ -93,6 +88,6 @@ static void Callback(SCNetworkReachabilityRef target, SCNetworkReachabilityFlags
     ReachabilityStatus status = [reachability statusForFlags:flags];
     if (status != reachability.status) {
         reachability.status = status;
-        [reachability invokeHandler:reachability.statusHandler status:status];
+        [reachability invokeHandler:reachability.handler object:reachability];
     }
 }
