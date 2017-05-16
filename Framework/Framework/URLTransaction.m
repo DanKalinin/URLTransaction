@@ -367,6 +367,8 @@ static NSMutableDictionary *_baseComponents = nil;
         request.task = [NSURLSession.sharedSession dataTaskWithRequest:request completionHandler:^(NSData *data, NSURLResponse *response, NSError *error) {
             
             if (error) {
+                if (([error.domain isEqualToString:NSURLErrorDomain]) && (error.code == NSURLErrorCancelled)) return;
+                
                 request.error = error;
                 
                 dispatch_group_leave(group);
@@ -448,7 +450,7 @@ static NSMutableDictionary *_baseComponents = nil;
 
 - (void)cancel {
     NSArray *tasks = [self.requests valueForKey:@"task"];
-    NSPredicate *predicate = [NSPredicate predicateWithFormat:@"state = %ld", (long)NSURLSessionTaskStateRunning];
+    NSPredicate *predicate = [NSPredicate predicateWithFormat:@"state = %i", (int)NSURLSessionTaskStateRunning];
     tasks = [tasks filteredArrayUsingPredicate:predicate];
     [tasks makeObjectsPerformSelector:@selector(cancel)];
 }
