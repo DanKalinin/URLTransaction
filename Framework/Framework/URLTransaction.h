@@ -13,8 +13,6 @@
 FOUNDATION_EXPORT double URLTransactionVersionNumber;
 FOUNDATION_EXPORT const unsigned char URLTransactionVersionString[];
 
-#import <URLTransaction/Reachability.h>
-
 extern NSErrorDomain const HTTPErrorDomain;
 
 extern NSString *const HTTPMethodOptions;
