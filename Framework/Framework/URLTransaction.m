@@ -69,12 +69,12 @@ NSString *const MediaTypeApplicationJSON = @"application/json";
 
 + (void)load {
     SEL original = @selector(initWithURL:cachePolicy:timeoutInterval:);
-    SEL swizzled = @selector(initSwizzledWithURL:cachePolicy:timeoutInterval:);
+    SEL swizzled = @selector(init_URLTransaction_NSURLRequest_swizzledWithURL:cachePolicy:timeoutInterval:);
     [self swizzleInstanceMethod:original with:swizzled];
 }
 
-- (instancetype)initSwizzledWithURL:(NSURL *)URL cachePolicy:(NSURLRequestCachePolicy)cachePolicy timeoutInterval:(NSTimeInterval)timeoutInterval {
-    self = [self initSwizzledWithURL:URL cachePolicy:cachePolicy timeoutInterval:timeoutInterval];
+- (instancetype)init_URLTransaction_NSURLRequest_swizzledWithURL:(NSURL *)URL cachePolicy:(NSURLRequestCachePolicy)cachePolicy timeoutInterval:(NSTimeInterval)timeoutInterval {
+    self = [self init_URLTransaction_NSURLRequest_swizzledWithURL:URL cachePolicy:cachePolicy timeoutInterval:timeoutInterval];
     if (self) {
         self.JSONSchemas = [NSMutableDictionary dictionary];
     }
