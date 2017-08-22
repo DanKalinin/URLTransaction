@@ -12,25 +12,25 @@
 
 NSErrorDomain const HTTPErrorDomain = @"HTTPErrorDomain";
 
-NSString *const HTTPMethodOptions = @"OPTIONS";
-NSString *const HTTPMethodGet = @"GET";
-NSString *const HTTPMethodHead = @"HEAD";
-NSString *const HTTPMethodPost = @"POST";
-NSString *const HTTPMethodPut = @"PUT";
-NSString *const HTTPMethodPatch = @"PATCH";
-NSString *const HTTPMethodDelete = @"DELETE";
-NSString *const HTTPMethodTrace = @"TRACE";
-NSString *const HTTPMethodConnect = @"CONNECT";
+HTTPMethod const HTTPMethodOptions = @"OPTIONS";
+HTTPMethod const HTTPMethodGet = @"GET";
+HTTPMethod const HTTPMethodHead = @"HEAD";
+HTTPMethod const HTTPMethodPost = @"POST";
+HTTPMethod const HTTPMethodPut = @"PUT";
+HTTPMethod const HTTPMethodPatch = @"PATCH";
+HTTPMethod const HTTPMethodDelete = @"DELETE";
+HTTPMethod const HTTPMethodTrace = @"TRACE";
+HTTPMethod const HTTPMethodConnect = @"CONNECT";
 
-NSString *const HTTPHeaderFieldAccept = @"Accept";
-NSString *const HTTPHeaderFieldAuthorization = @"Authorization";
-NSString *const HTTPHeaderFieldContentType = @"Content-Type";
-NSString *const HTTPHeaderFieldIfModifiedSince = @"If-Modified-Since";
-NSString *const HTTPHeaderFieldLastModified = @"Last-Modified";
-NSString *const HTTPHeaderFieldDate = @"Date";
+HTTPHeaderField const HTTPHeaderFieldAccept = @"Accept";
+HTTPHeaderField const HTTPHeaderFieldAuthorization = @"Authorization";
+HTTPHeaderField const HTTPHeaderFieldContentType = @"Content-Type";
+HTTPHeaderField const HTTPHeaderFieldIfModifiedSince = @"If-Modified-Since";
+HTTPHeaderField const HTTPHeaderFieldLastModified = @"Last-Modified";
+HTTPHeaderField const HTTPHeaderFieldDate = @"Date";
 
-NSString *const MediaTypeApplicationForm = @"application/x-www-form-urlencoded";
-NSString *const MediaTypeApplicationJSON = @"application/json";
+MediaType const MediaTypeApplicationForm = @"application/x-www-form-urlencoded";
+MediaType const MediaTypeApplicationJSON = @"application/json";
 
 
 
@@ -239,7 +239,7 @@ static NSMutableDictionary *_baseComponents = nil;
     return self.dateFormatter;
 }
 
-- (NSDate *)dateForHTTPHeaderField:(NSString *)field {
+- (NSDate *)dateForHTTPHeaderField:(HTTPHeaderField)field {
     NSString *string = [self valueForHTTPHeaderField:field];
     NSDate *date = [self.dateFormatter dateFromString:string];
     return date;
@@ -523,7 +523,7 @@ static NSMutableDictionary *_baseComponents = nil;
 
 @implementation NSMutableURLRequest (URLTransaction)
 
-- (void)setDate:(NSDate *)date forHTTPHeaderField:(NSString *)field {
+- (void)setDate:(NSDate *)date forHTTPHeaderField:(HTTPHeaderField)field {
     NSString *string = [self.dateFormatter stringFromDate:date];
     [self setValue:string forHTTPHeaderField:field];
 }
@@ -594,7 +594,7 @@ static NSMutableDictionary *_baseComponents = nil;
     return self.dateFormatter3;
 }
 
-- (NSDate *)dateForHTTPHeaderField:(NSString *)field {
+- (NSDate *)dateForHTTPHeaderField:(HTTPHeaderField)field {
     NSString *string = self.allHeaderFields[field];
     NSDate *date = [self.dateFormatter1 dateFromString:string];
     if (date) return date;

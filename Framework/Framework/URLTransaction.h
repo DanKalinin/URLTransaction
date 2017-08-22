@@ -6,34 +6,38 @@
 //  Copyright © 2016 Dan. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
-#import <CoreData/CoreData.h>
-#import <JSONSchema/JSONSchema.h>
+#import <Foundation/Foundation.h>
 
 FOUNDATION_EXPORT double URLTransactionVersionNumber;
 FOUNDATION_EXPORT const unsigned char URLTransactionVersionString[];
 
+#import <CoreData/CoreData.h>
+#import <JSONSchema/JSONSchema.h>
+
 extern NSErrorDomain const HTTPErrorDomain;
 
-extern NSString *const HTTPMethodOptions;
-extern NSString *const HTTPMethodGet;
-extern NSString *const HTTPMethodHead;
-extern NSString *const HTTPMethodPost;
-extern NSString *const HTTPMethodPut;
-extern NSString *const HTTPMethodPatch;
-extern NSString *const HTTPMethodDelete;
-extern NSString *const HTTPMethodTrace;
-extern NSString *const HTTPMethodConnect;
+typedef NSString * HTTPMethod NS_STRING_ENUM;
+extern HTTPMethod const HTTPMethodOptions;
+extern HTTPMethod const HTTPMethodGet;
+extern HTTPMethod const HTTPMethodHead;
+extern HTTPMethod const HTTPMethodPost;
+extern HTTPMethod const HTTPMethodPut;
+extern HTTPMethod const HTTPMethodPatch;
+extern HTTPMethod const HTTPMethodDelete;
+extern HTTPMethod const HTTPMethodTrace;
+extern HTTPMethod const HTTPMethodConnect;
 
-extern NSString *const HTTPHeaderFieldAccept;
-extern NSString *const HTTPHeaderFieldAuthorization;
-extern NSString *const HTTPHeaderFieldContentType;
-extern NSString *const HTTPHeaderFieldIfModifiedSince;
-extern NSString *const HTTPHeaderFieldLastModified;
-extern NSString *const HTTPHeaderFieldDate;
+typedef NSString * HTTPHeaderField NS_STRING_ENUM;
+extern HTTPHeaderField const HTTPHeaderFieldAccept;
+extern HTTPHeaderField const HTTPHeaderFieldAuthorization;
+extern HTTPHeaderField const HTTPHeaderFieldContentType;
+extern HTTPHeaderField const HTTPHeaderFieldIfModifiedSince;
+extern HTTPHeaderField const HTTPHeaderFieldLastModified;
+extern HTTPHeaderField const HTTPHeaderFieldDate;
 
-extern NSString *const MediaTypeApplicationForm;
-extern NSString *const MediaTypeApplicationJSON;
+typedef NSString * MediaType NS_STRING_ENUM;
+extern MediaType const MediaTypeApplicationForm;
+extern MediaType const MediaTypeApplicationJSON;
 
 typedef NS_ENUM(NSInteger, HTTPStatusCode) {
     
@@ -127,7 +131,7 @@ typedef void (^URLRequestHandler)(__kindof NSURLRequest *);
 @property (readonly) NSHTTPURLResponse *response;
 @property (readonly) NSError *error;
 
-- (NSDate *)dateForHTTPHeaderField:(NSString *)field;
+- (NSDate *)dateForHTTPHeaderField:(HTTPHeaderField)field;
 
 - (void)setJSONSchema:(JSONSchema *)schema forStatusCode:(HTTPStatusCode)code;
 - (JSONSchema *)JSONSchemaForStatusCode:(HTTPStatusCode)code;
@@ -180,7 +184,7 @@ typedef void (^URLTransactionHandler)(URLTransaction *);
 
 @interface NSMutableURLRequest (URLTransaction)
 
-- (void)setDate:(NSDate *)date forHTTPHeaderField:(NSString *)field;
+- (void)setDate:(NSDate *)date forHTTPHeaderField:(HTTPHeaderField)field;
 
 @end
 
@@ -195,7 +199,7 @@ typedef void (^URLTransactionHandler)(URLTransaction *);
 
 @interface NSHTTPURLResponse (URLTransaction)
 
-- (NSDate *)dateForHTTPHeaderField:(NSString *)field;
+- (NSDate *)dateForHTTPHeaderField:(HTTPHeaderField)field;
 
 @end
 
