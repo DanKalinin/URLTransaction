@@ -11,6 +11,7 @@
 FOUNDATION_EXPORT double URLTransactionVersionNumber;
 FOUNDATION_EXPORT const unsigned char URLTransactionVersionString[];
 
+#import <Helpers/Helpers.h>
 #import <CoreData/CoreData.h>
 #import <JSONSchema/JSONSchema.h>
 
@@ -182,9 +183,26 @@ typedef void (^URLTransactionHandler)(URLTransaction *);
 
 
 
+@interface BasicCredential : Credential
+
+@property NSString *user;
+@property NSString *password;
+
+@end
+
+
+
+
+
+
+
+
+
+
 @interface NSMutableURLRequest (URLTransaction)
 
 - (void)setDate:(NSDate *)date forHTTPHeaderField:(HTTPHeaderField)field;
+- (void)setCredential:(Credential *)credential forHTTPHeaderField:(HTTPHeaderField)field;
 
 @end
 

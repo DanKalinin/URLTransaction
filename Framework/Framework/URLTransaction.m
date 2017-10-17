@@ -521,11 +521,46 @@ static NSMutableDictionary *_baseComponents = nil;
 
 
 
+@interface BasicCredential ()
+
+@end
+
+
+
+@implementation BasicCredential
+
+- (NSString *)description {
+    NSString *type = @"Basic";
+    
+    NSString *credentials = [NSString stringWithFormat:@"%@:%@", self.user, self.password];
+    NSData *data = [credentials dataUsingEncoding:NSUTF8StringEncoding];
+    credentials = [data base64EncodedStringWithOptions:0];
+    
+    NSString *value = [NSString stringWithFormat:@"%@ %@", type, credentials];
+    return value;
+}
+
+@end
+
+
+
+
+
+
+
+
+
+
 @implementation NSMutableURLRequest (URLTransaction)
 
 - (void)setDate:(NSDate *)date forHTTPHeaderField:(HTTPHeaderField)field {
-    NSString *string = [self.dateFormatter stringFromDate:date];
-    [self setValue:string forHTTPHeaderField:field];
+    NSString *value = [self.dateFormatter stringFromDate:date];
+    [self setValue:value forHTTPHeaderField:field];
+}
+
+- (void)setCredential:(Credential *)credential forHTTPHeaderField:(HTTPHeaderField)field {
+    NSString *value = credential.description;
+    [self setValue:value forHTTPHeaderField:field];
 }
 
 @end
