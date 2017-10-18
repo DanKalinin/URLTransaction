@@ -529,7 +529,7 @@ static NSMutableDictionary *_baseComponents = nil;
 
 @implementation BasicCredential
 
-- (NSString *)description {
+- (NSString *)debugDescription {
     NSString *type = @"Basic";
     
     NSString *credentials = [NSString stringWithFormat:@"%@:%@", self.user, self.password];
@@ -559,7 +559,7 @@ static NSMutableDictionary *_baseComponents = nil;
 }
 
 - (void)setCredential:(Credential *)credential forHTTPHeaderField:(HTTPHeaderField)field {
-    NSString *value = credential.description;
+    NSString *value = credential.debugDescription;
     [self setValue:value forHTTPHeaderField:field];
 }
 
