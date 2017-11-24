@@ -254,6 +254,27 @@ static NSMutableDictionary *_baseComponents = nil;
     return schema;
 }
 
+- (NSString *)raw {
+    NSMutableArray *components = NSMutableArray.array;
+    
+    NSString *component = [NSString stringWithFormat:@"%@ %@ HTTP/1.1", self.HTTPMethod, self.URL.path];
+    [components addObject:component];
+    
+    component = [NSString stringWithFormat:@"Host: %@:%@", self.URL.host, self.URL.port];
+    [components addObject:component];
+    
+    for (NSString *field in self.allHTTPHeaderFields.allKeys) {
+        NSString *value = [self valueForHTTPHeaderField:field];
+        component = [NSString stringWithFormat:@"%@: %@", field, value];
+        [components addObject:component];
+    }
+    
+    [components addObject:@"\r\n"];
+    
+    NSString *result = [components componentsJoinedByString:@"\r\n"];
+    return result;
+}
+
 #pragma mark - Helpers
 
 - (void)invokeHandler:(URLRequestHandler)handler request:(NSURLRequest *)request {

@@ -131,6 +131,7 @@ typedef void (^URLRequestHandler)(__kindof NSURLRequest *);
 @property (readonly) NSData *data;
 @property (readonly) NSHTTPURLResponse *response;
 @property (readonly) NSError *error;
+@property (readonly) NSString *raw;
 
 - (NSDate *)dateForHTTPHeaderField:(HTTPHeaderField)field;
 
