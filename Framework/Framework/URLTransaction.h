@@ -35,6 +35,7 @@ extern HTTPHeaderField const HTTPHeaderFieldContentType;
 extern HTTPHeaderField const HTTPHeaderFieldIfModifiedSince;
 extern HTTPHeaderField const HTTPHeaderFieldLastModified;
 extern HTTPHeaderField const HTTPHeaderFieldDate;
+extern HTTPHeaderField const HTTPHeaderFieldHost;
 
 typedef NSString * MediaType NS_STRING_ENUM;
 extern MediaType const MediaTypeApplicationForm;

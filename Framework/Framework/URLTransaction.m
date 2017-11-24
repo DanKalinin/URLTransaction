@@ -28,6 +28,7 @@ HTTPHeaderField const HTTPHeaderFieldContentType = @"Content-Type";
 HTTPHeaderField const HTTPHeaderFieldIfModifiedSince = @"If-Modified-Since";
 HTTPHeaderField const HTTPHeaderFieldLastModified = @"Last-Modified";
 HTTPHeaderField const HTTPHeaderFieldDate = @"Date";
+HTTPHeaderField const HTTPHeaderFieldHost = @"Host";
 
 MediaType const MediaTypeApplicationForm = @"application/x-www-form-urlencoded";
 MediaType const MediaTypeApplicationJSON = @"application/json";
@@ -260,7 +261,7 @@ static NSMutableDictionary *_baseComponents = nil;
     NSString *component = [NSString stringWithFormat:@"%@ %@ HTTP/1.1", self.HTTPMethod, self.URL.path];
     [components addObject:component];
     
-    component = [NSString stringWithFormat:@"Host: %@:%@", self.URL.host, self.URL.port];
+    component = [NSString stringWithFormat:@"%@: %@:%@", HTTPHeaderFieldHost, self.URL.host, self.URL.port];
     [components addObject:component];
     
     for (NSString *field in self.allHTTPHeaderFields.allKeys) {
@@ -269,9 +270,9 @@ static NSMutableDictionary *_baseComponents = nil;
         [components addObject:component];
     }
     
-    [components addObject:@"\r\n"];
+    [components addObject:StringRN];
     
-    NSString *result = [components componentsJoinedByString:@"\r\n"];
+    NSString *result = [components componentsJoinedByString:StringRN];
     return result;
 }
 
