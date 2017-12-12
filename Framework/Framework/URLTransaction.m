@@ -44,6 +44,7 @@ MediaType const MediaTypeApplicationJSON = @"application/json";
 
 @interface NSURLRequest (URLTransactionSelectors)
 
+@property NSURLSession *session;
 @property NSOperationQueue *queue;
 @property NSManagedObjectContext *moc;
 @property id info;
@@ -79,6 +80,11 @@ MediaType const MediaTypeApplicationJSON = @"application/json";
     if (self) {
         self.JSONSchemas = [NSMutableDictionary dictionary];
     }
+    return self;
+}
+
+- (instancetype)session:(NSURLSession *)session {
+    self.session = session;
     return self;
 }
 
@@ -130,6 +136,14 @@ static NSMutableDictionary *_baseComponents = nil;
     
     _baseComponents = [NSMutableDictionary dictionary];
     return _baseComponents;
+}
+
+- (void)setSession:(NSURLSession *)session {
+    objc_setAssociatedObject(self, @selector(session), session, OBJC_ASSOCIATION_RETAIN);
+}
+
+- (NSURLSession *)session {
+    return objc_getAssociatedObject(self, @selector(session));
 }
 
 - (void)setQueue:(NSOperationQueue *)queue {
@@ -299,6 +313,7 @@ static NSMutableDictionary *_baseComponents = nil;
 
 @interface URLTransaction ()
 
+@property NSURLSession *session;
 @property NSOperationQueue *queue;
 @property NSMutableDictionary<NSNumber *, JSONSchema *> *JSONSchemas;
 @property NSManagedObjectContext *moc;
@@ -329,6 +344,11 @@ static NSMutableDictionary *_baseComponents = nil;
         
         self.JSONSchemas = [NSMutableDictionary dictionary];
     }
+    return self;
+}
+
+- (instancetype)session:(NSURLSession *)session {
+    self.session = session;
     return self;
 }
 
@@ -386,7 +406,7 @@ static NSMutableDictionary *_baseComponents = nil;
         
         dispatch_group_enter(group);
         
-        request.task = [NSURLSession.sharedSession dataTaskWithRequest:request completionHandler:^(NSData *data, NSURLResponse *response, NSError *error) {
+        request.task = [request.session dataTaskWithRequest:request completionHandler:^(NSData *data, NSURLResponse *response, NSError *error) {
             
             if (error) {
                 if (([error.domain isEqualToString:NSURLErrorDomain]) && (error.code == NSURLErrorCancelled)) return;
@@ -492,6 +512,10 @@ static NSMutableDictionary *_baseComponents = nil;
     
     // Transaction
     
+    if (!self.session) {
+        self.session = [NSURLSession sharedSession];
+    }
+    
     if (!self.queue) {
         self.queue = [NSOperationQueue mainQueue];
     }
@@ -499,6 +523,10 @@ static NSMutableDictionary *_baseComponents = nil;
     // Requests
     
     for (NSURLRequest *request in self.requests) {
+        if (!request.session) {
+            request.session = self.session;
+        }
+        
         if (!request.queue) {
             request.queue = self.queue;
         }

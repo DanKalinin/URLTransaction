@@ -115,6 +115,7 @@ typedef NS_ENUM(NSInteger, HTTPStatusCode) {
 
 typedef void (^URLRequestHandler)(__kindof NSURLRequest *);
 
+- (instancetype)session:(NSURLSession *)session;
 - (instancetype)queue:(NSOperationQueue *)queue;
 - (instancetype)moc:(NSManagedObjectContext *)moc;
 - (instancetype)info:(id)info;
@@ -154,6 +155,7 @@ typedef void (^URLRequestHandler)(__kindof NSURLRequest *);
 
 typedef void (^URLTransactionHandler)(URLTransaction *);
 
+- (instancetype)session:(NSURLSession *)session;
 - (instancetype)queue:(NSOperationQueue *)queue;
 - (instancetype)moc:(NSManagedObjectContext *)moc;
 - (instancetype)info:(id)info;
