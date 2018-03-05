@@ -47,6 +47,7 @@ MediaType const MediaTypeApplicationJSON = @"application/json";
 @property NSURLSession *session;
 @property NSOperationQueue *queue;
 @property NSManagedObjectContext *moc;
+@property BOOL blocking;
 @property id info;
 
 @property NSData *data;
@@ -100,6 +101,11 @@ MediaType const MediaTypeApplicationJSON = @"application/json";
 
 - (instancetype)info:(id)info {
     self.info = info;
+    return self;
+}
+
+- (instancetype)blocking:(BOOL)blocking {
+    self.blocking = blocking;
     return self;
 }
 
@@ -176,6 +182,16 @@ static NSMutableDictionary *_baseComponents = nil;
 
 - (id)info {
     return objc_getAssociatedObject(self, @selector(info));
+}
+
+- (void)setBlocking:(BOOL)blocking {
+    NSNumber *value = @(blocking);
+    objc_setAssociatedObject(self, @selector(blocking), value, OBJC_ASSOCIATION_RETAIN);
+}
+
+- (BOOL)blocking {
+    NSNumber *value = objc_getAssociatedObject(self, @selector(blocking));
+    return value.boolValue;
 }
 
 - (void)setData:(NSData *)data {
@@ -318,6 +334,7 @@ static NSMutableDictionary *_baseComponents = nil;
 @property NSMutableDictionary<NSNumber *, JSONSchema *> *JSONSchemas;
 @property NSManagedObjectContext *moc;
 @property id info;
+@property BOOL blocking;
 
 @property NSError *error;
 
@@ -369,6 +386,11 @@ static NSMutableDictionary *_baseComponents = nil;
 
 - (instancetype)info:(id)info {
     self.info = info;
+    return self;
+}
+
+- (instancetype)blocking:(BOOL)blocking {
+    self.blocking = blocking;
     return self;
 }
 
@@ -455,39 +477,15 @@ static NSMutableDictionary *_baseComponents = nil;
         NSLog(@"%@ %@", request.HTTPMethod, request.URL.path);
     }
     
-    dispatch_queue_t queue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0);
-    dispatch_group_notify(group, queue, ^{
-        
-        // Requests
-        
-        for (NSURLRequest *request in self.requests) {
-            
-            request.transaction = nil;
-            
-            if (request.error) {
-                
-                if (!self.error) {
-                    self.error = request.error;
-                }
-                
-                [request invokeHandler:request.failure request:request];
-            } else {
-                [request invokeHandler:request.success request:request];
-            }
-            [request invokeHandler:request.completion request:request];
-        }
-        
-        // Transaction
-        
-        if (self.error) {
-            [self invokeHandler:self.failure transaction:self];
-        } else {
-            [self invokeHandler:self.success transaction:self];
-        }
-        [self invokeHandler:self.completion transaction:self];
-        
-        [self cleanup];
-    });
+    if (self.blocking) {
+        dispatch_group_wait(group, DISPATCH_TIME_FOREVER);
+        [self complete];
+    } else {
+        dispatch_queue_t queue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0);
+        dispatch_group_notify(group, queue, ^{
+            [self complete];
+        });
+    }
 }
 
 - (void)cancel {
@@ -523,6 +521,8 @@ static NSMutableDictionary *_baseComponents = nil;
     // Requests
     
     for (NSURLRequest *request in self.requests) {
+        self.blocking = (self.blocking || request.blocking);
+        
         if (!request.session) {
             request.session = self.session;
         }
@@ -546,6 +546,38 @@ static NSMutableDictionary *_baseComponents = nil;
             request.info = self.info;
         }
     }
+}
+
+- (void)complete {
+    // Requests
+    
+    for (NSURLRequest *request in self.requests) {
+        
+        request.transaction = nil;
+        
+        if (request.error) {
+            
+            if (!self.error) {
+                self.error = request.error;
+            }
+            
+            [request invokeHandler:request.failure request:request];
+        } else {
+            [request invokeHandler:request.success request:request];
+        }
+        [request invokeHandler:request.completion request:request];
+    }
+    
+    // Transaction
+    
+    if (self.error) {
+        [self invokeHandler:self.failure transaction:self];
+    } else {
+        [self invokeHandler:self.success transaction:self];
+    }
+    [self invokeHandler:self.completion transaction:self];
+    
+    [self cleanup];
 }
 
 - (void)cleanup {
