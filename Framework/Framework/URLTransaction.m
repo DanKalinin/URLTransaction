@@ -338,6 +338,8 @@ static NSMutableDictionary *_baseComponents = nil;
 
 @property NSError *error;
 
+@property (weak) NSURLRequest *failedRequest;
+
 @property (copy) URLTransactionHandler success;
 @property (copy) URLTransactionHandler failure;
 @property (copy) URLTransactionHandler completion;
@@ -559,6 +561,7 @@ static NSMutableDictionary *_baseComponents = nil;
             
             if (!self.error) {
                 self.error = request.error;
+                self.failedRequest = request;
             }
             
             [request invokeHandler:request.failure request:request];

@@ -175,6 +175,8 @@ typedef void (^URLTransactionHandler)(URLTransaction *);
 @property (readonly) NSArray *requests;
 @property (readonly) NSError *error;
 
+@property (weak, readonly) NSURLRequest *failedRequest;
+
 - (void)setJSONSchema:(JSONSchema *)schema forStatusCode:(HTTPStatusCode)code;
 - (JSONSchema *)JSONSchemaForStatusCode:(HTTPStatusCode)code;
 
