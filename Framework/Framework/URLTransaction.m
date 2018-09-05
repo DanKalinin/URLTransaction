@@ -291,7 +291,11 @@ static NSMutableDictionary *_baseComponents = nil;
     NSString *component = [NSString stringWithFormat:@"%@ %@ HTTP/1.1", self.HTTPMethod, self.URL.path];
     [components addObject:component];
     
-    component = [NSString stringWithFormat:@"%@: %@:%@", HTTPHeaderFieldHost, self.URL.host, self.URL.port];
+    if (self.URL.port) {
+        component = [NSString stringWithFormat:@"%@: %@:%@", HTTPHeaderFieldHost, self.URL.host, self.URL.port];
+    } else {
+        component = [NSString stringWithFormat:@"%@: %@", HTTPHeaderFieldHost, self.URL.host];
+    }
     [components addObject:component];
     
     for (NSString *field in self.allHTTPHeaderFields.allKeys) {
