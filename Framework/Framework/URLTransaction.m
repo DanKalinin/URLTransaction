@@ -8,7 +8,7 @@
 
 #import "URLTransaction.h"
 #import <objc/runtime.h>
-#import <Helpers/Helpers.h>
+#import <FoundationExt/FoundationExt.h>
 
 NSErrorDomain const HTTPErrorDomain = @"HTTPErrorDomain";
 

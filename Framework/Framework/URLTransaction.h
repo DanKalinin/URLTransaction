@@ -11,7 +11,7 @@
 FOUNDATION_EXPORT double URLTransactionVersionNumber;
 FOUNDATION_EXPORT const unsigned char URLTransactionVersionString[];
 
-#import <Helpers/Helpers.h>
+#import <FoundationExt/FoundationExt.h>
 #import <CoreData/CoreData.h>
 #import <JSONSchema/JSONSchema.h>
 
