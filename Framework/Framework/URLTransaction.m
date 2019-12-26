@@ -459,6 +459,12 @@ static NSMutableDictionary *_baseComponents = nil;
                 return;
             }
             
+            NSString *contentType = [request.response.allHeaderFields valueForKey:HTTPHeaderFieldContentType];
+            if (![contentType isEqualToString:MediaTypeApplicationJSON]) {
+                dispatch_group_leave(group);
+                return;
+            }
+
             JSONSchema *schema = request.JSONSchemas[@(statusCode)];
             if (!schema) {
                 dispatch_group_leave(group);
@@ -468,8 +474,11 @@ static NSMutableDictionary *_baseComponents = nil;
             NSOperationQueue *queue = [NSOperationQueue new];
             [queue addOperationWithBlock:^{
                 NSError *error = nil;
-                BOOL valid = [schema validateObject:request.data.json error:&error];
-                if (!valid) {
+                id json = [NSJSONSerialization JSONObjectWithData:request.data options:0 error:&error];
+                if (!error) {
+                    [schema validateObject:json error:&error];
+                }
+                if (error) {
                     request.error = error;
                 }
                 
