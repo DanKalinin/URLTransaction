@@ -46,7 +46,6 @@ MediaType const MediaTypeApplicationJSON = @"application/json";
 
 @property NSURLSession *session;
 @property NSOperationQueue *queue;
-@property NSManagedObjectContext *moc;
 @property BOOL blocking;
 @property id info;
 
@@ -91,11 +90,6 @@ MediaType const MediaTypeApplicationJSON = @"application/json";
 
 - (instancetype)queue:(NSOperationQueue *)queue {
     self.queue = queue;
-    return self;
-}
-
-- (instancetype)moc:(NSManagedObjectContext *)moc {
-    self.moc = moc;
     return self;
 }
 
@@ -166,14 +160,6 @@ static NSMutableDictionary *_baseComponents = nil;
 
 - (NSMutableDictionary *)JSONSchemas {
     return objc_getAssociatedObject(self, @selector(JSONSchemas));
-}
-
-- (void)setMoc:(NSManagedObjectContext *)moc {
-    objc_setAssociatedObject(self, @selector(moc), moc, OBJC_ASSOCIATION_RETAIN);
-}
-
-- (NSManagedObjectContext *)moc {
-    return objc_getAssociatedObject(self, @selector(moc));
 }
 
 - (void)setInfo:(id)info {
@@ -336,7 +322,6 @@ static NSMutableDictionary *_baseComponents = nil;
 @property NSURLSession *session;
 @property NSOperationQueue *queue;
 @property NSMutableDictionary<NSNumber *, JSONSchema *> *JSONSchemas;
-@property NSManagedObjectContext *moc;
 @property id info;
 @property BOOL blocking;
 
@@ -382,11 +367,6 @@ static NSMutableDictionary *_baseComponents = nil;
 
 - (instancetype)JSONSchema:(JSONSchema *)schema forStatusCode:(HTTPStatusCode)statusCode {
     self.JSONSchemas[@(statusCode)] = schema;
-    return self;
-}
-
-- (instancetype)moc:(NSManagedObjectContext *)moc {
-    self.moc = moc;
     return self;
 }
 
@@ -542,10 +522,6 @@ static NSMutableDictionary *_baseComponents = nil;
             if (!schema) {
                 request.JSONSchemas[code] = self.JSONSchemas[code];
             }
-        }
-        
-        if (!request.moc && self.moc) {
-            request.moc = self.moc;
         }
         
         if (!request.info && self.info) {
