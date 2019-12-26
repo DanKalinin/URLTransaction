@@ -12,7 +12,6 @@ FOUNDATION_EXPORT double URLTransactionVersionNumber;
 FOUNDATION_EXPORT const unsigned char URLTransactionVersionString[];
 
 #import <Helpers/Helpers.h>
-#import <CoreData/CoreData.h>
 #import <JSONSchema/JSONSchema.h>
 
 extern NSErrorDomain const HTTPErrorDomain;
@@ -117,7 +116,6 @@ typedef void (^URLRequestHandler)(__kindof NSURLRequest *);
 
 - (instancetype)session:(NSURLSession *)session;
 - (instancetype)queue:(NSOperationQueue *)queue;
-- (instancetype)moc:(NSManagedObjectContext *)moc;
 - (instancetype)info:(id)info;
 - (instancetype)blocking:(BOOL)blocking;
 - (instancetype)success:(URLRequestHandler)success;
@@ -129,7 +127,6 @@ typedef void (^URLRequestHandler)(__kindof NSURLRequest *);
 
 @property (class, readonly) NSMutableDictionary<NSString *, NSURLComponents *> *baseComponents;
 @property (readonly) NSOperationQueue *queue;
-@property (readonly) NSManagedObjectContext *moc;
 @property (readonly) id info;
 @property (readonly) NSData *data;
 @property (readonly) NSHTTPURLResponse *response;
@@ -158,7 +155,6 @@ typedef void (^URLTransactionHandler)(URLTransaction *);
 
 - (instancetype)session:(NSURLSession *)session;
 - (instancetype)queue:(NSOperationQueue *)queue;
-- (instancetype)moc:(NSManagedObjectContext *)moc;
 - (instancetype)info:(id)info;
 - (instancetype)blocking:(BOOL)blocking;
 - (instancetype)addRequest:(NSURLRequest *)request;
@@ -170,7 +166,6 @@ typedef void (^URLTransactionHandler)(URLTransaction *);
 - (void)cancel;
 
 @property (readonly) NSOperationQueue *queue;
-@property (readonly) NSManagedObjectContext *moc;
 @property (readonly) id info;
 @property (readonly) NSArray *requests;
 @property (readonly) NSError *error;
